@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+		xmlns:local="http://schemas.android.com/apk/res-auto">
+  <item android:id="@+id/edit"
+			android:orderInCategory="102"
+			android:icon="@drawable/ic_menu_edit"
+			android:title="@string/edit" 
+			local:showAsAction="always"/>
+	<item android:id="@+id/save" 
+		android:icon="@drawable/ic_menu_save"
+		android:title="@string/save" 
+		local:showAsAction="always" />
+  
+</menu>

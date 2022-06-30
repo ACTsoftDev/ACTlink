@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/SSIDTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_text_size"
+            android:textColor="@color/grey"
+            local:MvxBind="Text SSIDTitle; Visible IsAdmin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            local:MvxBind="Text SSIDText; Visible IsAdmin"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/PassowordTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_text_size"
+            android:textColor="@color/grey"
+            local:MvxBind="Text PassowordTitle; Visible IsAdmin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            local:MvxBind="Text PasswordText; Visible IsAdmin"
+            android:inputType="text" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/connectButton"
+            android:layout_margin="15dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            local:MvxBind="Text ConnectButtonTitle" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/large_text_size"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            local:MvxBind="Text MessageText"
+            android:layout_margin="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                local:MvxBind="Click UploadDataBtnClicked">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/uploadIcon"
+                    local:MvxBind="DrawableName UploadImage,Converter = ImageName,ConverterParameter=0; Click UploadDataBtnClicked" />
+                <actchargers.Droid.CiTextViewBold
+                    android:id="@+id/uploadDatatitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    local:MvxBind="Text UploadTitle"
+                    android:textSize="@dimen/large_text_size" />
+                <TextView
+                    android:id="@+id/uploadDataTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="2dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/grey"
+                    local:MvxBind="Text UploadSubTitle"
+                    android:textSize="@dimen/normal_text_size" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                local:MvxBind="Click SyncSitesBtnClicked">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/syncIcon"
+                    local:MvxBind="DrawableName SyncImage,Converter = ImageName,ConverterParameter=0; Click SyncSitesBtnClicked" />
+                <actchargers.Droid.CiTextViewBold
+                    android:id="@+id/synctitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    local:MvxBind="Text SyncSiteTitle"
+                    android:textSize="@dimen/large_text_size" />
+                <TextView
+                    android:id="@+id/syncTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="2dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/grey"
+                    local:MvxBind="Text SyncSiteSubTitle"
+                    android:textSize="@dimen/normal_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            local:MvxBind="Text PushBackupTitle; Click PushBackupBtnClicked" />
+    </LinearLayout>
+</ScrollView>

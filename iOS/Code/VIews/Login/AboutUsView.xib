@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsView">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="logo" destination="2043" id="name-outlet-2043"/>
+                <outlet property="poweredView" destination="6311" id="name-outlet-6311"/>
+                <outlet property="poweredLogo" destination="6312" id="name-outlet-6312"/>
+                <outlet property="poweredBy" destination="6313" id="name-outlet-6313"/>
+                <outlet property="appName" destination="2048" id="name-outlet-2048"/>
+                <outlet property="appVersion" destination="2052" id="name-outlet-2052"/>
+                <outlet property="mcbVersion" destination="2057" id="name-outlet-2057"/>
+                <outlet property="battViewVersion" destination="2062" id="name-outlet-2062"/>
+                <outlet property="calibratorVersion" destination="2067" id="name-outlet-2067"/>
+                <outlet property="copyright" destination="2072" id="name-outlet-2072"/>
+                <outlet property="aboutAct" destination="15368" id="name-outlet-15368"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2043" translatesAutoresizingMaskIntoConstraints="NO" image="ACTlink-Logo.png">
+                    <rect key="frame" x="117" y="8" width="180" height="108"/>
+                    <constraints>
+                        <constraint id="12738" firstItem="2043" firstAttribute="height" constant="108"/>
+                        <constraint id="12739" firstItem="2043" firstAttribute="width" constant="180"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" id="6311" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="8" y="652" width="398" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6312" translatesAutoresizingMaskIntoConstraints="NO" image="ACTlink-Logo.png">
+                            <rect key="frame" x="298" y="8" width="100" height="60"/>
+                            <constraints>
+                                <constraint id="9687" firstItem="6312" firstAttribute="width" constant="100"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6313" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="28" width="290" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint id="9682" firstItem="6311" firstAttribute="height" constant="76"/>
+                        <constraint id="9683" firstItem="6312" firstAttribute="trailing" secondItem="6311" secondAttribute="trailing"/>
+                        <constraint id="9684" firstItem="6311" firstAttribute="bottom" secondItem="6312" secondAttribute="bottom" constant="8"/>
+                        <constraint id="9685" firstItem="6312" firstAttribute="top" secondItem="6311" secondAttribute="top" constant="8"/>
+                        <constraint id="9688" firstItem="6313" firstAttribute="leading" secondItem="6311" secondAttribute="leading"/>
+                        <constraint id="9689" firstItem="6313" firstAttribute="top" secondItem="6311" secondAttribute="top" constant="28"/>
+                        <constraint id="9690" firstItem="6311" firstAttribute="bottom" secondItem="6313" secondAttribute="bottom" constant="27"/>
+                        <constraint id="9691" firstItem="6312" firstAttribute="leading" secondItem="6313" secondAttribute="trailing" constant="8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" id="12721" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="8" y="126" width="398" height="518"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTLink" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2048" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="10" width="398" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="12948" firstItem="2048" firstAttribute="height" constant="21"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2052" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="39" width="398" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="12947" firstItem="2052" firstAttribute="height" constant="21"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2057" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="68" width="398" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="13209" firstItem="2057" firstAttribute="height" constant="21"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2062" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="97" width="398" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="12955" firstItem="2062" firstAttribute="height" constant="21"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2067" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="126" width="398" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="12959" firstItem="2067" firstAttribute="height" constant="21"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2072" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="155" width="398" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="12963" firstItem="2072" firstAttribute="height" constant="21"/>
+                            </constraints>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="15368" translatesAutoresizingMaskIntoConstraints="NO" editable="NO" selectable="NO" text="ACT">
+                            <rect key="frame" x="0.0" y="200" width="398" height="310"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <constraints>
+                        <constraint id="12941" firstItem="2048" firstAttribute="leading" secondItem="12721" secondAttribute="leading"/>
+                        <constraint id="12942" firstItem="2048" firstAttribute="trailing" secondItem="12721" secondAttribute="trailing"/>
+                        <constraint id="12943" firstItem="2048" firstAttribute="top" secondItem="12721" secondAttribute="top" constant="10"/>
+                        <constraint id="12944" firstItem="2052" firstAttribute="leading" secondItem="12721" secondAttribute="leading"/>
+                        <constraint id="12945" firstItem="2052" firstAttribute="trailing" secondItem="12721" secondAttribute="trailing"/>
+                        <constraint id="12946" firstItem="2052" firstAttribute="top" secondItem="2048" secondAttribute="bottom" constant="8"/>
+                        <constraint id="12949" firstItem="2057" firstAttribute="leading" secondItem="12721" secondAttribute="leading"/>
+                        <constraint id="12950" firstItem="2057" firstAttribute="trailing" secondItem="12721" secondAttribute="trailing"/>
+                        <constraint id="12951" firstItem="2057" firstAttribute="top" secondItem="2052" secondAttribute="bottom" constant="8"/>
+                        <constraint id="12952" firstItem="2062" firstAttribute="leading" secondItem="12721" secondAttribute="leading"/>
+                        <constraint id="12953" firstItem="2062" firstAttribute="trailing" secondItem="12721" secondAttribute="trailing"/>
+                        <constraint id="12954" firstItem="2062" firstAttribute="top" secondItem="2057" secondAttribute="bottom" constant="8"/>
+                        <constraint id="12956" firstItem="2067" firstAttribute="leading" secondItem="12721" secondAttribute="leading"/>
+                        <constraint id="12957" firstItem="2067" firstAttribute="trailing" secondItem="12721" secondAttribute="trailing"/>
+                        <constraint id="12958" firstItem="2067" firstAttribute="top" secondItem="2062" secondAttribute="bottom" constant="8"/>
+                        <constraint id="12960" firstItem="2072" firstAttribute="leading" secondItem="12721" secondAttribute="leading"/>
+                        <constraint id="12961" firstItem="2072" firstAttribute="trailing" secondItem="12721" secondAttribute="trailing"/>
+                        <constraint id="12962" firstItem="2072" firstAttribute="top" secondItem="2067" secondAttribute="bottom" constant="8"/>
+                        <constraint id="15606" firstItem="15368" firstAttribute="leading" secondItem="12721" secondAttribute="leading"/>
+                        <constraint id="15607" firstItem="15368" firstAttribute="top" secondItem="2072" secondAttribute="bottom" constant="24"/>
+                        <constraint id="15608" firstItem="15368" firstAttribute="trailing" secondItem="12721" secondAttribute="trailing"/>
+                        <constraint id="15609" firstItem="12721" firstAttribute="bottom" secondItem="15368" secondAttribute="bottom" constant="8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint id="9679" firstItem="6311" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8"/>
+                <constraint id="9680" firstItem="2" firstAttribute="trailing" secondItem="6311" secondAttribute="trailing" constant="8"/>
+                <constraint id="9681" firstItem="2" firstAttribute="bottom" secondItem="6311" secondAttribute="bottom" constant="8"/>
+                <constraint id="12736" firstItem="2043" firstAttribute="centerX" secondItem="2" secondAttribute="centerX"/>
+                <constraint id="12737" firstItem="2043" firstAttribute="top" secondItem="2" secondAttribute="top" constant="8"/>
+                <constraint id="12937" firstItem="12721" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8"/>
+                <constraint id="12938" firstItem="2" firstAttribute="trailing" secondItem="12721" secondAttribute="trailing" constant="8"/>
+                <constraint id="12939" firstItem="12721" firstAttribute="top" secondItem="2043" secondAttribute="bottom" constant="10"/>
+                <constraint id="12940" firstItem="6311" firstAttribute="top" secondItem="12721" secondAttribute="bottom" constant="8"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar.png" width="86" height="86"/>
+        <image name="logout.png" width="40" height="46"/>
+        <image name="menu.png" width="18" height="12"/>
+        <image name="circle.png" width="60" height="60"/>
+        <image name="dots.png" width="22" height="5"/>
+        <image name="sync_sites.png" width="60" height="60"/>
+        <image name="upload_data.png" width="60" height="60"/>
+        <image name="download_devicedata.png" width="60" height="60"/>
+        <image name="sync_sites_whitebg.png" width="60" height="60"/>
+        <image name="update_device_firmware.png" width="60" height="60"/>
+        <image name="upload_data_whitebg.png" width="60" height="60"/>
+        <image name="restat_device.png" width="60" height="60"/>
+        <image name="download_sitedata.png" width="60" height="60"/>
+        <image name="update_site_firmware.png" width="60" height="60"/>
+        <image name="Selected.png" width="25" height="20"/>
+        <image name="ACTlink-Logo.png" width="112" height="67"/>
+        <image name="battery_info.png" width="60" height="60"/>
+        <image name="battview_info.png" width="60" height="60"/>
+        <image name="battview_settings.png" width="60" height="60"/>
+        <image name="quick_view.png" width="60" height="60"/>
+        <image name="history.png" width="60" height="60"/>
+        <image name="caliberation.png" width="60" height="60"/>
+        <image name="factory_control.png" width="60" height="60"/>
+        <image name="wifi.png" width="60" height="60"/>
+        <image name="charger_info.png" width="60" height="60"/>
+        <image name="charger_settings.png" width="60" height="60"/>
+        <image name="energy_management.png" width="60" height="60"/>
+        <image name="power_module.png" width="60" height="60"/>
+        <image name="charger.png" width="34" height="17"/>
+        <image name="current_a_Icon.png" width="26" height="33"/>
+        <image name="temp_icon.png" width="16" height="39"/>
+        <image name="voltage.png" width="33" height="37"/>
+        <image name="chargerquickview.png" width="772" height="410"/>
+        <image name="back_arrow.png" width="13" height="22"/>
+        <image name="activeselect.png" width="60" height="60"/>
+        <image name="battview.png" width="144" height="43"/>
+        <image name="battview_lostConnection.png" width="144" height="43"/>
+        <image name="battview_notConnected.png" width="144" height="43"/>
+        <image name="downarrow.png" width="60" height="60"/>
+        <image name="firmware_update.png" width="60" height="60"/>
+        <image name="idleWithFault_12.png" width="165" height="220"/>
+        <image name="idleWithFault_4.png" width="118" height="150"/>
+        <image name="idleWithFault_6.png" width="165" height="150"/>
+        <image name="idleWithWarning_12.png" width="165" height="220"/>
+        <image name="idleWithWarning_4.png" width="118" height="150"/>
+        <image name="idleWithWarning_6.png" width="165" height="150"/>
+        <image name="idle_12.png" width="165" height="220"/>
+        <image name="idle_4.png" width="118" height="150"/>
+        <image name="idle_6.png" width="165" height="150"/>
+        <image name="inactiveselect.png" width="60" height="60"/>
+        <image name="lostConnection_12.png" width="110" height="146"/>
+        <image name="lostConnection_4.png" width="82" height="104"/>
+        <image name="lostConnection_6.png" width="110" height="99"/>
+        <image name="notConnected_12.png" width="165" height="220"/>
+        <image name="notConnected_4.png" width="118" height="150"/>
+        <image name="notConnected_6.png" width="165" height="150"/>
+        <image name="refresh_device.png" width="60" height="60"/>
+        <image name="rightarrow.png" width="60" height="60"/>
+        <image name="runningWithFault_12.gif" width="165" height="220"/>
+        <image name="runningWithFault_4.gif" width="118" height="150"/>
+        <image name="runningWithFault_6.gif" width="166" height="150"/>
+        <image name="runningWithWarning_12.gif" width="165" height="220"/>
+        <image name="runningWithWarning_4.gif" width="118" height="150"/>
+        <image name="runningWithWarning_6.gif" width="166" height="150"/>
+        <image name="running_12.gif" width="110" height="146"/>
+        <image name="running_4.gif" width="82" height="104"/>
+        <image name="running_6.gif" width="110" height="99"/>
+        <image name="site_view.png" width="60" height="60"/>
+        <image name="site_view_icon.png" width="60" height="60"/>
+    </resources>
+</document>

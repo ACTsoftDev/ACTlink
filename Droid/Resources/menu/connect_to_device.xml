@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/empty"
+        android:icon="@drawable/ic_action_overflow"
+        android:orderInCategory="101"
+        android:title="@string/overflow_site_menu"
+        local:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/download"
+                android:icon="@drawable/download_device_data_menu"
+                android:title="@string/download_device_data"
+                local:showAsAction="never" />
+
+            <item
+                android:id="@+id/upload_data"
+                android:icon="@drawable/upload_data_menu"
+                android:title="@string/upload_data"
+                local:showAsAction="never" />
+
+            <item
+                android:id="@+id/sync_sites"
+                android:icon="@drawable/sync_sites"
+                android:title="@string/sync_sites"
+                local:showAsAction="never" />
+
+            <item
+                android:id="@+id/site_view"
+                android:icon="@drawable/ic_site_view"
+                android:title="@string/site_view"
+                local:showAsAction="never" />
+
+            <item
+                android:id="@+id/update_site_firmware"
+                android:icon="@drawable/update_site_firmware_menu"
+                android:title="@string/update_site_firmware"
+                local:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

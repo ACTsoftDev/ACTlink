@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="cxk-wN-pdQ" customClass="EnableDisableButtonTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBZ-ER-vvH" customClass="CalibrationRoundedRectButton">
+                        <rect key="frame" x="20" y="10" width="280" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Zg7-zC-Trt"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FBZ-ER-vvH" secondAttribute="trailing" constant="20" id="Fob-Nq-D7E"/>
+                    <constraint firstItem="FBZ-ER-vvH" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="Q7w-Ff-DNk"/>
+                    <constraint firstAttribute="bottom" secondItem="FBZ-ER-vvH" secondAttribute="bottom" constant="10" id="v3z-fB-jBt"/>
+                    <constraint firstItem="FBZ-ER-vvH" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="10" id="yOQ-tf-utg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="actionButton" destination="FBZ-ER-vvH" id="xDp-X1-7LW"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

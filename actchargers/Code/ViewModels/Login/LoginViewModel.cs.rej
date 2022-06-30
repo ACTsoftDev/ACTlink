@@ -1,0 +1,10 @@
+diff a/actchargers/Code/ViewModels/Login/LoginViewModel.cs b/actchargers/Code/ViewModels/Login/LoginViewModel.cs	(rejected hunks)
+@@ -20,7 +20,7 @@
+ 
+ 		void OnLoginClick()
+ 		{
+-			ShowViewModel<MainContainerViewModel>();
++			ShowViewModel<UsageAgreementViewModel>();
+ 		}
+ 	}
+ }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="cxk-wN-pdQ" customClass="LabelSwitchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jCy-rJ-JT9">
+                        <rect key="frame" x="256" y="9" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="9IP-bd-MC1"/>
+                            <constraint firstAttribute="height" constant="31" id="ipB-Ks-0m8"/>
+                        </constraints>
+                    </switch>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UF-KU-70z">
+                        <rect key="frame" x="15" y="48" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.54901960780000003" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="d7L-bm-Fb1"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wR-tv-oEM">
+                        <rect key="frame" x="15" y="16" width="35.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8wR-tv-oEM" firstAttribute="leading" secondItem="8UF-KU-70z" secondAttribute="leading" id="4Je-ib-d4Y"/>
+                    <constraint firstAttribute="bottom" secondItem="8UF-KU-70z" secondAttribute="bottom" id="BLc-Xa-146"/>
+                    <constraint firstItem="jCy-rJ-JT9" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="CxU-M2-IOP"/>
+                    <constraint firstItem="8UF-KU-70z" firstAttribute="top" secondItem="8wR-tv-oEM" secondAttribute="bottom" constant="12" id="ROO-Uw-Rt0"/>
+                    <constraint firstItem="8wR-tv-oEM" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" constant="7" id="bAW-p9-ufJ"/>
+                    <constraint firstItem="8wR-tv-oEM" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" constant="1.5" id="bjM-Na-ts5"/>
+                    <constraint firstItem="8UF-KU-70z" firstAttribute="trailing" secondItem="jCy-rJ-JT9" secondAttribute="trailing" id="bjQ-wd-Br6"/>
+                    <constraint firstAttribute="trailing" secondItem="8UF-KU-70z" secondAttribute="trailing" constant="15" id="kEL-qe-LFJ"/>
+                    <constraint firstItem="8wR-tv-oEM" firstAttribute="centerY" secondItem="jCy-rJ-JT9" secondAttribute="centerY" constant="1.5" id="mGS-ei-0B0"/>
+                    <constraint firstItem="8wR-tv-oEM" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="8" id="mvA-c0-WWO"/>
+                    <constraint firstItem="jCy-rJ-JT9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8wR-tv-oEM" secondAttribute="trailing" constant="15" id="wZd-Ox-2M4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="8wR-tv-oEM" id="aIo-pn-2c1"/>
+                <outlet property="valueSwitch" destination="jCy-rJ-JT9" id="KN0-f9-f91"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

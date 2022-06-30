@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <MvvmCross.Binding.Droid.Views.MvxListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        android:layout_weight="1"
+        android:listSelector="@color/transparent"
+        local:MvxBind="ItemsSource ViewGlobalRecordsItemSource"
+        local:MvxItemTemplate="@layout/item_global_records" />
+</LinearLayout>

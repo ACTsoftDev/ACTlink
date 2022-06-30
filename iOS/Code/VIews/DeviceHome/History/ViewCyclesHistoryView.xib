@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewCyclesHistoryView">
+            <connections>
+                <outlet property="heading1" destination="60R-eC-Nyt" id="04N-bR-lT4"/>
+                <outlet property="heading2" destination="zjC-JS-gnc" id="gtm-RW-Dyz"/>
+                <outlet property="heading3" destination="RBF-xP-ITW" id="rWt-Yg-J2a"/>
+                <outlet property="heading4" destination="u8I-TI-dFO" id="hM9-Qq-MyH"/>
+                <outlet property="heading5" destination="sFs-TH-Tjg" id="2tL-BK-UJT"/>
+                <outlet property="listTableView" destination="ooS-cD-shH" id="VFU-8x-RJG"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="heading6" destination="2153" id="name-outlet-2153"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEh-6z-LHx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sequence" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60R-eC-Nyt">
+                            <rect key="frame" x="15" y="10" width="58" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="5253" firstAttribute="height" constant="34"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjC-JS-gnc">
+                            <rect key="frame" x="81" y="10" width="58" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="5259" firstAttribute="height" constant="34"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBF-xP-ITW">
+                            <rect key="frame" x="147" y="10" width="58" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="5261" firstAttribute="height" constant="34"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Module ID" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8I-TI-dFO">
+                            <rect key="frame" x="213" y="10" width="58" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="5263" firstAttribute="height" constant="34"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFs-TH-Tjg">
+                            <rect key="frame" x="279" y="10" width="58" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="5265" firstAttribute="height" constant="34"/>
+                            </constraints>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery Type" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2153">
+                            <rect key="frame" x="345" y="10" width="58" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <constraints>
+                                <constraint id="5257" firstAttribute="height" constant="34"/>
+                            </constraints>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint id="5250" firstAttribute="height" constant="53"/>
+                        <constraint id="5251" firstItem="60R-eC-Nyt" firstAttribute="leading" secondItem="qEh-6z-LHx" secondAttribute="leading" constant="15"/>
+                        <constraint id="5252" firstItem="60R-eC-Nyt" firstAttribute="top" secondItem="qEh-6z-LHx" secondAttribute="top" constant="10"/>
+                        <constraint id="5254" firstAttribute="trailing" secondItem="2153" secondAttribute="trailing" constant="11"/>
+                        <constraint id="5255" firstItem="2153" firstAttribute="top" secondItem="qEh-6z-LHx" secondAttribute="top" constant="10"/>
+                        <constraint id="5256" firstItem="2153" firstAttribute="leading" secondItem="sFs-TH-Tjg" secondAttribute="trailing" constant="8"/>
+                        <constraint id="5258" firstItem="zjC-JS-gnc" firstAttribute="top" secondItem="qEh-6z-LHx" secondAttribute="top" constant="10"/>
+                        <constraint id="5260" firstItem="RBF-xP-ITW" firstAttribute="top" secondItem="qEh-6z-LHx" secondAttribute="top" constant="10"/>
+                        <constraint id="5262" firstItem="u8I-TI-dFO" firstAttribute="top" secondItem="qEh-6z-LHx" secondAttribute="top" constant="10"/>
+                        <constraint id="5264" firstItem="sFs-TH-Tjg" firstAttribute="top" secondItem="qEh-6z-LHx" secondAttribute="top" constant="10"/>
+                        <constraint id="5266" firstItem="zjC-JS-gnc" firstAttribute="leading" secondItem="60R-eC-Nyt" secondAttribute="trailing" constant="8"/>
+                        <constraint id="5267" firstItem="RBF-xP-ITW" firstAttribute="leading" secondItem="zjC-JS-gnc" secondAttribute="trailing" constant="8"/>
+                        <constraint id="5268" firstItem="u8I-TI-dFO" firstAttribute="leading" secondItem="RBF-xP-ITW" secondAttribute="trailing" constant="8"/>
+                        <constraint id="5269" firstItem="sFs-TH-Tjg" firstAttribute="leading" secondItem="u8I-TI-dFO" secondAttribute="trailing" constant="8"/>
+                        <constraint id="5270" firstItem="2153" firstAttribute="leading" secondItem="sFs-TH-Tjg" secondAttribute="trailing" constant="8"/>
+                        <constraint id="5271" firstItem="zjC-JS-gnc" firstAttribute="width" secondItem="60R-eC-Nyt" secondAttribute="width"/>
+                        <constraint id="5272" firstItem="RBF-xP-ITW" firstAttribute="width" secondItem="60R-eC-Nyt" secondAttribute="width"/>
+                        <constraint id="5273" firstItem="u8I-TI-dFO" firstAttribute="width" secondItem="60R-eC-Nyt" secondAttribute="width"/>
+                        <constraint id="5274" firstItem="sFs-TH-Tjg" firstAttribute="width" secondItem="60R-eC-Nyt" secondAttribute="width"/>
+                        <constraint id="5275" firstItem="2153" firstAttribute="width" secondItem="60R-eC-Nyt" secondAttribute="width"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ooS-cD-shH">
+                    <rect key="frame" x="0.0" y="53.5" width="414" height="682.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint id="5247" firstItem="qEh-6z-LHx" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
+                <constraint id="5248" firstItem="qEh-6z-LHx" firstAttribute="top" secondItem="2" secondAttribute="top"/>
+                <constraint id="5249" firstItem="qEh-6z-LHx" firstAttribute="trailing" secondItem="2" secondAttribute="trailing"/>
+                <constraint id="5276" firstItem="ooS-cD-shH" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
+                <constraint id="5277" firstItem="ooS-cD-shH" firstAttribute="top" secondItem="qEh-6z-LHx" secondAttribute="bottom"/>
+                <constraint id="5278" firstItem="ooS-cD-shH" firstAttribute="trailing" secondItem="2" secondAttribute="trailing"/>
+                <constraint id="5279" firstItem="ooS-cD-shH" firstAttribute="bottom" secondItem="2" secondAttribute="bottom"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

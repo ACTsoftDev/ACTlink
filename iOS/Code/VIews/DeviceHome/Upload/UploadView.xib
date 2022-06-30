@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadView">
+            <connections>
+                <outlet property="listTableView" destination="0dS-G4-0iD" id="LAD-ax-bfR"/>
+                <outlet property="progressIndicator" destination="ODa-KE-id3" id="N3g-q7-Fyp"/>
+                <outlet property="segmentController" destination="93Z-B6-bkV" id="eSg-Py-saA"/>
+                <outlet property="statusText" destination="lM4-Lr-nd5" id="9tD-Uz-gtT"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="93Z-B6-bkV">
+                    <rect key="frame" x="16" y="10" width="343" height="29"/>
+                    <segments>
+                        <segment title="Chargers"/>
+                        <segment title="BATTView"/>
+                        <segment title="BATTView Mobile"/>
+                    </segments>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0dS-G4-0iD">
+                    <rect key="frame" x="0.0" y="46" width="375" height="533"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-0d-b6A">
+                    <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM4-Lr-nd5">
+                            <rect key="frame" x="187" y="31" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ODa-KE-id3">
+                            <rect key="frame" x="16" y="39" width="343" height="2"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="RbN-It-EHk"/>
+                            </constraints>
+                        </progressView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.082352941176470587" green="0.41568627450980389" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="lM4-Lr-nd5" firstAttribute="centerX" secondItem="ODa-KE-id3" secondAttribute="centerX" id="Dg3-tF-KwA"/>
+                        <constraint firstItem="ODa-KE-id3" firstAttribute="top" secondItem="lM4-Lr-nd5" secondAttribute="bottom" constant="8" id="Owo-bf-g7O"/>
+                        <constraint firstAttribute="height" constant="80" id="UQw-Q8-6tz"/>
+                        <constraint firstItem="ODa-KE-id3" firstAttribute="centerY" secondItem="aDm-0d-b6A" secondAttribute="centerY" id="nwk-mE-rkr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0dS-G4-0iD" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="02J-3j-mgx"/>
+                <constraint firstAttribute="trailing" secondItem="aDm-0d-b6A" secondAttribute="trailing" id="5If-db-UqY"/>
+                <constraint firstAttribute="trailing" secondItem="93Z-B6-bkV" secondAttribute="trailing" constant="16" id="9eR-uQ-UOT"/>
+                <constraint firstItem="aDm-0d-b6A" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="Anc-Jo-2b4"/>
+                <constraint firstAttribute="trailing" secondItem="0dS-G4-0iD" secondAttribute="trailing" id="C37-iv-Ftw"/>
+                <constraint firstItem="93Z-B6-bkV" firstAttribute="top" secondItem="2" secondAttribute="top" constant="10" id="Ctm-oR-zA7"/>
+                <constraint firstItem="aDm-0d-b6A" firstAttribute="top" secondItem="0dS-G4-0iD" secondAttribute="bottom" constant="8" id="Nas-9x-BNE"/>
+                <constraint firstAttribute="bottom" secondItem="aDm-0d-b6A" secondAttribute="bottom" id="Xut-I4-wt9"/>
+                <constraint firstItem="aDm-0d-b6A" firstAttribute="top" secondItem="0dS-G4-0iD" secondAttribute="bottom" constant="8" id="cK5-92-147"/>
+                <constraint firstItem="ODa-KE-id3" firstAttribute="trailing" secondItem="93Z-B6-bkV" secondAttribute="trailing" id="fzU-yY-hQd"/>
+                <constraint firstItem="0dS-G4-0iD" firstAttribute="top" secondItem="93Z-B6-bkV" secondAttribute="bottom" constant="8" id="h9l-GA-daB"/>
+                <constraint firstItem="ODa-KE-id3" firstAttribute="leading" secondItem="93Z-B6-bkV" secondAttribute="leading" id="viI-eV-8FE"/>
+                <constraint firstItem="93Z-B6-bkV" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="16" id="yvo-iS-fco"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

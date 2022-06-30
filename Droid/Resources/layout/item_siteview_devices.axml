@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="68dp"
+            android:layout_height="60dp"
+            android:id="@+id/image_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                local:MvxBind="Visible NotSite" />
+            <ImageView
+                android:layout_width="68dp"
+                android:layout_height="30dp"
+                android:id="@+id/image_battery"
+                android:layout_centerInParent="true"
+                local:MvxBind="DrawableName ImageString, Converter = ImageName,ConverterParameter=0; Visible BattviewImageVisibility" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:id="@+id/image_charger"
+                android:layout_centerInParent="true"
+                local:MvxBind="DrawableName ImageString, Converter = ImageName,ConverterParameter=0; Visible ChargerImageVisibility" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/image_layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                local:MvxBind="Text deviceName"
+                android:id="@+id/device_name"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                local:MvxBind="Text serialNumber"
+                android:id="@+id/battery_id"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                local:MvxBind="Text DeviceStatus"
+                android:id="@+id/downloading_status" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/checked_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            local:MvxBind="DrawableName CheckedImageString, Converter = ImageName,ConverterParameter=0; Click ItemCheckBtnCommand"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

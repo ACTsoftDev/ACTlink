@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BatteryInfoView">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="listTableView" destination="2040" id="name-outlet-2040"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="2040" translatesAutoresizingMaskIntoConstraints="NO" estimatedRowHeight="60">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint id="2293" firstItem="2040" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
+                <constraint id="2294" firstItem="2040" firstAttribute="trailing" secondItem="2" secondAttribute="trailing"/>
+                <constraint id="2295" firstItem="2040" firstAttribute="bottom" secondItem="2" secondAttribute="bottom"/>
+                <constraint id="2296" firstItem="2040" firstAttribute="top" secondItem="2" secondAttribute="top"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar.png" width="86" height="86"/>
+        <image name="logout.png" width="40" height="46"/>
+        <image name="menu.png" width="18" height="12"/>
+        <image name="circle.png" width="60" height="60"/>
+        <image name="dots.png" width="22" height="5"/>
+        <image name="sync_sites.png" width="60" height="60"/>
+        <image name="upload_data.png" width="60" height="60"/>
+        <image name="download_devicedata.png" width="60" height="60"/>
+        <image name="sync_sites_whitebg.png" width="60" height="60"/>
+        <image name="update_device_firmware.png" width="60" height="60"/>
+        <image name="upload_data_whitebg.png" width="60" height="60"/>
+        <image name="restat_device.png" width="60" height="60"/>
+        <image name="download_sitedata.png" width="60" height="60"/>
+        <image name="update_site_firmware.png" width="60" height="60"/>
+        <image name="Selected.png" width="25" height="20"/>
+        <image name="ACTlink-Logo.png" width="112" height="67"/>
+        <image name="battery_info.png" width="60" height="60"/>
+        <image name="battview_info.png" width="60" height="60"/>
+        <image name="battview_settings.png" width="60" height="60"/>
+        <image name="quick_view.png" width="60" height="60"/>
+        <image name="history.png" width="60" height="60"/>
+        <image name="caliberation.png" width="60" height="60"/>
+        <image name="factory_control.png" width="60" height="60"/>
+        <image name="wifi.png" width="60" height="60"/>
+        <image name="charger_info.png" width="60" height="60"/>
+        <image name="charger_settings.png" width="60" height="60"/>
+        <image name="energy_management.png" width="60" height="60"/>
+        <image name="power_module.png" width="60" height="60"/>
+        <image name="charger.png" width="34" height="17"/>
+        <image name="current_a_Icon.png" width="26" height="33"/>
+        <image name="temp_icon.png" width="16" height="39"/>
+        <image name="voltage.png" width="33" height="37"/>
+        <image name="chargerquickview.png" width="772" height="410"/>
+        <image name="back_arrow.png" width="13" height="22"/>
+        <image name="activeselect.png" width="60" height="60"/>
+        <image name="battview.png" width="144" height="43"/>
+        <image name="battview_lostConnection.png" width="144" height="43"/>
+        <image name="battview_notConnected.png" width="144" height="43"/>
+        <image name="downarrow.png" width="60" height="60"/>
+        <image name="firmware_update.png" width="60" height="60"/>
+        <image name="idleWithFault_12.png" width="165" height="220"/>
+        <image name="idleWithFault_4.png" width="118" height="150"/>
+        <image name="idleWithFault_6.png" width="165" height="150"/>
+        <image name="idleWithWarning_12.png" width="165" height="220"/>
+        <image name="idleWithWarning_4.png" width="118" height="150"/>
+        <image name="idleWithWarning_6.png" width="165" height="150"/>
+        <image name="idle_12.png" width="165" height="220"/>
+        <image name="idle_4.png" width="118" height="150"/>
+        <image name="idle_6.png" width="165" height="150"/>
+        <image name="inactiveselect.png" width="60" height="60"/>
+        <image name="lostConnection_12.png" width="110" height="146"/>
+        <image name="lostConnection_4.png" width="82" height="104"/>
+        <image name="lostConnection_6.png" width="110" height="99"/>
+        <image name="notConnected_12.png" width="165" height="220"/>
+        <image name="notConnected_4.png" width="118" height="150"/>
+        <image name="notConnected_6.png" width="165" height="150"/>
+        <image name="refresh_device.png" width="60" height="60"/>
+        <image name="rightarrow.png" width="60" height="60"/>
+        <image name="runningWithFault_12.gif" width="165" height="220"/>
+        <image name="runningWithFault_4.gif" width="118" height="150"/>
+        <image name="runningWithFault_6.gif" width="166" height="150"/>
+        <image name="runningWithWarning_12.gif" width="165" height="220"/>
+        <image name="runningWithWarning_4.gif" width="118" height="150"/>
+        <image name="runningWithWarning_6.gif" width="166" height="150"/>
+        <image name="running_12.gif" width="110" height="146"/>
+        <image name="running_4.gif" width="82" height="104"/>
+        <image name="running_6.gif" width="110" height="99"/>
+    </resources>
+</document>

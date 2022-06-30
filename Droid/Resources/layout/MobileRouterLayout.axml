@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/SSIDTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_text_size"
+            android:textColor="@color/grey"
+            local:MvxBind="Text SSIDTitleMobile; Visible IsAdmin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/SSIDText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            local:MvxBind="Text SSIDTextMobile; Visible IsAdmin" />
+        <TextView
+            android:id="@+id/PassowordTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_text_size"
+            android:textColor="@color/grey"
+            local:MvxBind="Text PassowordTitleMobile; Visible IsAdmin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/PasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            local:MvxBind="Text PasswordTextMobile; Visible IsAdmin" />
+        <TextView
+            android:id="@+id/PortTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_text_size"
+            android:textColor="@color/grey"
+            local:MvxBind="Text PortTitle; Visible IsAdmin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/PortText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            local:MvxBind="Text PortText; Visible IsAdmin" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobileConnectButton"
+            android:layout_margin="15dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            local:MvxBind="Text ConnectButtonTitle" />
+    </LinearLayout>
+</ScrollView>

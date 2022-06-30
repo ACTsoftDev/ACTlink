@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="212" id="cxk-wN-pdQ" customClass="DaysNewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Bed-Ed-uGm">
+                        <rect key="frame" x="15" y="49" width="295" height="160.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dtU-bN-M8g">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVw-Lz-ulM">
+                        <rect key="frame" x="15" y="211" width="290" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="YV4-XN-uPv"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcI-ny-ddd">
+                        <rect key="frame" x="15" y="10" width="290" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="d6o-Qj-X8r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bed-Ed-uGm" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="1UD-cx-2QM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YcI-ny-ddd" secondAttribute="trailing" constant="7" id="40c-LW-2UA"/>
+                    <constraint firstItem="YcI-ny-ddd" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" constant="7" id="61I-gg-F7Y"/>
+                    <constraint firstAttribute="trailing" secondItem="Bed-Ed-uGm" secondAttribute="trailing" constant="10" id="B2D-Au-Duq"/>
+                    <constraint firstItem="YcI-ny-ddd" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="2" id="Khh-WH-BcA"/>
+                    <constraint firstItem="Bed-Ed-uGm" firstAttribute="top" secondItem="YcI-ny-ddd" secondAttribute="bottom" constant="19" id="Lsw-wc-v1Q"/>
+                    <constraint firstAttribute="trailing" secondItem="zVw-Lz-ulM" secondAttribute="trailing" constant="15" id="QU9-Al-0Rz"/>
+                    <constraint firstItem="Bed-Ed-uGm" firstAttribute="top" secondItem="YcI-ny-ddd" secondAttribute="bottom" constant="19" id="ahq-WA-ye5"/>
+                    <constraint firstAttribute="bottom" secondItem="Bed-Ed-uGm" secondAttribute="bottom" constant="2" id="ecq-ZY-ApF"/>
+                    <constraint firstAttribute="bottom" secondItem="zVw-Lz-ulM" secondAttribute="bottom" id="se4-lF-90r"/>
+                    <constraint firstItem="zVw-Lz-ulM" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="yEv-Dk-cCx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="listCollectionView" destination="Bed-Ed-uGm" id="6sM-33-cjV"/>
+                <outlet property="separatorView" destination="zVw-Lz-ulM" id="c7g-Rs-NwC"/>
+                <outlet property="titleLabel" destination="YcI-ny-ddd" id="Swo-c3-TXb"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="138"/>
+        </tableViewCell>
+    </objects>
+</document>

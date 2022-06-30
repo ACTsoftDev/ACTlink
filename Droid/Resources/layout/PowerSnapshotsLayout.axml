@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/item_padding"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_left_margin"
+            android:textSize="@dimen/large_text_size"
+            local:MvxBind="Text StartFromTitle" />
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_text_size"
+            android:textColor="@color/grey"
+            android:inputType="number"
+            local:MvxBind="Text StartId" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_left_margin"
+            android:paddingLeft="@dimen/button_left_margin"
+            android:paddingRight="@dimen/button_left_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            local:MvxBind="Text ReadRecordsTitle; Click ReadRecordsCommand" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_top_margin"
+        android:padding="4dp"
+        android:background="@color/view_cycle_header">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text IdTitle" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text TimeTitle" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text VoltageTitle" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text CurrentTitle" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text PowerTitle" />
+    </LinearLayout>
+    <MvvmCross.Binding.Droid.Views.MvxListView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        android:layout_weight="1"
+        android:id="@+id/list"
+        android:listSelector="@color/transparent"
+        local:MvxBind="ItemsSource ListItemSource"
+        local:MvxItemTemplate="@layout/item_power_snapshots" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="actionbar_tile" />
+    <string name="hello">Hello World, Click Me!</string>
+    <string name="app_name">ACTlink</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!--Login related strings -->
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="restart_device">Restart Device</string>
+    <string name="download_device_data">Download Device Data</string>
+    <string name="update_device_firmware">Update Device Firmware</string>
+    <string name="download_site_data">Download Site Data</string>
+    <string name="upload_data">Upload Data</string>
+    <string name="sync_sites">Sync Sites</string>
+    <string name="site_view">Site View</string>
+    <string name="update_site_firmware">Update Site Firmware</string>
+    <string name="settings">Settings</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="start_new_study">Start New Study</string>
+    <string name="tab_count">0</string>
+    <string name="overflow_site_menu">Site Menu</string>
+    <string name="overflow_device_menu">Device Menu</string>
+    <string name="reset">Reset</string>
+    <string name="reset_voltage_cal">Reset Voltage Calibration</string>
+    <string name="next">Next</string>
+    <string name="refresh">Refresh</string>
+    <string name="read_records">Read Records</string>
+    <string name="pdf">PDF</string>
+</resources>

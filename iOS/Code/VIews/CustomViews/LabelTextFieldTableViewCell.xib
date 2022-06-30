@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="cxk-wN-pdQ" customClass="LabelTextFieldTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye9-5g-AXa">
+                        <rect key="frame" x="15" y="10" width="300" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2g-hQ-Y6V">
+                        <rect key="frame" x="15" y="58" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.54901960780000003" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gaS-E6-JB6"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dqJ-By-bdN">
+                        <rect key="frame" x="15" y="27" width="295" height="31"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="kAb-31-9ZK"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="v2g-hQ-Y6V" secondAttribute="bottom" constant="1" id="Bxr-3d-SYS"/>
+                    <constraint firstItem="v2g-hQ-Y6V" firstAttribute="leading" secondItem="dqJ-By-bdN" secondAttribute="leading" id="SxW-Mo-nLH"/>
+                    <constraint firstItem="dqJ-By-bdN" firstAttribute="top" secondItem="ye9-5g-AXa" secondAttribute="bottom" id="VRD-Wg-9oc"/>
+                    <constraint firstItem="ye9-5g-AXa" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="15" id="Vxm-RE-3wa"/>
+                    <constraint firstAttribute="trailing" secondItem="dqJ-By-bdN" secondAttribute="trailing" constant="10" id="Zo6-Vr-m2e"/>
+                    <constraint firstItem="v2g-hQ-Y6V" firstAttribute="trailing" secondItem="dqJ-By-bdN" secondAttribute="trailing" constant="-5" id="aJV-ql-g6E"/>
+                    <constraint firstItem="ye9-5g-AXa" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="10" id="hpO-OR-SMa"/>
+                    <constraint firstItem="v2g-hQ-Y6V" firstAttribute="top" secondItem="dqJ-By-bdN" secondAttribute="bottom" id="pBB-4X-4aJ"/>
+                    <constraint firstItem="dqJ-By-bdN" firstAttribute="leading" secondItem="ye9-5g-AXa" secondAttribute="leading" id="uQY-aL-RUL"/>
+                    <constraint firstAttribute="trailing" secondItem="ye9-5g-AXa" secondAttribute="trailing" constant="5" id="wxb-cM-mkG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textFieldHighlightView" destination="v2g-hQ-Y6V" id="SUE-6L-Eko"/>
+                <outlet property="tfHighlightViewHeightConstraint" destination="gaS-E6-JB6" id="Oo7-zs-pXV"/>
+                <outlet property="titleLabel" destination="ye9-5g-AXa" id="LPi-tJ-LFO"/>
+                <outlet property="valueTextField" destination="dqJ-By-bdN" id="usx-Oy-wzS"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <MvvmCross.Binding.Droid.Views.MvxListView
+        android:id="@+id/battViewList"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        local:MvxItemTemplate="@layout/listitem_replacement"
+        local:MvxBind="ItemsSource ListItemSource; ItemClick SelectItemCommand" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/view_left_margin"
+        android:layout_marginRight="@dimen/view_left_margin"
+        android:layout_marginTop="@dimen/view_margin"
+        android:layout_marginBottom="@dimen/view_margin"
+        android:textAllCaps="true"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        local:MvxBind="Click UpdateFirmwareCommand; Text UpdateFirmwareTitle;" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/empty"
+        android:icon="@drawable/ic_menu_moreoverflow_normal_holo_dark"
+        android:orderInCategory="101"
+        android:title="@string/overflow_device_menu"
+        local:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/restart"
+                android:icon="@drawable/restart_device_menu"
+                android:title="@string/restart_device"
+                local:showAsAction="never" />
+
+            <item
+                android:id="@+id/refresh"
+                android:icon="@drawable/refresh_device_menu"
+                android:title="@string/refresh"
+                local:showAsAction="never" />
+
+            <item
+                android:id="@+id/download"
+                android:icon="@drawable/download_device_data_menu"
+                android:title="@string/download_device_data"
+                local:showAsAction="never" />
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <MvvmCross.Binding.Droid.Views.MvxGridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/view_margin"
+        android:layout_marginBottom="@dimen/view_margin"
+        android:stretchMode="columnWidth"
+        android:useDefaultMargins="true"
+        local:MvxBind="ItemsSource ItemSource; ItemClick SelectGridItemCommand"
+        local:MvxItemTemplate="@layout/device_home_item" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        local:MvxBind="Text ApplySettingsTitle; Click ApplySettingsCommand;" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        local:MvxBind="Text CancelTitle; Click CancelSettingsCommand;" />
+</LinearLayout>

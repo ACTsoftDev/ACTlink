@@ -1,0 +1,1808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{86BC705F-84FF-46B9-A793-D59844B5F8C9}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>actchargers.iOS</RootNamespace>
+    <AssemblyName>actchargers.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution: Advanced Charging Technologies Inc (WUPB565VDQ)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>39948</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>ACTLINK_APPSTORE_PROFILE</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution: Advanced Charging Technologies Inc (WUPB565VDQ)</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>ACTLINK_APPSTORE_PROFILE</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>Apple Development: Seif Elshafei (4D759DVCC2)</CodesignKey>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>Apple Development: Seif Elshafei (4D759DVCC2)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchSdkVersion>10.1</MtouchSdkVersion>
+    <CodesignProvision>ACTLINK_DEV_10_06_2021</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support">
+      <HintPath>..\packages\MvvmCross.iOS.Support.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support.XamarinSidebar">
+      <HintPath>..\packages\MvvmCross.iOS.Support.XamarinSidebar.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.XamarinSidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Xamarin-Sidebar-Unified">
+      <HintPath>..\packages\SidebarNavigation.1.9.3\lib\Xamarin.iOS10\Xamarin-Sidebar-Unified.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Analytics">
+      <HintPath>..\packages\Xamarin.Google.iOS.Analytics.3.17.0\lib\Xamarin.iOS10\Google.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Xamarin.iOS">
+      <HintPath>..\packages\OxyPlot.Xamarin.iOS.1.0.0\lib\Xamarin.iOS10\OxyPlot.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Analytics">
+      <HintPath>..\packages\Xamarin.Google.iOS.Analytics.3.17.0\lib\Xamarin.iOS10\Google.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support">
+      <HintPath>..\packages\MvvmCross.iOS.Support.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support.XamarinSidebar">
+      <HintPath>..\packages\MvvmCross.iOS.Support.XamarinSidebar.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.XamarinSidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Xamarin.iOS">
+      <HintPath>..\packages\OxyPlot.Xamarin.iOS.1.0.0\lib\Xamarin.iOS10\OxyPlot.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin-Sidebar-Unified">
+      <HintPath>..\packages\SidebarNavigation.1.9.3\lib\Xamarin.iOS10\Xamarin-Sidebar-Unified.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.Support.iOS">
+      <HintPath>..\packages\Acr.Support.2.1.0\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Analytics">
+      <HintPath>..\packages\Xamarin.Google.iOS.Analytics.3.17.0\lib\Xamarin.iOS10\Google.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support">
+      <HintPath>..\packages\MvvmCross.iOS.Support.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support.XamarinSidebar">
+      <HintPath>..\packages\MvvmCross.iOS.Support.XamarinSidebar.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.XamarinSidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Xamarin.iOS">
+      <HintPath>..\packages\OxyPlot.Xamarin.iOS.1.0.0\lib\Xamarin.iOS10\OxyPlot.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin-Sidebar-Unified">
+      <HintPath>..\packages\SidebarNavigation.1.9.3\lib\Xamarin.iOS10\Xamarin-Sidebar-Unified.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.Support.iOS">
+      <HintPath>..\packages\Acr.Support.2.1.0\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.Support.iOS">
+      <HintPath>..\packages\Acr.Support.2.1.0\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Analytics">
+      <HintPath>..\packages\Xamarin.Google.iOS.Analytics.3.17.0\lib\Xamarin.iOS10\Google.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support">
+      <HintPath>..\packages\MvvmCross.iOS.Support.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support.XamarinSidebar">
+      <HintPath>..\packages\MvvmCross.iOS.Support.XamarinSidebar.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.XamarinSidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Xamarin.iOS">
+      <HintPath>..\packages\OxyPlot.Xamarin.iOS.1.0.0\lib\Xamarin.iOS10\OxyPlot.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin-Sidebar-Unified">
+      <HintPath>..\packages\SidebarNavigation.1.9.3\lib\Xamarin.iOS10\Xamarin-Sidebar-Unified.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.3.4.2\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.3.4.2\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Analytics">
+      <HintPath>..\packages\Xamarin.Google.iOS.Analytics.3.17.0\lib\Xamarin.iOS10\Google.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support">
+      <HintPath>..\packages\MvvmCross.iOS.Support.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support.XamarinSidebar">
+      <HintPath>..\packages\MvvmCross.iOS.Support.XamarinSidebar.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.XamarinSidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Xamarin.iOS">
+      <HintPath>..\packages\OxyPlot.Xamarin.iOS.1.0.0\lib\Xamarin.iOS10\OxyPlot.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin-Sidebar-Unified">
+      <HintPath>..\packages\SidebarNavigation.1.9.3\lib\Xamarin.iOS10\Xamarin-Sidebar-Unified.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.Support.iOS">
+      <HintPath>..\packages\Acr.Support.2.1.0\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Acr.Support.iOS">
+      <HintPath>..\packages\Acr.Support.2.1.0\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.Support.iOS">
+      <HintPath>..\packages\Acr.Support.2.1.0\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Color.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Email.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings">
+      <HintPath>..\packages\HockeySDK.Xamarin.4.1.1\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\Xamarin.iOS10\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Analytics">
+      <HintPath>..\packages\Xamarin.Google.iOS.Analytics.3.17.0\lib\Xamarin.iOS10\Google.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support">
+      <HintPath>..\packages\MvvmCross.iOS.Support.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support.XamarinSidebar">
+      <HintPath>..\packages\MvvmCross.iOS.Support.XamarinSidebar.4.4.0\lib\Xamarin.iOS10\MvvmCross.iOS.Support.XamarinSidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Xamarin.iOS">
+      <HintPath>..\packages\OxyPlot.Xamarin.iOS.1.0.0\lib\Xamarin.iOS10\OxyPlot.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.5\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin-Sidebar-Unified">
+      <HintPath>..\packages\SidebarNavigation.1.9.3\lib\Xamarin.iOS10\Xamarin-Sidebar-Unified.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\actchargers\actchargers.csproj">
+      <Project>{75DAD2E9-F1FD-483E-99F2-02C9CA3BF458}</Project>
+      <Name>actchargers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdPartyLibraries\FilePicker\Plugin.FilePicker.iOS\Plugin.FilePicker.iOS.csproj">
+      <Project>{2882AEEB-D4CD-4EB9-8A6C-6653B33681F0}</Project>
+      <Name>Plugin.FilePicker.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-57x57%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-57x57%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-50x50%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-50x50%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-72x72%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-72x72%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\ACTlink-Splash-1242x2208px.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\ACTlink-Splash-750x1334px.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\ACTlink-Splash-2048x2732px.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\ACTlink-Splash-640x960px.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\ACTlink-Splash-640x1136px.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\ACTlink-Splash-768x1024px.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\ACTlink-Splash-1536x2048px.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\ACTlink-Splash-320x480px.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <InterfaceDefinition Include="Code\VIews\Login\LoginView.xib" />
+    <InterfaceDefinition Include="Code\VIews\MainContainer\SideMenuView.xib" />
+    <InterfaceDefinition Include="Code\VIews\MainContainer\MainContainerView.xib" />
+    <InterfaceDefinition Include="Code\VIews\Connect\ConnectView.xib" />
+    <InterfaceDefinition Include="Code\VIews\Login\UsageAgreementView.xib" />
+    <InterfaceDefinition Include="Code\VIews\Login\ContactUsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\Connect\ConnectToDeviceView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\DeviceCollectionViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\DeviceHomeView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ActionMenuTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\LabelLabelTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\LabelSwitchTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\LabelTextFieldTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\Connect\ActionsMenuViewController.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\DeviceTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\PickerInputView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\HistoryView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\CumulativeDataView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\TwoLabelTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ThreeLabelTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ListSelectorTabelViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\Common\ListSelectorView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\DatePickerTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\DatePickerSwitchTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\RtRecordsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\PlotTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\QuickView\QuickView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\PieChartCollectionViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\EventsDateRangeView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\EventDataRangeHistoryView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\BatteryUsageSummaryView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\ChargeSummaryView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\ExceptionsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\DatePickerInputView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\Calibration\CalibrationViewController.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ButtonTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\DaysTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\LabelTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\DaysNewTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ListCollectionViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\ViewGlobalRecordsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\GlobalRecordsCollectionViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\HistoryChartsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\QuickView\QuickViewChargerView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ImageTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\QuickViewTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\QuickViewThreeLabelTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\EnableDisableButtonTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\RTRecordsPlotsTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\SyncSites\SyncSitesView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\SyncSitesHeaderTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\SyncSitesItemTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\SyncSitesHeaderView.xib" />
+    <InterfaceDefinition Include="Code\VIews\SyncSites\ReplacementView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ButtonTextFieldTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\FactoryControl\FactoryControlView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ReplacementDeviceItemTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\FirmwareUpdate\FirmwareUpdateView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\CustomAlertView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\CustomPlotView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\HeaderThreeLabelTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\HeaderTwoLabelTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ImageLabelTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\LabelSwitchButtonTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\UploadItemTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\Upload\UploadView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\FactoryControl\CommissionAReplacementPartView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\FactoryControl\CommissionNextView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\FactoryControl\CommissionView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\FactoryControl\EditEventControlView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\FactoryControl\TestingBattViewView.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\BatteryDailyUsageView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\BatteryDailyUsageTableCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\PowerModule\PMFaultsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\PMFaultsTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\ViewCyclesHistoryView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\ViewCyclesHistoryTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\PowerModule\PmLiveView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\PmLiveTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\PowerSnapshotsTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\DeviceHome\History\PowerSnapshotsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\SiteView\SiteViewSitesView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\SiteViewSitesTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\SiteViewDevicesTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\SiteView\SiteViewDevicesView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\SiteViewInProgressDevicesTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\SiteView\SiteViewInProgressDevicesView.xib" />
+    <InterfaceDefinition Include="Code\VIews\SiteView\SiteViewSettingsHomeView.xib" />
+    <InterfaceDefinition Include="Code\VIews\CustomViews\SectionHeaderTableViewCell.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\EnergyManagementView\EnergyManagementView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\Info\InfoView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\PowerModule\PmInfo\PmInfoView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\PowerModule\PowerModule\PowerModuleView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\Settings\CableSettings\CableSettingsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\Settings\SettingsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\WiFi\WiFiView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\BatteryInfo\BatteryInfoView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\BatterySettings\BatterySettingsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\DefaultChargeProfile\DefaultChargeProfileView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\FinishAndEQSettings\FinishAndEQSettingsView.xib" />
+    <InterfaceDefinition Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\NewStudy\NewStudyView.xib" />
+    <InterfaceDefinition Include="Code\VIews\Login\AboutUsView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="Code\AppDelegate.cs" />
+    <Compile Include="Code\Setup.cs" />
+    <Compile Include="Code\VIews\Login\LoginView.cs" />
+    <Compile Include="Code\VIews\Login\LoginView.designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\MainContainer\SideMenuView.cs" />
+    <Compile Include="Code\VIews\MainContainer\SideMenuView.designer.cs">
+      <DependentUpon>SideMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\MainContainer\MainContainerView.cs" />
+    <Compile Include="Code\VIews\MainContainer\MainContainerView.designer.cs">
+      <DependentUpon>MainContainerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\Connect\ConnectView.cs" />
+    <Compile Include="Code\VIews\Connect\ConnectView.designer.cs">
+      <DependentUpon>ConnectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\CustomPresenter.cs" />
+    <Compile Include="Code\VIews\Login\UsageAgreementView.cs" />
+    <Compile Include="Code\VIews\Login\UsageAgreementView.designer.cs">
+      <DependentUpon>UsageAgreementView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\MainContainer\SideMenuTableViewSource.cs" />
+    <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
+    <Compile Include="Code\VIews\CustomViews\RoundedRectButton.cs" />
+    <Compile Include="Code\Utility\SQLite.cs" />
+    <Compile Include="Code\Utility\iOSUserPreferences.cs" />
+    <Compile Include="Code\VIews\Login\ContactUsView.cs" />
+    <Compile Include="Code\VIews\Login\ContactUsView.designer.cs">
+      <DependentUpon>ContactUsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bootstrap\EmailPluginBootstrap.cs" />
+    <Compile Include="Code\VIews\Connect\ConnectToDeviceView.cs" />
+    <Compile Include="Code\VIews\Connect\ConnectToDeviceView.designer.cs">
+      <DependentUpon>ConnectToDeviceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\Connect\ConnectToDeviceTableViewSource.cs" />
+    <Compile Include="Code\VIews\CustomViews\DeviceCollectionViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\DeviceCollectionViewCell.designer.cs">
+      <DependentUpon>DeviceCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\DeviceHomeView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\DeviceHomeView.designer.cs">
+      <DependentUpon>DeviceHomeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\BackViewController.cs" />
+    <Compile Include="Code\VIews\CustomViews\ActionMenuTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ActionMenuTableViewCell.designer.cs">
+      <DependentUpon>ActionMenuTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\LabelLabelTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\LabelLabelTableViewCell.designer.cs">
+      <DependentUpon>LabelLabelTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\LabelSwitchTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\LabelSwitchTableViewCell.designer.cs">
+      <DependentUpon>LabelSwitchTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\LabelTextFieldTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\LabelTextFieldTableViewCell.designer.cs">
+      <DependentUpon>LabelTextFieldTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\EditViewController.cs" />
+    <Compile Include="Code\Utility\UIColorUtility.cs" />
+    <Compile Include="Code\VIews\Connect\ActionsMenuViewController.cs" />
+    <Compile Include="Code\VIews\Connect\ActionsMenuViewController.designer.cs">
+      <DependentUpon>ActionsMenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\DeviceTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\DeviceTableViewCell.designer.cs">
+      <DependentUpon>DeviceTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\PickerInputView.cs" />
+    <Compile Include="Code\VIews\CustomViews\PickerInputView.designer.cs">
+      <DependentUpon>PickerInputView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\HistoryView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\HistoryView.designer.cs">
+      <DependentUpon>HistoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\CumulativeDataView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\CumulativeDataView.designer.cs">
+      <DependentUpon>CumulativeDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\TwoLabelTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\TwoLabelTableViewCell.designer.cs">
+      <DependentUpon>TwoLabelTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\ThreeLabelTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ThreeLabelTableViewCell.designer.cs">
+      <DependentUpon>ThreeLabelTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\ListSelectorTabelViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ListSelectorTabelViewCell.designer.cs">
+      <DependentUpon>ListSelectorTabelViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="Code\VIews\DeviceHome\Common\PlainItemTableViewSource.cs" />
+    <Compile Include="Code\VIews\DeviceHome\Common\ListSelectorView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\Common\ListSelectorView.designer.cs">
+      <DependentUpon>ListSelectorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\Common\StringListTableViewSource.cs" />
+    <Compile Include="Code\VIews\CustomViews\DatePickerTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\DatePickerTableViewCell.designer.cs">
+      <DependentUpon>DatePickerTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\DatePickerSwitchTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\DatePickerSwitchTableViewCell.designer.cs">
+      <DependentUpon>DatePickerSwitchTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\RtRecordsView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\RtRecordsView.designer.cs">
+      <DependentUpon>RtRecordsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\PlotTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\PlotTableViewCell.designer.cs">
+      <DependentUpon>PlotTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\Common\PlotTableViewItemSource.cs" />
+    <Compile Include="Code\VIews\DeviceHome\QuickView\QuickView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\QuickView\QuickView.designer.cs">
+      <DependentUpon>QuickView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\PieChartCollectionViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\PieChartCollectionViewCell.designer.cs">
+      <DependentUpon>PieChartCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\Common\ChartCollectionViewItemSource.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\EventsDateRangeView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\EventsDateRangeView.designer.cs">
+      <DependentUpon>EventsDateRangeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\EventDataRangeHistoryView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\EventDataRangeHistoryView.designer.cs">
+      <DependentUpon>EventDataRangeHistoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\BatteryUsageSummaryView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\BatteryUsageSummaryView.designer.cs">
+      <DependentUpon>BatteryUsageSummaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\ChargeSummaryView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\ChargeSummaryView.designer.cs">
+      <DependentUpon>ChargeSummaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\ExceptionsView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\ExceptionsView.designer.cs">
+      <DependentUpon>ExceptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\Common\GroupItemTableViewSource.cs" />
+    <Compile Include="Code\VIews\DeviceHome\Common\ListTableViewSource.cs" />
+    <Compile Include="Code\VIews\CustomViews\DatePickerInputView.cs" />
+    <Compile Include="Code\VIews\CustomViews\DatePickerInputView.designer.cs" />
+    <Compile Include="Bootstrap\ColorPluginBootstrap.cs" />
+    <Compile Include="Code\VIews\CustomViews\BaseView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\Calibration\CalibrationViewController.cs" />
+    <Compile Include="Code\VIews\DeviceHome\Calibration\CalibrationViewController.designer.cs">
+      <DependentUpon>CalibrationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\ButtonTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ButtonTableViewCell.designer.cs">
+      <DependentUpon>ButtonTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Utility\WifiManagerService.cs" />
+    <Compile Include="Code\VIews\CustomViews\DaysTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\DaysTableViewCell.designer.cs">
+      <DependentUpon>DaysTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\LabelTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\LabelTableViewCell.designer.cs" />
+    <Compile Include="Code\VIews\CustomViews\DaysNewTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\DaysNewTableViewCell.designer.cs">
+      <DependentUpon>DaysNewTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\ListCollectionViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ListCollectionViewCell.designer.cs">
+      <DependentUpon>ListCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\ViewGlobalRecordsView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\ViewGlobalRecordsView.designer.cs" />
+    <Compile Include="Code\VIews\CustomViews\GlobalRecordsCollectionViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\GlobalRecordsCollectionViewCell.designer.cs">
+      <DependentUpon>GlobalRecordsCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\HistoryChartsView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\HistoryChartsView.designer.cs">
+      <DependentUpon>HistoryChartsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\Common\PlotViewListItemSource.cs" />
+    <Compile Include="Code\VIews\DeviceHome\QuickView\QuickViewChargerView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\QuickView\QuickViewChargerView.designer.cs">
+      <DependentUpon>QuickViewChargerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\ImageTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ImageTableViewCell.designer.cs">
+      <DependentUpon>ImageTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\QuickViewTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\QuickViewTableViewCell.designer.cs">
+      <DependentUpon>QuickViewTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\QuickViewThreeLabelTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\QuickViewThreeLabelTableViewCell.designer.cs">
+      <DependentUpon>QuickViewThreeLabelTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\EnableDisableButtonTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\EnableDisableButtonTableViewCell.designer.cs">
+      <DependentUpon>EnableDisableButtonTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\RTRecordsPlotsTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\RTRecordsPlotsTableViewCell.designer.cs">
+      <DependentUpon>RTRecordsPlotsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\ButtonTextFieldTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ButtonTextFieldTableViewCell.designer.cs">
+      <DependentUpon>ButtonTextFieldTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\FactoryControlView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\FactoryControlView.designer.cs">
+      <DependentUpon>FactoryControlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\SyncSites\SyncSitesView.cs" />
+    <Compile Include="Code\VIews\SyncSites\SyncSitesView.designer.cs">
+      <DependentUpon>SyncSitesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\Common\SyncSitesTableViewSource.cs" />
+    <Compile Include="Code\VIews\CustomViews\SyncSitesHeaderTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\SyncSitesHeaderTableViewCell.designer.cs">
+      <DependentUpon>SyncSitesHeaderTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\SyncSitesItemTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\SyncSitesItemTableViewCell.designer.cs">
+      <DependentUpon>SyncSitesItemTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\SyncSitesHeaderView.cs" />
+    <Compile Include="Code\VIews\CustomViews\SyncSitesHeaderView.designer.cs">
+      <DependentUpon>SyncSitesHeaderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\SyncSites\ReplacementView.cs" />
+    <Compile Include="Code\VIews\SyncSites\ReplacementView.designer.cs">
+      <DependentUpon>ReplacementView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\ReplacementDeviceItemTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ReplacementDeviceItemTableViewCell.designer.cs">
+      <DependentUpon>ReplacementDeviceItemTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\FirmwareUpdate\FirmwareUpdateView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FirmwareUpdate\FirmwareUpdateView.designer.cs" />
+    <Compile Include="Code\Utility\CustomAlert.cs" />
+    <Compile Include="Code\VIews\CustomViews\CustomAlertView.cs" />
+    <Compile Include="Code\VIews\CustomViews\CustomAlertView.designer.cs" />
+    <Compile Include="Code\VIews\CustomViews\CustomPlotView.cs" />
+    <Compile Include="Code\VIews\CustomViews\CustomPlotView.designer.cs" />
+    <Compile Include="Code\VIews\CustomViews\HeaderThreeLabelTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\HeaderThreeLabelTableViewCell.designer.cs" />
+    <Compile Include="Code\VIews\CustomViews\HeaderTwoLabelTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\HeaderTwoLabelTableViewCell.designer.cs" />
+    <Compile Include="Code\VIews\CustomViews\ImageLabelTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ImageLabelTableViewCell.designer.cs" />
+    <Compile Include="Code\VIews\CustomViews\LabelSwitchButtonTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\LabelSwitchButtonTableViewCell.designer.cs" />
+    <Compile Include="Code\VIews\CustomViews\UploadItemTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\UploadItemTableViewCell.designer.cs" />
+    <Compile Include="Code\VIews\DeviceHome\Upload\UploadView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\Upload\UploadView.designer.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\CommissionAReplacementPartView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\CommissionAReplacementPartView.designer.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\CommissionNextView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\CommissionNextView.designer.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\CommissionView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\CommissionView.designer.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\EditEventControlView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\EditEventControlView.designer.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\TestingBattViewView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\FactoryControl\TestingBattViewView.designer.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\BatteryDailyUsageView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\BatteryDailyUsageView.designer.cs">
+      <DependentUpon>BatteryDailyUsageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\BatteryDailyUsageTableCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\BatteryDailyUsageTableCell.designer.cs">
+      <DependentUpon>BatteryDailyUsageTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\PowerModule\PMFaultsView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\PowerModule\PMFaultsView.designer.cs">
+      <DependentUpon>PMFaultsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\PMFaultsTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\PMFaultsTableViewCell.designer.cs">
+      <DependentUpon>PMFaultsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\ViewCyclesHistoryView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\ViewCyclesHistoryView.designer.cs">
+      <DependentUpon>ViewCyclesHistoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\ViewCyclesHistoryTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\ViewCyclesHistoryTableViewCell.designer.cs">
+      <DependentUpon>ViewCyclesHistoryTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Code\Utility\ProfileCheckService.cs" />
+    <Compile Include="Code\Utility\PlatformVersion.cs" />
+    <Compile Include="Code\Utility\DatabaseBackupManager.cs" />
+    <Compile Include="Code\Utility\ListTableManager.cs" />
+    <Compile Include="Code\VIews\DeviceHome\PowerModule\PmLiveView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\PowerModule\PmLiveView.designer.cs">
+      <DependentUpon>PmLiveView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\PmLiveTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\PmLiveTableViewCell.designer.cs">
+      <DependentUpon>PmLiveTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\PowerSnapshotsTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\PowerSnapshotsTableViewCell.designer.cs">
+      <DependentUpon>PowerSnapshotsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\DeviceHome\History\PowerSnapshotsView.cs" />
+    <Compile Include="Code\VIews\DeviceHome\History\PowerSnapshotsView.designer.cs">
+      <DependentUpon>PowerSnapshotsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\SiteView\SiteViewSitesView.cs" />
+    <Compile Include="Code\VIews\SiteView\SiteViewSitesView.designer.cs">
+      <DependentUpon>SiteViewSitesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\SiteViewSitesTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\SiteViewSitesTableViewCell.designer.cs">
+      <DependentUpon>SiteViewSitesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\SiteViewDevicesTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\SiteViewDevicesTableViewCell.designer.cs">
+      <DependentUpon>SiteViewDevicesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\SiteView\SiteViewDevicesView.cs" />
+    <Compile Include="Code\VIews\SiteView\SiteViewDevicesView.designer.cs">
+      <DependentUpon>SiteViewDevicesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\SiteViewInProgressDevicesTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\SiteViewInProgressDevicesTableViewCell.designer.cs">
+      <DependentUpon>SiteViewInProgressDevicesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\SiteView\SiteViewInProgressDevicesView.cs" />
+    <Compile Include="Code\VIews\SiteView\SiteViewInProgressDevicesView.designer.cs">
+      <DependentUpon>SiteViewInProgressDevicesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\SiteView\SiteViewSettingsHomeView.cs" />
+    <Compile Include="Code\VIews\SiteView\SiteViewSettingsHomeView.designer.cs">
+      <DependentUpon>SiteViewSettingsHomeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\CustomViews\SectionHeaderTableViewCell.cs" />
+    <Compile Include="Code\VIews\CustomViews\SectionHeaderTableViewCell.designer.cs">
+      <DependentUpon>SectionHeaderTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\EnergyManagementView\EnergyManagementView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\EnergyManagementView\EnergyManagementView.designer.cs">
+      <DependentUpon>..\..\..\SiteView\SiteViewSettings\EnergyManagementView\EnergyManagementView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\Info\InfoView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\Info\InfoView.designer.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\PowerModule\PmInfo\PmInfoView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\PowerModule\PmInfo\PmInfoView.designer.cs">
+      <DependentUpon>..\..\..\..\SiteView\SiteViewSettings\PowerModule\PmInfo\PmInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\PowerModule\PowerModule\PowerModuleView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\PowerModule\PowerModule\PowerModuleView.designer.cs">
+      <DependentUpon>..\..\..\..\SiteView\SiteViewSettings\PowerModule\PowerModule\PowerModuleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\Settings\CableSettings\CableSettingsView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\Settings\CableSettings\CableSettingsView.designer.cs">
+      <DependentUpon>..\..\..\..\SiteView\SiteViewSettings\Settings\CableSettings\CableSettingsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\Settings\SettingsView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\Settings\SettingsView.designer.cs">
+      <DependentUpon>..\..\..\DeviceHome\Settings\SettingsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WiFi\WiFiView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WiFi\WiFiView.designer.cs">
+      <DependentUpon>..\..\..\SiteView\SiteViewSettings\WiFi\WiFiView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\BatteryInfo\BatteryInfoView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\BatteryInfo\BatteryInfoView.designer.cs">
+      <DependentUpon>..\..\..\..\SiteView\SiteViewSettings\WithBattViewMobile\BatteryInfo\BatteryInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\BatterySettings\BatterySettingsView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\BatterySettings\BatterySettingsView.designer.cs">
+      <DependentUpon>..\..\..\..\SiteView\SiteViewSettings\WithBattViewMobile\BatterySettings\BatterySettingsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\DefaultChargeProfile\DefaultChargeProfileView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\DefaultChargeProfile\DefaultChargeProfileView.designer.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\FinishAndEQSettings\FinishAndEQSettingsView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\FinishAndEQSettings\FinishAndEQSettingsView.designer.cs">
+      <DependentUpon>..\..\..\..\SiteView\SiteViewSettings\WithBattViewMobile\FinishAndEQSettings\FinishAndEQSettingsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\NewStudy\NewStudyView.cs" />
+    <Compile Include="Code\VIews\ListView\SiteViewSettings\WithBattViewMobile\NewStudy\NewStudyView.designer.cs">
+      <DependentUpon>..\..\..\..\SiteView\SiteViewSettings\WithBattViewMobile\NewStudy\NewStudyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\VIews\ListView\ListViewBaseView.cs" />
+    <Compile Include="Code\VIews\Login\AboutUsView.cs" />
+    <Compile Include="Code\VIews\Login\AboutUsView.designer.cs">
+      <DependentUpon>AboutUsView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\avatar%402x.png" />
+    <BundleResource Include="Resources\logout%402x.png" />
+    <BundleResource Include="Resources\menu%402x.png" />
+    <BundleResource Include="Resources\contact_us.html" />
+    <BundleResource Include="Resources\about_us.html" />
+    <BundleResource Include="Resources\circle%402x.png" />
+    <BundleResource Include="Resources\dots%402x.png" />
+    <BundleResource Include="Resources\avatar%401x.png" />
+    <BundleResource Include="Resources\avatar%403x.png" />
+    <BundleResource Include="Resources\dots%401x.png" />
+    <BundleResource Include="Resources\dots%403x.png" />
+    <BundleResource Include="Resources\logout%401x.png" />
+    <BundleResource Include="Resources\logout%403x.png" />
+    <BundleResource Include="Resources\menu%401x.png" />
+    <BundleResource Include="Resources\menu%403x.png" />
+    <BundleResource Include="Resources\sync_sites%401x.png" />
+    <BundleResource Include="Resources\sync_sites%402x.png" />
+    <BundleResource Include="Resources\sync_sites%403x.png" />
+    <BundleResource Include="Resources\upload_data%401x.png" />
+    <BundleResource Include="Resources\upload_data%402x.png" />
+    <BundleResource Include="Resources\upload_data%403x.png" />
+    <BundleResource Include="Resources\download_devicedata%401x.png" />
+    <BundleResource Include="Resources\download_devicedata%402x.png" />
+    <BundleResource Include="Resources\download_devicedata%403x.png" />
+    <BundleResource Include="Resources\sync_sites_whitebg%401x.png" />
+    <BundleResource Include="Resources\sync_sites_whitebg%402x.png" />
+    <BundleResource Include="Resources\sync_sites_whitebg%403x.png" />
+    <BundleResource Include="Resources\update_device_firmware%401x.png" />
+    <BundleResource Include="Resources\update_device_firmware%402x.png" />
+    <BundleResource Include="Resources\update_device_firmware%403x.png" />
+    <BundleResource Include="Resources\upload_data_whitebg%401x.png" />
+    <BundleResource Include="Resources\upload_data_whitebg%402x.png" />
+    <BundleResource Include="Resources\upload_data_whitebg%403x.png" />
+    <BundleResource Include="Resources\restat_device%401x.png" />
+    <BundleResource Include="Resources\restat_device%402x.png" />
+    <BundleResource Include="Resources\restat_device%403x.png" />
+    <BundleResource Include="Resources\download_sitedata%401x.png" />
+    <BundleResource Include="Resources\download_sitedata%402x.png" />
+    <BundleResource Include="Resources\download_sitedata%403x.png" />
+    <BundleResource Include="Resources\update_site_firmware%401x.png" />
+    <BundleResource Include="Resources\update_site_firmware%402x.png" />
+    <BundleResource Include="Resources\update_site_firmware%403x.png" />
+    <BundleResource Include="Resources\Selected%401x.png" />
+    <BundleResource Include="Resources\Selected%402x.png" />
+    <BundleResource Include="Resources\Selected%403x.png" />
+    <BundleResource Include="Resources\ACTlink-Logo%401x.png" />
+    <BundleResource Include="Resources\ACTlink-Logo%402x.png" />
+    <BundleResource Include="Resources\ACTlink-Logo%403x.png" />
+    <BundleResource Include="Resources\battery_info%401x.png" />
+    <BundleResource Include="Resources\battery_info%402x.png" />
+    <BundleResource Include="Resources\battery_info%403x.png" />
+    <BundleResource Include="Resources\battview_info%401x.png" />
+    <BundleResource Include="Resources\battview_info%402x.png" />
+    <BundleResource Include="Resources\battview_info%403x.png" />
+    <BundleResource Include="Resources\battview_settings%401x.png" />
+    <BundleResource Include="Resources\battview_settings%402x.png" />
+    <BundleResource Include="Resources\battview_settings%403x.png" />
+    <BundleResource Include="Resources\quick_view%401x.png" />
+    <BundleResource Include="Resources\quick_view%402x.png" />
+    <BundleResource Include="Resources\quick_view%403x.png" />
+    <BundleResource Include="Resources\history%401x.png" />
+    <BundleResource Include="Resources\history%402x.png" />
+    <BundleResource Include="Resources\history%403x.png" />
+    <BundleResource Include="Resources\caliberation%401x.png" />
+    <BundleResource Include="Resources\caliberation%402x.png" />
+    <BundleResource Include="Resources\caliberation%403x.png" />
+    <BundleResource Include="Resources\factory_control%401x.png" />
+    <BundleResource Include="Resources\factory_control%402x.png" />
+    <BundleResource Include="Resources\factory_control%403x.png" />
+    <BundleResource Include="Resources\wifi%401x.png" />
+    <BundleResource Include="Resources\wifi%402x.png" />
+    <BundleResource Include="Resources\wifi%403x.png" />
+    <BundleResource Include="Resources\charger_info%401x.png" />
+    <BundleResource Include="Resources\charger_info%402x.png" />
+    <BundleResource Include="Resources\charger_info%403x.png" />
+    <BundleResource Include="Resources\charger_settings%401x.png" />
+    <BundleResource Include="Resources\charger_settings%402x.png" />
+    <BundleResource Include="Resources\charger_settings%403x.png" />
+    <BundleResource Include="Resources\energy_management%401x.png" />
+    <BundleResource Include="Resources\energy_management%402x.png" />
+    <BundleResource Include="Resources\energy_management%403x.png" />
+    <BundleResource Include="Resources\power_module%401x.png" />
+    <BundleResource Include="Resources\power_module%402x.png" />
+    <BundleResource Include="Resources\power_module%403x.png" />
+    <BundleResource Include="Resources\charger%401x.png" />
+    <BundleResource Include="Resources\charger%402x.png" />
+    <BundleResource Include="Resources\charger%403x.png" />
+    <BundleResource Include="Resources\current_a_Icon%401x.png" />
+    <BundleResource Include="Resources\current_a_Icon%402x.png" />
+    <BundleResource Include="Resources\current_a_Icon%403x.png" />
+    <BundleResource Include="Resources\temp_icon%401x.png" />
+    <BundleResource Include="Resources\temp_icon%402x.png" />
+    <BundleResource Include="Resources\temp_icon%403x.png" />
+    <BundleResource Include="Resources\voltage%401x.png" />
+    <BundleResource Include="Resources\voltage%402x.png" />
+    <BundleResource Include="Resources\voltage%403x.png" />
+    <BundleResource Include="Resources\chargerquickview.png" />
+    <BundleResource Include="Resources\usage_agreement.html" />
+    <BundleResource Include="Resources\back_arrow%401x.png" />
+    <BundleResource Include="Resources\back_arrow%402x.png" />
+    <BundleResource Include="Resources\back_arrow%403x.png" />
+    <BundleResource Include="Resources\activeselect%401x.png" />
+    <BundleResource Include="Resources\activeselect%402x.png" />
+    <BundleResource Include="Resources\activeselect%403x.png" />
+    <BundleResource Include="Resources\battview.png" />
+    <BundleResource Include="Resources\battview_lostConnection.png" />
+    <BundleResource Include="Resources\battview_notConnected.png" />
+    <BundleResource Include="Resources\circle%401x.png" />
+    <BundleResource Include="Resources\circle%403x.png" />
+    <BundleResource Include="Resources\downarrow%401x.png" />
+    <BundleResource Include="Resources\downarrow%402x.png" />
+    <BundleResource Include="Resources\downarrow%403x.png" />
+    <BundleResource Include="Resources\firmware_update%401x.png" />
+    <BundleResource Include="Resources\firmware_update%402x.png" />
+    <BundleResource Include="Resources\firmware_update%403x.png" />
+    <BundleResource Include="Resources\idleWithFault_12.png" />
+    <BundleResource Include="Resources\idleWithFault_4.png" />
+    <BundleResource Include="Resources\idleWithFault_6.png" />
+    <BundleResource Include="Resources\idleWithWarning_12.png" />
+    <BundleResource Include="Resources\idleWithWarning_4.png" />
+    <BundleResource Include="Resources\idleWithWarning_6.png" />
+    <BundleResource Include="Resources\idle_12.png" />
+    <BundleResource Include="Resources\idle_4.png" />
+    <BundleResource Include="Resources\idle_6.png" />
+    <BundleResource Include="Resources\inactiveselect%401x.png" />
+    <BundleResource Include="Resources\inactiveselect%402x.png" />
+    <BundleResource Include="Resources\inactiveselect%403x.png" />
+    <BundleResource Include="Resources\lostConnection_12.png" />
+    <BundleResource Include="Resources\lostConnection_4.png" />
+    <BundleResource Include="Resources\lostConnection_6.png" />
+    <BundleResource Include="Resources\notConnected_12.png" />
+    <BundleResource Include="Resources\notConnected_4.png" />
+    <BundleResource Include="Resources\notConnected_6.png" />
+    <BundleResource Include="Resources\refresh_device%401x.png" />
+    <BundleResource Include="Resources\refresh_device%402x.png" />
+    <BundleResource Include="Resources\refresh_device%403x.png" />
+    <BundleResource Include="Resources\rightarrow%401x.png" />
+    <BundleResource Include="Resources\rightarrow%402x.png" />
+    <BundleResource Include="Resources\rightarrow%403x.png" />
+    <BundleResource Include="Resources\runningWithFault_12.gif" />
+    <BundleResource Include="Resources\runningWithFault_4.gif" />
+    <BundleResource Include="Resources\runningWithFault_6.gif" />
+    <BundleResource Include="Resources\runningWithWarning_12.gif" />
+    <BundleResource Include="Resources\runningWithWarning_4.gif" />
+    <BundleResource Include="Resources\runningWithWarning_6.gif" />
+    <BundleResource Include="Resources\running_12.gif" />
+    <BundleResource Include="Resources\running_4.gif" />
+    <BundleResource Include="Resources\running_6.gif" />
+    <BundleResource Include="Resources\actCertificate.cer" />
+    <BundleResource Include="Resources\site_view%401x.png" />
+    <BundleResource Include="Resources\site_view%402x.png" />
+    <BundleResource Include="Resources\site_view%403x.png" />
+    <BundleResource Include="Resources\site_view_icon%401x.png" />
+    <BundleResource Include="Resources\site_view_icon%402x.png" />
+    <BundleResource Include="Resources\site_view_icon%403x.png" />
+    <BundleResource Include="Resources\settings_icon%401x.png" />
+    <BundleResource Include="Resources\settings_icon%402x.png" />
+    <BundleResource Include="Resources\settings_icon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\VIews\DeviceHome\" />
+    <Folder Include="Code\VIews\DeviceHome\History\" />
+    <Folder Include="Code\VIews\DeviceHome\Common\" />
+    <Folder Include="Code\VIews\DeviceHome\QuickView\" />
+    <Folder Include="Code\VIews\DeviceHome\Calibration\" />
+    <Folder Include="Code\VIews\DeviceHome\PowerModule\" />
+    <Folder Include="Code\VIews\SyncSites\" />
+    <Folder Include="Code\VIews\DeviceHome\FactoryControl\" />
+    <Folder Include="Code\VIews\SiteView\" />
+    <Folder Include="Code\VIews\ListView\" />
+    <Folder Include="Code\VIews\ListView\SiteViewSettings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\Xamarin.Google.iOS.Analytics.3.17.0\build\Xamarin.Google.iOS.Analytics.targets" Condition="Exists('..\packages\Xamarin.Google.iOS.Analytics.3.17.0\build\Xamarin.Google.iOS.Analytics.targets')" />
+</Project>

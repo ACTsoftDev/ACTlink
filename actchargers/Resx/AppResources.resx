@@ -1,0 +1,1950 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="default_title" xml:space="preserve">
+        <value>Default</value>
+    </data>
+    <data name="help" xml:space="preserve">
+        <value>Help</value>
+    </data>
+    <data name="done" xml:space="preserve">
+        <value>Done</value>
+    </data>
+    <data name="enable_location_message" xml:space="preserve">
+        <value>Your location seems to be disabled, do you want to enable it?</value>
+    </data>
+    <data name="firmware_update" xml:space="preserve">
+        <value>Firmware Update</value>
+    </data>
+    <data name="request_now" xml:space="preserve">
+        <value>Request Now(DEV)</value>
+    </data>
+    <data name="load_hex_file" xml:space="preserve">
+        <value>Load Hex File</value>
+    </data>
+    <data name="update_firmware" xml:space="preserve">
+        <value>Update Firmware</value>
+    </data>
+    <data name="update_wifi_firmware" xml:space="preserve">
+        <value>Update WiFi Firmware</value>
+    </data>
+    <data name="cant_update_firmware" xml:space="preserve">
+        <value>Can't Update Firmware</value>
+    </data>
+    <data name="device_is_reflushing_firmware" xml:space="preserve">
+        <value>The device is reflushing Firmware, it may take few minutes to update the firmware</value>
+    </data>
+    <data name="device_has_latest_firmware" xml:space="preserve">
+        <value>The device has the latest Firmware</value>
+    </data>
+    <data name="about_us" xml:space="preserve">
+        <value>About Us</value>
+    </data>
+    <data name="contact_us" xml:space="preserve">
+        <value>Contact Us</value>
+    </data>
+    <data name="license_agreement" xml:space="preserve">
+        <value>License Agreement</value>
+    </data>
+    <data name="logout" xml:space="preserve">
+        <value>Log out</value>
+    </data>
+    <data name="logout_img" xml:space="preserve">
+        <value>logout</value>
+    </data>
+    <data name="enter_email_id" xml:space="preserve">
+        <value>Enter email ID</value>
+    </data>
+    <data name="enter_password" xml:space="preserve">
+        <value>Password</value>
+    </data>
+    <data name="having_trouble" xml:space="preserve">
+        <value>Having trouble?</value>
+    </data>
+    <data name="not_registered" xml:space="preserve">
+        <value>Not Registered</value>
+    </data>
+    <data name="register_at_act_view" xml:space="preserve">
+        <value>Register at www.act-view.com</value>
+    </data>
+    <data name="decline" xml:space="preserve">
+        <value>Decline</value>
+    </data>
+    <data name="accept" xml:space="preserve">
+        <value>Accept</value>
+    </data>
+    <data name="user_agreement_text" xml:space="preserve">
+        <value>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</value>
+    </data>
+    <data name="usage_agreement" xml:space="preserve">
+        <value>Usage Agreement</value>
+    </data>
+    <data name="login" xml:space="preserve">
+        <value>Login</value>
+    </data>
+    <data name="invalid_username_password" xml:space="preserve">
+        <value>Invalid username or password</value>
+    </data>
+    <data name="connect" xml:space="preserve">
+        <value>Connect</value>
+    </data>
+    <data name="ssid" xml:space="preserve">
+        <value>SSID</value>
+    </data>
+    <data name="ssidName" xml:space="preserve">
+        <value>act24mobileLocal</value>
+    </data>
+    <data name="ssidPassword" xml:space="preserve">
+        <value>shlonak5alLocal</value>
+    </data>
+    <data name="no_network_connection" xml:space="preserve">
+        <value>You are in offline mode. Please check your network connection</value>
+    </data>
+    <data name="upload_data" xml:space="preserve">
+        <value>Upload Data</value>
+    </data>
+    <data name="upload_data_or_sync_device" xml:space="preserve">
+        <value>Be current by Uploading data to ACT Cloud or Sync Device Configuration</value>
+    </data>
+    <data name="push_backup" xml:space="preserve">
+        <value>Push Backup</value>
+    </data>
+    <data name="backup_pushed_alert" xml:space="preserve">
+        <value>The backup has been pushed successfully</value>
+    </data>
+    <data name="password" xml:space="preserve">
+        <value>Password</value>
+    </data>
+    <data name="disconnect" xml:space="preserve">
+        <value>Disconnect</value>
+    </data>
+    <data name="save" xml:space="preserve">
+        <value>Save</value>
+    </data>
+    <data name="raw" xml:space="preserve">
+        <value>Raw</value>
+    </data>
+    <data name="register_at_url" xml:space="preserve">
+        <value>https://act-view.com/#/register</value>
+    </data>
+    <data name="connect_to_device" xml:space="preserve">
+        <value>Connect to Device</value>
+    </data>
+    <data name="fixed_router" xml:space="preserve">
+        <value>Fixed Router</value>
+    </data>
+    <data name="mobile_router_mode" xml:space="preserve">
+        <value>Mobile Router Mode</value>
+    </data>
+    <data name="usb" xml:space="preserve">
+        <value>USB</value>
+    </data>
+    <data name="stationary_router" xml:space="preserve">
+        <value>Stationary Router (ACT Access)</value>
+    </data>
+    <data name="scan_again" xml:space="preserve">
+        <value>Scan Again</value>
+    </data>
+    <data name="scanning_for_devices" xml:space="preserve">
+        <value>Scanning for devices</value>
+    </data>
+    <data name="download_site_data" xml:space="preserve">
+        <value>Download Site Data</value>
+    </data>
+    <data name="sync_sites" xml:space="preserve">
+        <value>Sync Sites</value>
+    </data>
+    <data name="update_site_firmware" xml:space="preserve">
+        <value>Update Site Firmware</value>
+    </data>
+    <data name="settings" xml:space="preserve">
+        <value>Settings</value>
+    </data>
+    <data name="restart_device" xml:space="preserve">
+        <value>Restart Device</value>
+    </data>
+    <data name="download_device_data" xml:space="preserve">
+        <value>Download Device Data</value>
+    </data>
+    <data name="update_device_firmware" xml:space="preserve">
+        <value>Update Device Firmware</value>
+    </data>
+    <data name="battview" xml:space="preserve">
+        <value>BATTView</value>
+    </data>
+    <data name="charger" xml:space="preserve">
+        <value>Charger</value>
+    </data>
+    <data name="chargers" xml:space="preserve">
+        <value>Chargers</value>
+    </data>
+    <data name="replacements" xml:space="preserve">
+        <value>Replacements</value>
+    </data>
+    <data name="today" xml:space="preserve">
+        <value>Today</value>
+    </data>
+    <data name="batt_view_info" xml:space="preserve">
+        <value>BATTView Info</value>
+    </data>
+    <data name="battview_settings" xml:space="preserve">
+        <value>BATTView Settings</value>
+    </data>
+    <data name="battery_info" xml:space="preserve">
+        <value>Battery Info</value>
+    </data>
+    <data name="quick_view" xml:space="preserve">
+        <value>Quick View</value>
+    </data>
+    <data name="history" xml:space="preserve">
+        <value>History</value>
+    </data>
+    <data name="wifi" xml:space="preserve">
+        <value>Wi-Fi</value>
+    </data>
+    <data name="restore_to_defaults" xml:space="preserve">
+        <value>Restore To Defaults</value>
+    </data>
+    <data name="calibration" xml:space="preserve">
+        <value>Calibration</value>
+    </data>
+    <data name="calculate_and_save" xml:space="preserve">
+        <value>Calculate and Save</value>
+    </data>
+    <data name="low_range" xml:space="preserve">
+        <value>Low Range</value>
+    </data>
+    <data name="high_range" xml:space="preserve">
+        <value>High Range</value>
+    </data>
+    <data name="read_the_value_of" xml:space="preserve">
+        <value>Read the value of </value>
+    </data>
+    <data name="factory_control" xml:space="preserve">
+        <value>Factory Control</value>
+    </data>
+    <data name="batt_view_info" xml:space="preserve">
+        <value>BATTView Info</value>
+    </data>
+    <data name="serial_number" xml:space="preserve">
+        <value>Serial Number</value>
+    </data>
+    <data name="hardware_version" xml:space="preserve">
+        <value>Hardware Version</value>
+    </data>
+    <data name="battery_settings" xml:space="preserve">
+        <value>Battery Settings</value>
+    </data>
+    <data name="default_charge_profile" xml:space="preserve">
+        <value>Default Charge Profile</value>
+    </data>
+    <data name="finish_eq_scheduling" xml:space="preserve">
+        <value>Finish &amp; EQ Scheduling</value>
+    </data>
+    <data name="battery_info" xml:space="preserve">
+        <value>Battery Info</value>
+    </data>
+    <data name="fahrenheit" xml:space="preserve">
+        <value>Fahrenheit</value>
+    </data>
+    <data name="celsius" xml:space="preserve">
+        <value>Celsius</value>
+    </data>
+    <data name="cummulative_data" xml:space="preserve">
+        <value>Cumulative Data</value>
+    </data>
+    <data name="events_history" xml:space="preserve">
+        <value>Events History</value>
+    </data>
+    <data name="rt_records" xml:space="preserve">
+        <value>RT Records</value>
+    </data>
+    <data name="power_snapshots" xml:space="preserve">
+        <value>List Power Snapshots</value>
+    </data>
+    <data name="power_snapshots_id" xml:space="preserve">
+        <value>ID</value>
+    </data>
+    <data name="power_snapshots_time" xml:space="preserve">
+        <value>Time</value>
+    </data>
+    <data name="power_snapshots_voltage" xml:space="preserve">
+        <value>Voltage</value>
+    </data>
+    <data name="power_snapshots_current" xml:space="preserve">
+        <value>Current</value>
+    </data>
+    <data name="power_snapshots_power" xml:space="preserve">
+        <value>Power</value>
+    </data>
+    <data name="start_from" xml:space="preserve">
+        <value>Start From</value>
+    </data>
+    <data name="read_records" xml:space="preserve">
+        <value>Read Records</value>
+    </data>
+    <data name="debug_records" xml:space="preserve">
+        <value>Debug Records</value>
+    </data>
+    <data name="in_use" xml:space="preserve">
+        <value>In Use</value>
+    </data>
+    <data name="charge" xml:space="preserve">
+        <value>Charge</value>
+    </data>
+    <data name="in_use_time" xml:space="preserve">
+        <value>In Use Time</value>
+    </data>
+    <data name="charge_time" xml:space="preserve">
+        <value>Charge Time</value>
+    </data>
+    <data name="total_events" xml:space="preserve">
+        <value>Total Events</value>
+    </data>
+    <data name="idle_time" xml:space="preserve">
+        <value>Idle Time</value>
+    </data>
+    <data name="total_rt_records" xml:space="preserve">
+        <value>Total RT Records</value>
+    </data>
+    <data name="rt_records_title" xml:space="preserve">
+        <value>RT Records</value>
+    </data>
+    <data name="signature" xml:space="preserve">
+        <value>Signature</value>
+    </data>
+    <data name="seq" xml:space="preserve">
+        <value>SEQ</value>
+    </data>
+    <data name="end_signature" xml:space="preserve">
+        <value>End Signature</value>
+    </data>
+    <data name="leftover_in_use_as" xml:space="preserve">
+        <value>Leftover In Use AS</value>
+    </data>
+    <data name="leftover_in_use_Ws" xml:space="preserve">
+        <value>Leftover In Use WS</value>
+    </data>
+    <data name="leftover_in_charge_as" xml:space="preserve">
+        <value>Leftover In Charge AS</value>
+    </data>
+    <data name="leftover_in_charge_Ws" xml:space="preserve">
+        <value>Leftover In Charge WS</value>
+    </data>
+    <data name="total_debug_records" xml:space="preserve">
+        <value>Total Debug Records</value>
+    </data>
+    <data name="rt_records_subTitle" xml:space="preserve">
+        <value>Select time</value>
+    </data>
+    <data name="temperature_format" xml:space="preserve">
+        <value>Temperature Format</value>
+    </data>
+    <data name="battery_id" xml:space="preserve">
+        <value>Battery ID</value>
+    </data>
+    <data name="battery_serial_number" xml:space="preserve">
+        <value>Battery Serial Number</value>
+    </data>
+    <data name="battery_model" xml:space="preserve">
+        <value>Battery Model</value>
+    </data>
+    <data name="truck_id" xml:space="preserve">
+        <value>Truck ID</value>
+    </data>
+    <data name="installation_date" xml:space="preserve">
+        <value>Installation Date</value>
+    </data>
+    <data name="battery_manufacturing_date_same_as_installation" xml:space="preserve">
+        <value>Battery Manufacturing &amp; Installation Dates are same </value>
+    </data>
+    <data name="battery_manufacturing_date" xml:space="preserve">
+        <value>Battery Manufacturing</value>
+    </data>
+    <data name="time_zone" xml:space="preserve">
+        <value>Time Zone</value>
+    </data>
+    <data name="battery_capacity" xml:space="preserve">
+        <value>Battery Capacity (AHRs)</value>
+    </data>
+    <data name="battery_voltage" xml:space="preserve">
+        <value>Battery Voltage</value>
+    </data>
+    <data name="temperature_compesation" xml:space="preserve">
+        <value>Temperature Compensation (mVPC/C)</value>
+    </data>
+    <data name="max_battery_temperature" xml:space="preserve">
+        <value>Max Battery Temperature</value>
+    </data>
+    <data name="battery_type" xml:space="preserve">
+        <value>Battery Type</value>
+    </data>
+    <data name="warranted" xml:space="preserve">
+        <value>Warranted AHR</value>
+    </data>
+    <data name="min_cold_charge_temperature" xml:space="preserve">
+        <value>Min Cold Charge Temperature</value>
+    </data>
+    <data name="foldback_temperature" xml:space="preserve">
+        <value>Foldback Temperature</value>
+    </data>
+    <data name="cool_down_temperature" xml:space="preserve">
+        <value>Cool Down Temperature</value>
+    </data>
+    <data name="application_type" xml:space="preserve">
+        <value>Application Type</value>
+    </data>
+    <data name="battery_settings" xml:space="preserve">
+        <value>Battery Settings</value>
+    </data>
+    <data name="battery_usage_summary" xml:space="preserve">
+        <value>Battery Usage Summary</value>
+    </data>
+    <data name="charge_summary" xml:space="preserve">
+        <value>Charge Summary</value>
+    </data>
+    <data name="charts" xml:space="preserve">
+        <value>Charts</value>
+    </data>
+    <data name="exceptions" xml:space="preserve">
+        <value>Exceptions</value>
+    </data>
+    <data name="battery_daily_usage" xml:space="preserve">
+        <value>Battery Daily Usage</value>
+    </data>
+    <data name="study_name" xml:space="preserve">
+        <value>Study Name</value>
+    </data>
+    <data name="study_name_error" xml:space="preserve">
+        <value>Start new study to start Recording Events</value>
+    </data>
+    <data name="start_new_study" xml:space="preserve">
+        <value>Start New Study</value>
+    </data>
+    <data name="events_date_range" xml:space="preserve">
+        <value>Events Date Range</value>
+    </data>
+    <data name="preset_date_range" xml:space="preserve">
+        <value>Preset Date Range</value>
+    </data>
+    <data name="this_week" xml:space="preserve">
+        <value>This Week</value>
+    </data>
+    <data name="last_week" xml:space="preserve">
+        <value>Last Week</value>
+    </data>
+    <data name="this_month" xml:space="preserve">
+        <value>This Month</value>
+    </data>
+    <data name="last_month" xml:space="preserve">
+        <value>Last Month</value>
+    </data>
+    <data name="last_three_month" xml:space="preserve">
+        <value>Last 3 Months</value>
+    </data>
+    <data name="last_six_month" xml:space="preserve">
+        <value>Last 6 Months</value>
+    </data>
+    <data name="last_twelve_month" xml:space="preserve">
+        <value>Last 12 Months</value>
+    </data>
+    <data name="custom_date_range" xml:space="preserve">
+        <value>Custom Date Range</value>
+    </data>
+    <data name="from" xml:space="preserve">
+        <value>From</value>
+    </data>
+    <data name="to" xml:space="preserve">
+        <value>To</value>
+    </data>
+    <data name="quick_view" xml:space="preserve">
+        <value>Quick View</value>
+    </data>
+    <data name="ahr" xml:space="preserve">
+        <value>AHr</value>
+    </data>
+    <data name="ahrs" xml:space="preserve">
+        <value>AHRs</value>
+    </data>
+    <data name="kwhr" xml:space="preserve">
+        <value>KWHr</value>
+    </data>
+    <data name="kwhrs" xml:space="preserve">
+        <value>KWHrs</value>
+    </data>
+    <data name="idle" xml:space="preserve">
+        <value>Idle</value>
+    </data>
+    <data name="hour_title" xml:space="preserve">
+        <value>Hr</value>
+    </data>
+    <data name="charges" xml:space="preserve">
+        <value>Charges</value>
+    </data>
+    <data name="misseded_finishes" xml:space="preserve">
+        <value>Missed Finishes</value>
+    </data>
+    <data name="missed_eq" xml:space="preserve">
+        <value>Missed EQ</value>
+    </data>
+    <data name="total_charge" xml:space="preserve">
+        <value>Total Charge</value>
+    </data>
+    <data name="total_charge_ahr" xml:space="preserve">
+        <value>Total Charge AHr</value>
+    </data>
+    <data name="total_in_use" xml:space="preserve">
+        <value>Total In Use</value>
+    </data>
+    <data name="total_in_use_ahr" xml:space="preserve">
+        <value>Total In Use AHr</value>
+    </data>
+    <data name="max_temperature" xml:space="preserve">
+        <value>Max Temperature</value>
+    </data>
+    <data name="min_soc" xml:space="preserve">
+        <value>Min SOC</value>
+    </data>
+    <data name="eqs" xml:space="preserve">
+        <value>EQs</value>
+    </data>
+    <data name="cummulative_usage_summary" xml:space="preserve">
+        <value>Cumulative Usage Summary</value>
+    </data>
+    <data name="eqs_with_water" xml:space="preserve">
+        <value>EQs With Water OK</value>
+    </data>
+    <data name="daily_usage" xml:space="preserve">
+        <value>Daily Usage (In Use)</value>
+    </data>
+    <data name="daily_ebu_usage" xml:space="preserve">
+        <value>Daily EBU Usage Summary</value>
+    </data>
+    <data name="daily_cahrge_availablitiy" xml:space="preserve">
+        <value>Daily Charging Availability</value>
+    </data>
+    <data name="ahr_usage_per_hour" xml:space="preserve">
+        <value>AHr Usage Per Hour Summary</value>
+    </data>
+    <data name="in_hours" xml:space="preserve">
+        <value>In Hours</value>
+    </data>
+    <data name="charge" xml:space="preserve">
+        <value>Charge</value>
+    </data>
+    <data name="in_use" xml:space="preserve">
+        <value>In Use</value>
+    </data>
+    <data name="idle" xml:space="preserve">
+        <value>Idle</value>
+    </data>
+    <data name="in_ahrs" xml:space="preserve">
+        <value>In AHrs</value>
+    </data>
+    <data name="min" xml:space="preserve">
+        <value>Min</value>
+    </data>
+    <data name="avg" xml:space="preserve">
+        <value>Avg</value>
+    </data>
+    <data name="max" xml:space="preserve">
+        <value>Max</value>
+    </data>
+    <data name="in_ebus" xml:space="preserve">
+        <value>In EBUs</value>
+    </data>
+    <data name="ahr_hour" xml:space="preserve">
+        <value>AHr/Hour</value>
+    </data>
+    <data name="discharge_limit_exceeded" xml:space="preserve">
+        <value>Discharge Limit Exceeded</value>
+    </data>
+    <data name="over_temperature" xml:space="preserve">
+        <value>Over Temperature</value>
+    </data>
+    <data name="ahr_return" xml:space="preserve">
+        <value>AHr Return</value>
+    </data>
+    <data name="current_sense_issue" xml:space="preserve">
+        <value>Current Sense Issue</value>
+    </data>
+    <data name="deep_discharge" xml:space="preserve">
+        <value>Deep Discharge</value>
+    </data>
+    <data name="view_events" xml:space="preserve">
+        <value>View Events</value>
+    </data>
+    <data name="reset" xml:space="preserve">
+        <value>Reset</value>
+    </data>
+    <data name="data" xml:space="preserve">
+        <value>data</value>
+    </data>
+    <data name="alert_enter_valid" xml:space="preserve">
+        <value>Please enter valid values for: </value>
+    </data>
+    <data name="default_charge_profile" xml:space="preserve">
+        <value>Default Charge Profile</value>
+    </data>
+    <data name="tr_current_rate" xml:space="preserve">
+        <value>TR Current Rate (%Capacity) - TR Amps</value>
+    </data>
+    <data name="tr_current_rate_lithium" xml:space="preserve">
+        <value>CC1 Current Rate (%Capacity) - CC1 Amps</value>
+    </data>
+    <data name="cc_current_rate" xml:space="preserve">
+        <value>CC Current Rate (%Capacity) - CC Amps</value>
+    </data>
+    <data name="fi_current_rate" xml:space="preserve">
+        <value>FI Current Rate (%Capacity) - FI Amps</value>
+    </data>
+    <data name="eq_current_rate" xml:space="preserve">
+        <value>EQ Current Rate (%Capacity) - EQ Amps</value>
+    </data>
+    <data name="tr_target_voltage" xml:space="preserve">
+        <value>TR Target Voltage</value>
+    </data>
+    <data name="tr_target_voltage_lithium" xml:space="preserve">
+        <value>CV1 Target Voltage</value>
+    </data>
+    <data name="cv_target_voltage" xml:space="preserve">
+        <value>CV Target Voltage</value>
+    </data>
+    <data name="fi_target_voltage" xml:space="preserve">
+        <value>FI Target Voltage</value>
+    </data>
+    <data name="eq_target_voltage" xml:space="preserve">
+        <value>EQ Target Voltage</value>
+    </data>
+    <data name="partial_charge_stop" xml:space="preserve">
+        <value>Partial Charge Stop Current (%Capacity)</value>
+    </data>
+    <data name="cv_current_step" xml:space="preserve">
+        <value>CV Current Step (%CC)</value>
+    </data>
+    <data name="cv_timeout" xml:space="preserve">
+        <value>CV Timeout</value>
+    </data>
+    <data name="finish_timeout" xml:space="preserve">
+        <value>Finish Timeout</value>
+    </data>
+    <data name="equilize_timeout" xml:space="preserve">
+        <value>Equalize Timeout</value>
+    </data>
+    <data name="desulfation_duration" xml:space="preserve">
+        <value>Desulfation Duration</value>
+    </data>
+    <data name="finish_dv_voltage" xml:space="preserve">
+        <value>Finish dV Voltage (mVPC)</value>
+    </data>
+    <data name="finish_dt_time" xml:space="preserve">
+        <value>Finish dT Time</value>
+    </data>
+    <data name="finish_cycle_settings" xml:space="preserve">
+        <value>Finish Cycle Settings</value>
+    </data>
+    <data name="always" xml:space="preserve">
+        <value>Always</value>
+    </data>
+    <data name="custom" xml:space="preserve">
+        <value>Custom</value>
+    </data>
+    <data name="equalize_cycle" xml:space="preserve">
+        <value>Equalize Cycle</value>
+    </data>
+    <data name="starts" xml:space="preserve">
+        <value>Starts</value>
+    </data>
+    <data name="duration" xml:space="preserve">
+        <value>Duration</value>
+    </data>
+    <data name="days" xml:space="preserve">
+        <value>Days</value>
+    </data>
+    <data name="finish_cycle" xml:space="preserve">
+        <value>Finish Cycle</value>
+    </data>
+    <data name="monday" xml:space="preserve">
+        <value>MONDAY</value>
+    </data>
+    <data name="tuesday" xml:space="preserve">
+        <value>TUESDAY</value>
+    </data>
+    <data name="wednesday" xml:space="preserve">
+        <value>WEDNESDAY</value>
+    </data>
+    <data name="thursday" xml:space="preserve">
+        <value>THURSDAY</value>
+    </data>
+    <data name="friday" xml:space="preserve">
+        <value>FRIDAY</value>
+    </data>
+    <data name="saturday" xml:space="preserve">
+        <value>SATURDAY</value>
+    </data>
+    <data name="sunday" xml:space="preserve">
+        <value>SUNDAY</value>
+    </data>
+    <data name="finish_eq_settings" xml:space="preserve">
+        <value>Finish &amp; EQ Settings</value>
+    </data>
+    <data name="dev_in_progress" xml:space="preserve">
+        <value>Development is under progress</value>
+    </data>
+    <data name="no_data_found" xml:space="preserve">
+        <value>Data not Available</value>
+    </data>
+    <data name="mobile_ssid" xml:space="preserve">
+        <value>Mobile SSID</value>
+    </data>
+    <data name="mobile_ssid_password" xml:space="preserve">
+        <value>Mobile SSID Password</value>
+    </data>
+    <data name="direct_mode" xml:space="preserve">
+        <value>Direct Mode (Soft AP)</value>
+    </data>
+    <data name="soft_ap_password" xml:space="preserve">
+        <value>Soft AP Password</value>
+    </data>
+    <data name="mobile_ssid_port" xml:space="preserve">
+        <value>Mobile SSID Port</value>
+    </data>
+    <data name="connect_to_actview" xml:space="preserve">
+        <value>Connect to ACTView</value>
+    </data>
+    <data name="actview_ip" xml:space="preserve">
+        <value>ACTView IP</value>
+    </data>
+    <data name="actview_port" xml:space="preserve">
+        <value>ACTView Port</value>
+    </data>
+    <data name="port" xml:space="preserve">
+        <value>Port</value>
+    </data>
+    <data name="actview_connect_frequency" xml:space="preserve">
+        <value>ACTView Connect Frequency</value>
+    </data>
+    <data name="act_access_ssid" xml:space="preserve">
+        <value>ACT Access SSID</value>
+    </data>
+    <data name="act_access_ssid_password" xml:space="preserve">
+        <value>ACT Access SSID Password</value>
+    </data>
+    <data name="wifi_rssi" xml:space="preserve">
+        <value>RSSI</value>
+    </data>
+    <data name="wifi_at_version" xml:space="preserve">
+        <value>AT_Version</value>
+    </data>
+    <data name="wifi_ip" xml:space="preserve">
+        <value>IP</value>
+    </data>
+    <data name="wifi_connected_to" xml:space="preserve">
+        <value>Connected To</value>
+    </data>
+    <data name="wifi_is_communicating" xml:space="preserve">
+        <value>Is Communicating</value>
+    </data>
+    <data name="wifi_restart_status" xml:space="preserve">
+        <value>Restart Status</value>
+    </data>
+    <data name="wifi_gateway_address" xml:space="preserve">
+        <value>Gateway Address</value>
+    </data>
+    <data name="wifi_mac_address" xml:space="preserve">
+        <value>MAC Address</value>
+    </data>
+    <data name="setup_byte" xml:space="preserve">
+        <value>Setup Byte</value>
+    </data>
+    <data name="last_change_userid" xml:space="preserve">
+        <value>Last Change UserID</value>
+    </data>
+    <data name="firmware_revision" xml:space="preserve">
+        <value>Firmware Revision</value>
+    </data>
+    <data name="firmware_wifi_version" xml:space="preserve">
+        <value>ESP32 Firmware WiFi Version</value>
+    </data>
+    <data name="lcd_version" xml:space="preserve">
+        <value>LCD Version</value>
+    </data>
+    <data name="memory_signature" xml:space="preserve">
+        <value>Memory Signature</value>
+    </data>
+    <data name="bms_id" xml:space="preserve">
+        <value>BMS ID</value>
+    </data>
+    <data name="change_bms_id" xml:space="preserve">
+        <value>Change BMS ID</value>
+    </data>
+    <data name="select_bms_id" xml:space="preserve">
+        <value>Please select the BMS ID</value>
+    </data>
+    <data name="bms_version" xml:space="preserve">
+        <value>BMS Version</value>
+    </data>
+    <data name="bms_gct" xml:space="preserve">
+        <value>GCT</value>
+    </data>
+    <data name="bms_navitas" xml:space="preserve">
+        <value>NAVITAS</value>
+    </data>
+    <data name="bms_electrovaya" xml:space="preserve">
+        <value>ELECTROVAYA</value>
+    </data>
+    <data name="bms_unknown" xml:space="preserve">
+        <value>Unknown</value>
+    </data>
+    <data name="samples_time_span" xml:space="preserve">
+        <value>Samples Time Span</value>
+    </data>
+    <data name="battview_mobile" xml:space="preserve">
+        <value>BATTView Mobile</value>
+    </data>
+    <data name="post_electrolyte_ntc" xml:space="preserve">
+        <value>Post/ Electrolyte NTC</value>
+    </data>
+    <data name="disable_intercell" xml:space="preserve">
+        <value>Disable Intercell</value>
+    </data>
+    <data name="electrolyte_sensing" xml:space="preserve">
+        <value>Electrolyte Sensing</value>
+    </data>
+    <data name="use_hall_effect_sensor" xml:space="preserve">
+        <value>Use Hall Effect Sensor</value>
+    </data>
+    <data name="reverse_hall_effect" xml:space="preserve">
+        <value>Reverse Hall Effect</value>
+    </data>
+    <data name="restore_hall_effect" xml:space="preserve">
+        <value>Restore Hall Effect</value>
+    </data>
+    <data name="done_save" xml:space="preserve">
+        <value>Done, click save to take effect</value>
+    </data>
+    <data name="plc" xml:space="preserve">
+        <value>PLC</value>
+    </data>
+    <data name="daylight_saving" xml:space="preserve">
+        <value>Daylight Saving</value>
+    </data>
+    <data name="temperature_fallback_control" xml:space="preserve">
+        <value>Temperature Fallback control</value>
+    </data>
+    <data name="yes" xml:space="preserve">
+        <value>Yes</value>
+    </data>
+    <data name="no" xml:space="preserve">
+        <value>No</value>
+    </data>
+    <data name="battery_manufacturing_date_value_is_out_of_range" xml:space="preserve">
+        <value>Battery Manufacturing Date Value is out of Range</value>
+    </data>
+    <data name="installation_date_value_is_out_of_range" xml:space="preserve">
+        <value>Installation Date Value is out of Range</value>
+    </data>
+    <data name="battview_time_is_not_correct" xml:space="preserve">
+        <value>BATTView Time is not correct</value>
+    </data>
+    <data name="battery_type_is_invalid" xml:space="preserve">
+        <value>Battery Type is invalid</value>
+    </data>
+    <data name="battery_application_is_invalid" xml:space="preserve">
+        <value>Battery Application is invalid</value>
+    </data>
+    <data name="invalid_tr_rate_value" xml:space="preserve">
+        <value>Invalid TR Rate Value</value>
+    </data>
+    <data name="invalid_cc_rate_value" xml:space="preserve">
+        <value>Invalid CC Rate Value</value>
+    </data>
+    <data name="invalid_finish_rate_value" xml:space="preserve">
+        <value>Invalid Finish Rate Value</value>
+    </data>
+    <data name="invalid_eq_rate_value" xml:space="preserve">
+        <value>Invalid EQ Rate Value</value>
+    </data>
+    <data name="invalid_cv_finish_rate_value" xml:space="preserve">
+        <value>Invalid CV Finish Rate Value</value>
+    </data>
+    <data name="invalid_cv_max_duration_value" xml:space="preserve">
+        <value>Invalid CV Max Duration Value</value>
+    </data>
+    <data name="invalid_finish_duration_value" xml:space="preserve">
+        <value>Invalid Finish Duration Value</value>
+    </data>
+    <data name="invalid_equalize_duration_value" xml:space="preserve">
+        <value>Invalid Equalize Duration Value</value>
+    </data>
+    <data name="invalid_desulfate_duration_value" xml:space="preserve">
+        <value>Invalid Desulfate Duration Value</value>
+    </data>
+    <data name="invalid_finish_dv_value" xml:space="preserve">
+        <value>Invalid Finish dV Value</value>
+    </data>
+    <data name="invalid_finish_dt_value" xml:space="preserve">
+        <value>Invalid Finish dt Value</value>
+    </data>
+    <data name="invalid_cv_current_step_rate_value" xml:space="preserve">
+        <value>Invalid CV Current Step Rate Value</value>
+    </data>
+    <data name="current" xml:space="preserve">
+        <value>Current</value>
+    </data>
+    <data name="cancel" xml:space="preserve">
+        <value>Cancel</value>
+    </data>
+    <data name="logout_confirmation" xml:space="preserve">
+        <value>Do you want to logout?</value>
+    </data>
+    <data name="please_try_again" xml:space="preserve">
+        <value>Please Try Again</value>
+    </data>
+    <data name="voltage" xml:space="preserve">
+        <value>Voltage</value>
+    </data>
+    <data name="soc" xml:space="preserve">
+        <value>SOC</value>
+    </data>
+    <data name="set_reading" xml:space="preserve">
+        <value>SET READING</value>
+    </data>
+    <data name="send_current" xml:space="preserve">
+        <value>Send Current</value>
+    </data>
+    <data name="start_over" xml:space="preserve">
+        <value>START OVER</value>
+    </data>
+    <data name="soc_set" xml:space="preserve">
+        <value>SET SOC</value>
+    </data>
+    <data name="current" xml:space="preserve">
+        <value>Current</value>
+    </data>
+    <data name="temperature" xml:space="preserve">
+        <value>Temperature</value>
+    </data>
+    <data name="soc" xml:space="preserve">
+        <value>SOC</value>
+    </data>
+    <data name="cancel_confirmation" xml:space="preserve">
+        <value>Discard Changes ?</value>
+    </data>
+    <data name="select" xml:space="preserve">
+        <value>Select</value>
+    </data>
+    <data name="network_unavailable" xml:space="preserve">
+        <value>Network unavailable</value>
+    </data>
+    <data name="connect_to_wifi" xml:space="preserve">
+        <value>Connect to WiFi</value>
+    </data>
+    <data name="device_disconnected" xml:space="preserve">
+        <value>Device Disconnected</value>
+    </data>
+    <data name="connect_alert_for_profile" xml:space="preserve">
+        <value>Please using Safari Web browser Download the network profile</value>
+    </data>
+    <data name="network_profile_url" xml:space="preserve">
+        <value>https://www.act-view.com/actchargers_profile.mobileconfig</value>
+    </data>
+    <data name="cant_find_your_mobile_router" xml:space="preserve">
+        <value>Can't find your Mobile Router, please turn it on.</value>
+    </data>
+    <data name="please_connect_to_the_wifi_network" xml:space="preserve">
+        <value>Please connect to the WiFi network</value>
+    </data>
+    <data name="please_connect_to_v_network" xml:space="preserve">
+        <value>Please connect to {0} network</value>
+    </data>
+    <data name="save_failed" xml:space="preserve">
+        <value>Save Failed</value>
+    </data>
+    <data name="refresh" xml:space="preserve">
+        <value>Refresh</value>
+    </data>
+    <data name="unable_to_refresh_battview" xml:space="preserve">
+        <value>Unable to Refresh BATTView</value>
+    </data>
+    <data name="unable_to_refresh_MCB" xml:space="preserve">
+        <value>Unable to Refresh Charger</value>
+    </data>
+    <data name="failed_to_connect" xml:space="preserve">
+        <value>Failed to connect</value>
+    </data>
+    <data name="ok" xml:space="preserve">
+        <value>Ok</value>
+    </data>
+    <data name="charger_info" xml:space="preserve">
+        <value>Charger Info</value>
+    </data>
+    <data name="invalid_SSID" xml:space="preserve">
+        <value>Please enter valid SSID</value>
+    </data>
+    <data name="invalid_password" xml:space="preserve">
+        <value>Please enter valid Password</value>
+    </data>
+    <data name="invalid_port" xml:space="preserve">
+        <value>Port should be a numeric value</value>
+    </data>
+    <data name="charger_settings" xml:space="preserve">
+        <value>Charger Settings</value>
+    </data>
+    <data name="power_module" xml:space="preserve">
+        <value>Power Module</value>
+    </data>
+    <data name="energy_management" xml:space="preserve">
+        <value>Energy Management</value>
+    </data>
+    <data name="factory_control" xml:space="preserve">
+        <value>Factory Control</value>
+    </data>
+    <data name="mcb_serial_number" xml:space="preserve">
+        <value>MCB Serial Number</value>
+    </data>
+    <data name="charger_serial_number" xml:space="preserve">
+        <value>Charger Serial Number</value>
+    </data>
+    <data name="charger_model" xml:space="preserve">
+        <value>Charger Model</value>
+    </data>
+    <data name="hardware_revision" xml:space="preserve">
+        <value>Hardware Revision</value>
+    </data>
+    <data name="client_charger_id" xml:space="preserve">
+        <value>Client Charger ID</value>
+    </data>
+    <data name="charger_type" xml:space="preserve">
+        <value>Charger Type</value>
+    </data>
+    <data name="lcd_images_version" xml:space="preserve">
+        <value>LCD Images Version</value>
+    </data>
+    <data name="wifi_firmware_version" xml:space="preserve">
+        <value>Wifi Firmware Version</value>
+    </data>
+    <data name="run_battview_calibration" xml:space="preserve">
+        <value>Run/Stop BattView Calibration</value>
+    </data>
+    <data name="batt_capacity_24v" xml:space="preserve">
+        <value>Battery Capacity for 24V (AHRs)</value>
+    </data>
+    <data name="batt_capacity_36v" xml:space="preserve">
+        <value>Battery Capacity for 36V (AHRs)</value>
+    </data>
+    <data name="batt_capacity_48v" xml:space="preserve">
+        <value>Battery Capacity for 48V (AHRs)</value>
+    </data>
+    <data name="batt_capacity_80v" xml:space="preserve">
+        <value>Battery Capacity for 80V (AHRs)</value>
+    </data>
+    <data name="battery_capacity" xml:space="preserve">
+        <value>Battery Capacity (AHRs)</value>
+    </data>
+    <data name="battery_voltage" xml:space="preserve">
+        <value>Battery Voltage</value>
+    </data>
+    <data name="plant_temparature" xml:space="preserve">
+        <value>Plant Temperature</value>
+    </data>
+    <data name="temp_compensation" xml:space="preserve">
+        <value>Temperature Compensation (mVPC/C)</value>
+    </data>
+    <data name="max_batt_temp" xml:space="preserve">
+        <value>Max Battery Temperature</value>
+    </data>
+    <data name="min_charge_temp" xml:space="preserve">
+        <value>Min Charge Temperature</value>
+    </data>
+    <data name="foldback_temp" xml:space="preserve">
+        <value>Foldback Temperature</value>
+    </data>
+    <data name="cool_down_temp" xml:space="preserve">
+        <value>Cool Down Temperature</value>
+    </data>
+    <data name="battery_electrolyte_temp" xml:space="preserve">
+        <value>Battery Electrolyte Temperature (C)</value>
+    </data>
+    <data name="li_ion_cell_voltage" xml:space="preserve">
+        <value>Li-Ion Cell Voltage</value>
+    </data>
+    <data name="li_ion_number_of_cells" xml:space="preserve">
+        <value>Li-Ion Number of Cells</value>
+    </data>
+    <data name="act_intelligent" xml:space="preserve">
+        <value>Act Intelligent</value>
+    </data>
+    <data name="cable resistance" xml:space="preserve">
+        <value>Cable resistance (milliOhm)</value>
+    </data>
+    <data name="default brightness" xml:space="preserve">
+        <value>Default Brightness</value>
+    </data>
+    <data name="auto_start" xml:space="preserve">
+        <value>Auto Start</value>
+    </data>
+    <data name="auto_start_count_down" xml:space="preserve">
+        <value>Auto Start Count down</value>
+    </data>
+    <data name="refresh_cycle" xml:space="preserve">
+        <value>Refresh Cycle</value>
+    </data>
+    <data name="refresh_frequency" xml:space="preserve">
+        <value>Refresh Frequency</value>
+    </data>
+    <data name="temperature_sensor" xml:space="preserve">
+        <value>Temperature Sensor</value>
+    </data>
+    <data name="enable_72v_operation" xml:space="preserve">
+        <value>Enable 72V Operation</value>
+    </data>
+    <data name="reconnect_timer" xml:space="preserve">
+        <value>Reconnect Timer</value>
+    </data>
+    <data name="bms_aughter_card" xml:space="preserve">
+        <value>BMS Daughter Card</value>
+    </data>
+    <data name="bms_only" xml:space="preserve">
+        <value>BMS Only</value>
+    </data>
+    <data name="bms_with_fail_over" xml:space="preserve">
+        <value>BMS With Fail Over</value>
+    </data>
+    <data name="bms_with_plc_fail_over" xml:space="preserve">
+        <value>BMS With PLC Fail Over</value>
+    </data>
+    <data name="bms_bit_rate" xml:space="preserve">
+        <value>CAN Baud Rate</value>
+    </data>
+    <data name="can_baud_125" xml:space="preserve">
+        <value>125</value>
+    </data>
+    <data name="can_baud_250" xml:space="preserve">
+        <value>250</value>
+    </data>
+    <data name="can_baud_500" xml:space="preserve">
+        <value>500</value>
+    </data>
+    <data name="plc_gain" xml:space="preserve">
+        <value>PLC Gain</value>
+    </data>
+    <data name="gain_value_1" xml:space="preserve">
+        <value>1</value>
+    </data>
+    <data name="gain_value_2" xml:space="preserve">
+        <value>2</value>
+    </data>
+    <data name="gain_value_3" xml:space="preserve">
+        <value>3</value>
+    </data>
+    <data name="gain_value_4" xml:space="preserve">
+        <value>4</value>
+    </data>
+    <data name="gain_value_5" xml:space="preserve">
+        <value>5</value>
+    </data>
+    <data name="multi_voltage" xml:space="preserve">
+        <value>Multi Voltage</value>
+    </data>
+    <data name="temperature_format" xml:space="preserve">
+        <value>Temperature Format</value>
+    </data>
+    <data name="daylight_saving" xml:space="preserve">
+        <value>Daylight Saving</value>
+    </data>
+    <data name="enable_plc" xml:space="preserve">
+        <value>Enable PLC</value>
+    </data>
+    <data name="do_plc_stack_check" xml:space="preserve">
+        <value>Enable PLC Stack Check</value>
+    </data>
+    <data name="allow_manual_eq" xml:space="preserve">
+        <value>Allow Manual EQ</value>
+    </data>
+    <data name="allow_manual_desulfate" xml:space="preserve">
+        <value>Allow Manual Desulfate</value>
+    </data>
+    <data name="enable_stop_push_button" xml:space="preserve">
+        <value>Enable STOP push button</value>
+    </data>
+    <data name="led_options" xml:space="preserve">
+        <value>LED Options</value>
+    </data>
+    <data name="led_strip" xml:space="preserve">
+        <value>LED Strip</value>
+    </data>
+    <data name="disabled" xml:space="preserve">
+        <value>Disabled</value>
+    </data>
+    <data name="stack_light" xml:space="preserve">
+        <value>Stack Light</value>
+    </data>
+    <data name="charger_control_soc" xml:space="preserve">
+        <value>Charger Controls SOC</value>
+    </data>
+    <data name="charger_controls_fi_scheduling" xml:space="preserve">
+        <value>Charger Controls FI/EQ Scheduling</value>
+    </data>
+    <data name="current_ramp_minimum_steps" xml:space="preserve">
+        <value>Current Ramp Minimum Steps</value>
+    </data>
+    <data name="battview_auto_calibration" xml:space="preserve">
+        <value>BATTView Auto-Calibration</value>
+    </data>
+    <data name="charger_remote_control_settings" xml:space="preserve">
+        <value>Charger Remote Control Settings</value>
+    </data>
+    <data name="charger_remote_control_settings_disable" xml:space="preserve">
+        <value>Disable</value>
+    </data>
+    <data name="charger_remote_control_settings_remote_stop" xml:space="preserve">
+        <value>Remote Stop</value>
+    </data>
+    <data name="charger_remote_control_settings_dual_cables" xml:space="preserve">
+        <value>Dual Cables</value>
+    </data>
+    <data name="refresh_cycle_after_eq" xml:space="preserve">
+        <value>Refresh Cycle After EQ</value>
+    </data>
+    <data name="refresh_cycle_after_fi" xml:space="preserve">
+        <value>Refresh Cycle After FI</value>
+    </data>
+    <data name="reset_lcd" xml:space="preserve">
+        <value>Reset LCD calibration &amp; Restart</value>
+    </data>
+    <data name="update_cable_settings" xml:space="preserve">
+        <value>Update Cable Settings</value>
+    </data>
+    <data name="charger_cable_length" xml:space="preserve">
+        <value>Charger Cable Length</value>
+    </data>
+    <data name="cable_gauge" xml:space="preserve">
+        <value>Cable Gauge</value>
+    </data>
+    <data name="number_of_cables" xml:space="preserve">
+        <value>Number Of Cables</value>
+    </data>
+    <data name="battery_cable_length" xml:space="preserve">
+        <value>Battery Cable Length</value>
+    </data>
+    <data name="single" xml:space="preserve">
+        <value>Single</value>
+    </data>
+    <data name="dual" xml:space="preserve">
+        <value>Dual</value>
+    </data>
+    <data name="calculate" xml:space="preserve">
+        <value>Calculate</value>
+    </data>
+    <data name="load_plc_firmware_and_restart" xml:space="preserve">
+        <value>Load Plc Firmware And Restart</value>
+    </data>
+    <data name="cable_settings" xml:space="preserve">
+        <value>Cable Settings</value>
+    </data>
+    <data name="input_error" xml:space="preserve">
+        <value>Input error!</value>
+    </data>
+    <data name="reset_lcd_failed" xml:space="preserve">
+        <value>Reset LCD calibration &amp; Restart failed</value>
+    </data>
+    <data name="bad_firmware_encoding" xml:space="preserve">
+        <value>Bad Firmware encoding</value>
+    </data>
+    <data name="charger_is_reflushing_plc_firmware" xml:space="preserve">
+        <value>Charger is reflushing PLC Firmware</value>
+    </data>
+    <data name="charger_is_busy" xml:space="preserve">
+        <value>Charger is busy, stop the charge cycle first to restart</value>
+    </data>
+    <data name="batt_view_restarting" xml:space="preserve">
+        <value>BattView Restarting...</value>
+    </data>
+    <data name="charger_restarting" xml:space="preserve">
+        <value>Charger Restarting...</value>
+    </data>
+    <data name="view_global_records" xml:space="preserve">
+        <value>View Global Records</value>
+    </data>
+    <data name="view_cycles_history" xml:space="preserve">
+        <value>View Cycles History</value>
+    </data>
+    <data name="force_finish_timout" xml:space="preserve">
+        <value>Force Finish Timeout</value>
+    </data>
+    <data name="new_east_penn_profile" xml:space="preserve">
+        <value>New East Penn Profile</value>
+    </data>
+    <data name="total_charge_ahrs" xml:space="preserve">
+        <value>Total Charge AHRs</value>
+    </data>
+    <data name="total_charge_consumption" xml:space="preserve">
+        <value>Total Charge Consumption</value>
+    </data>
+    <data name="total_charge_kwhrs" xml:space="preserve">
+        <value>Total Charge KWHRs</value>
+    </data>
+    <data name="total_charge_in_kwhrs" xml:space="preserve">
+        <value>Total Charge in KWHRs</value>
+    </data>
+    <data name="total_charge_duration" xml:space="preserve">
+        <value>Total Charge duration</value>
+    </data>
+    <data name="total_charge_cycles" xml:space="preserve">
+        <value>Total Charge cycles</value>
+    </data>
+    <data name="total_pm_faults" xml:space="preserve">
+        <value>Total PM Faults</value>
+    </data>
+    <data name="eq_frequency_days" xml:space="preserve">
+        <value>EQ Frequency -Days</value>
+    </data>
+    <data name="finish_frequency_days" xml:space="preserve">
+        <value>Finish Frequency -Days</value>
+    </data>
+    <data name="pm_info" xml:space="preserve">
+        <value>PM Info</value>
+    </data>
+    <data name="pm_faults" xml:space="preserve">
+        <value>PM Faults</value>
+    </data>
+    <data name="number_of_installed_power_modules" xml:space="preserve">
+        <value>Number of Installed Power Modules</value>
+    </data>
+    <data name="rated_voltage" xml:space="preserve">
+        <value>Rated Voltage</value>
+    </data>
+    <data name="efficiency" xml:space="preserve">
+        <value>Efficiency</value>
+    </data>
+    <data name="pm_input_voltage" xml:space="preserve">
+        <value>PM Input Voltage</value>
+    </data>
+    <data name="max_pm_current" xml:space="preserve">
+        <value>Max PM Current</value>
+    </data>
+    <data name="lock_out" xml:space="preserve">
+        <value>Lockout</value>
+    </data>
+    <data name="power_limiting" xml:space="preserve">
+        <value>Power Limiting</value>
+    </data>
+    <data name="lockout_start_time" xml:space="preserve">
+        <value>Lockout Start Time</value>
+    </data>
+    <data name="lockout_window" xml:space="preserve">
+        <value>Lockout Window</value>
+    </data>
+    <data name="power_limit_factor" xml:space="preserve">
+        <value>Power Limit Factor</value>
+    </data>
+    <data name="start_time" xml:space="preserve">
+        <value>Start Time</value>
+    </data>
+    <data name="power_limit_window" xml:space="preserve">
+        <value>Power Limit Window</value>
+    </data>
+    <data name="k" xml:space="preserve">
+        <value>k</value>
+    </data>
+    <data name="voltage_calibration_range" xml:space="preserve">
+        <value>Voltage Calibration Range</value>
+    </data>
+    <data name="set_another_reading" xml:space="preserve">
+        <value>Set another reading</value>
+    </data>
+    <data name="a_up_range" xml:space="preserve">
+        <value>A-Up Range</value>
+    </data>
+    <data name="b_up_range" xml:space="preserve">
+        <value>B-Up Range</value>
+    </data>
+    <data name="a_low_range" xml:space="preserve">
+        <value>A-Low Range</value>
+    </data>
+    <data name="b_low_range" xml:space="preserve">
+        <value>B-Low Range</value>
+    </data>
+    <data name="enable_wifi_error" xml:space="preserve">
+        <value>Please turn on wifi.</value>
+    </data>
+    <data name="wifi_conn_error" xml:space="preserve">
+        <value>Unable to connect to wifi, please connect to the specified wifi.</value>
+    </data>
+    <data name="low_range_calibration" xml:space="preserve">
+        <value>Low Range Clibration</value>
+    </data>
+    <data name="save_new_calibration" xml:space="preserve">
+        <value>Save new calibration</value>
+    </data>
+    <data name="direct_save" xml:space="preserve">
+        <value>Save</value>
+    </data>
+    <data name="raw" xml:space="preserve">
+        <value>Raw</value>
+    </data>
+    <data name="all" xml:space="preserve">
+        <value>ALL</value>
+    </data>
+    <data name="low" xml:space="preserve">
+        <value>LOW</value>
+    </data>
+    <data name="opration_failed" xml:space="preserve">
+        <value>Operation failed</value>
+    </data>
+    <data name="opration_success" xml:space="preserve">
+        <value>Operation Success</value>
+    </data>
+    <data name="reset_voltage_cal" xml:space="preserve">
+        <value>Reset Voltage Calibration</value>
+    </data>
+    <data name="confirm" xml:space="preserve">
+        <value>Confirm</value>
+    </data>
+    <data name="reset_lcd_calibration" xml:space="preserve">
+        <value>Reset LCD Calibration</value>
+    </data>
+    <data name="upload_after_commission_upload" xml:space="preserve">
+        <value>Upload After Commission Upload</value>
+    </data>
+    <data name="switch_to_calibrator_mcb" xml:space="preserve">
+        <value>Switch to Calibrator MCB</value>
+    </data>
+    <data name="factory_reset" xml:space="preserve">
+        <value>Factory Reset</value>
+    </data>
+    <data name="Save_and_Restart" xml:space="preserve">
+        <value>Save &amp;&amp; Restart</value>
+    </data>
+    <data name="Save_mcb_serial_number" xml:space="preserve">
+        <value>Save MCB Serial Number</value>
+    </data>
+    <data name="commission_a_charger" xml:space="preserve">
+        <value>Commission  a charger</value>
+    </data>
+    <data name="change_board_id" xml:space="preserve">
+        <value>Change Board ID</value>
+    </data>
+    <data name="run/stop_burn_in_in_minutes" xml:space="preserve">
+        <value>Run/Stop Burn In in minutes</value>
+    </data>
+    <data name="check_mcb_health" xml:space="preserve">
+        <value>Check MCB Health</value>
+    </data>
+    <data name="change_actView_id_and_restart" xml:space="preserve">
+        <value>Change actView ID and Restart</value>
+    </data>
+    <data name="enable_pm_simulation_mode_and_restart" xml:space="preserve">
+        <value>Enable PM Simulation Mode and Restart</value>
+    </data>
+    <data name="enable_simulation_mode_and_restart" xml:space="preserve">
+        <value>Enable Simulation Mode and Restart</value>
+    </data>
+    <data name="disable_simulation_mode_and_restart" xml:space="preserve">
+        <value>Disable Simulation Mode and Restart</value>
+    </data>
+    <data name="allow_to_recomission_and_restart" xml:space="preserve">
+        <value>Allow to Recomission &amp;&amp; Restart</value>
+    </data>
+    <data name="enable_pm_simulation_mode_dev_and_restart" xml:space="preserve">
+        <value>Enable PM Simulation Mode (DEV) and Restart</value>
+    </data>
+    <data name="startdate_greater_than_enddate" xml:space="preserve">
+        <value>Start date is greater than end date</value>
+    </data>
+    <data name="disable_pm_simulation_mode_dev_and_restart" xml:space="preserve">
+        <value>Disable PM Simulation Mode (DEV) and Restart</value>
+    </data>
+    <data name="replacement_part" xml:space="preserve">
+        <value>Replacement Part</value>
+    </data>
+    <data name="factory_reset_alert_message_for_mcb" xml:space="preserve">
+        <value>This Operation will reset MCB History and Serial Number, it will decomission it as well. Click OK to confirm the Operation</value>
+    </data>
+    <data name="edit_event_control" xml:space="preserve">
+        <value>Edit Event control</value>
+    </data>
+    <data name="commission_a_battview" xml:space="preserve">
+        <value>Commission A BATTView</value>
+    </data>
+    <data name="commission_a_replacement_part" xml:space="preserve">
+        <value>Commission a Replacement Part</value>
+    </data>
+    <data name="start_testing_battview_standard/pro" xml:space="preserve">
+        <value>Start testing Battview Standard/Pro</value>
+    </data>
+    <data name="start_testing_battview_mobile" xml:space="preserve">
+        <value>Start testing Battview Mobile</value>
+    </data>
+    <data name="upload_after_commission" xml:space="preserve">
+        <value>Upload After Commission</value>
+    </data>
+    <data name="load_plc_firmware" xml:space="preserve">
+        <value>Load PLC Firmware</value>
+    </data>
+    <data name="factory_reset_alert_message_for_battview" xml:space="preserve">
+        <value>This Operation will reset BATTView History, it will decomission it as well. Click OK to confirm the Operation</value>
+    </data>
+    <data name="invalid_input" xml:space="preserve">
+        <value>Invalid Input</value>
+    </data>
+    <data name="timer_detect_threshold" xml:space="preserve">
+        <value>Timer detect threshold</value>
+    </data>
+    <data name="voltage_detect_threshold" xml:space="preserve">
+        <value>Voltage detect threshold</value>
+    </data>
+    <data name="current_detect_threshold" xml:space="preserve">
+        <value>Current detect threshold</value>
+    </data>
+    <data name="timer" xml:space="preserve">
+        <value>Timer</value>
+    </data>
+    <data name="current_limit" xml:space="preserve">
+        <value>Current Limit</value>
+    </data>
+    <data name="high_to_low" xml:space="preserve">
+        <value>High to Low</value>
+    </data>
+    <data name="low_to_high" xml:space="preserve">
+        <value>Low to High</value>
+    </data>
+    <data name="electrolyte" xml:space="preserve">
+        <value>Electrolyte</value>
+    </data>
+    <data name="idle_to_inUse" xml:space="preserve">
+        <value>Idle to InUse</value>
+    </data>
+    <data name="idle_to_charge" xml:space="preserve">
+        <value>Idle to Charge</value>
+    </data>
+    <data name="inuse_to_idle" xml:space="preserve">
+        <value>InUse to Idle</value>
+    </data>
+    <data name="inuse_to_Charge" xml:space="preserve">
+        <value>InUse to Charge</value>
+    </data>
+    <data name="charge_to_inUse" xml:space="preserve">
+        <value>Charge to InUse</value>
+    </data>
+    <data name="charge_to_idle" xml:space="preserve">
+        <value>Charge to Idle</value>
+    </data>
+    <data name="select_replacement" xml:space="preserve">
+        <value>Select Replacement Part</value>
+    </data>
+    <data name="search_bar_placeholder" xml:space="preserve">
+        <value>Search by Serial Number</value>
+    </data>
+    <data name="confirm_replacement" xml:space="preserve">
+        <value>Confirm Replacement</value>
+    </data>
+    <data name="continue" xml:space="preserve">
+        <value>Continue</value>
+    </data>
+    <data name="operation_cant_undone" xml:space="preserve">
+        <value>This operation can't be undone, tap "Continue" to proceed</value>
+    </data>
+    <data name="you_have_selected" xml:space="preserve">
+        <value>You have selected the </value>
+    </data>
+    <data name="do_you_want_to_process" xml:space="preserve">
+        <value>Do you want to process?</value>
+    </data>
+    <data name="download" xml:space="preserve">
+        <value>Download</value>
+    </data>
+    <data name="downloading" xml:space="preserve">
+        <value>Downloading</value>
+    </data>
+    <data name="completed" xml:space="preserve">
+        <value>Completed</value>
+    </data>
+    <data name="lost_connection" xml:space="preserve">
+        <value>Lost Connection</value>
+    </data>
+    <data name="commission" xml:space="preserve">
+        <value>Commission</value>
+    </data>
+    <data name="board_serial_number" xml:space="preserve">
+        <value>Board Serial Number</value>
+    </data>
+    <data name="battview_mobile_cannt_be_comissioned_as_replacment_part" xml:space="preserve">
+        <value>BATTView Mobile Cann't be comissioned as replacment Part</value>
+    </data>
+    <data name="lost_battview_connection" xml:space="preserve">
+        <value>Lost BATTView Connection</value>
+    </data>
+    <data name="lost_mcb_connection" xml:space="preserve">
+        <value>Lost MCB Connection</value>
+    </data>
+    <data name="invalid_serial_number" xml:space="preserve">
+        <value>Invalid serial number</value>
+    </data>
+    <data name="uploaded" xml:space="preserve">
+        <value>Uploaded</value>
+    </data>
+    <data name="quick_hw_check" xml:space="preserve">
+        <value>Quick HW check</value>
+    </data>
+    <data name="hw_version" xml:space="preserve">
+        <value>HW Versionk</value>
+    </data>
+    <data name="applying_24_volts" xml:space="preserve">
+        <value>Applying 24 Volts</value>
+    </data>
+    <data name="current_shunt" xml:space="preserve">
+        <value>Current Shunt</value>
+    </data>
+    <data name="clamp" xml:space="preserve">
+        <value>clamp</value>
+    </data>
+    <data name="electrolyte_and_external_led" xml:space="preserve">
+        <value>Electrolyte &amp;&amp; External LED</value>
+    </data>
+    <data name="act_view_id" xml:space="preserve">
+        <value>ACTView ID</value>
+    </data>
+    <data name="voltage_calibration" xml:space="preserve">
+        <value>Voltage Calibration</value>
+    </data>
+    <data name="wifi" xml:space="preserve">
+        <value>WiFi</value>
+    </data>
+    <data name="plc" xml:space="preserve">
+        <value>PLC</value>
+    </data>
+    <data name="invalid_ssid_password" xml:space="preserve">
+        <value>Please enter valid SSID &amp; Password</value>
+    </data>
+    <data name="firmware" xml:space="preserve">
+        <value>Firmware</value>
+    </data>
+    <data name="require_update" xml:space="preserve">
+        <value>Require update</value>
+    </data>
+    <data name="updating" xml:space="preserve">
+        <value>Updating...</value>
+    </data>
+    <data name="verifying" xml:space="preserve">
+        <value>Verifying...</value>
+    </data>
+    <data name="uptodate" xml:space="preserve">
+        <value>Up-To-Date</value>
+    </data>
+    <data name="updated" xml:space="preserve">
+        <value>Updated</value>
+    </data>
+    <data name="verifying" xml:space="preserve">
+        <value>Verifying</value>
+    </data>
+    <data name="failed" xml:space="preserve">
+        <value>Failed</value>
+    </data>
+    <data name="saving" xml:space="preserve">
+        <value>Saving...</value>
+    </data>
+    <data name="apply_settings" xml:space="preserve">
+        <value>Apply Settings</value>
+    </data>
+    <data name="awaiting_restart" xml:space="preserve">
+        <value>Awaiting Restart</value>
+    </data>
+    <data name="not_connected" xml:space="preserve">
+        <value>Not Connected</value>
+    </data>
+    <data name="connected_str" xml:space="preserve">
+        <value>Connected</value>
+    </data>
+    <data name="upload" xml:space="preserve">
+        <value>Upload</value>
+    </data>
+    <data name="no_data_to_upload" xml:space="preserve">
+        <value>No Data To upload</value>
+    </data>
+    <data name="uploading" xml:space="preserve">
+        <value>Uploading</value>
+    </data>
+    <data name="upload_aborted" xml:space="preserve">
+        <value>Upload Aborted, Failed to Read Database. Contact us at support@act-view.com</value>
+    </data>
+    <data name="some_records_failed_to_upload" xml:space="preserve">
+        <value>Some Records Failed to Upload </value>
+    </data>
+    <data name="upload_completed" xml:space="preserve">
+        <value>Upload Completed</value>
+    </data>
+    <data name="corrupted" xml:space="preserve">
+        <value>Corrupted-</value>
+    </data>
+    <data name="notAuthorized" xml:space="preserve">
+        <value>Not Authorized</value>
+    </data>
+    <data name="batt_mobile" xml:space="preserve">
+        <value>BATTView Mobile</value>
+    </data>
+    <data name="history_cycle_id" xml:space="preserve">
+        <value>Sequence</value>
+    </data>
+    <data name="history_date" xml:space="preserve">
+        <value>Date</value>
+    </data>
+    <data name="history_duration" xml:space="preserve">
+        <value>Duration</value>
+    </data>
+    <data name="history_ahrs" xml:space="preserve">
+        <value>AHRs</value>
+    </data>
+    <data name="history_kwhrs" xml:space="preserve">
+        <value>KWHRs</value>
+    </data>
+    <data name="history_max_whr" xml:space="preserve">
+        <value>Max WHR</value>
+    </data>
+    <data name="history_max_temperature" xml:space="preserve">
+        <value>Max Temperature</value>
+    </data>
+    <data name="history_start_voltage" xml:space="preserve">
+        <value>Start Voltage</value>
+    </data>
+    <data name="history_end_voltage" xml:space="preserve">
+        <value>End Voltage</value>
+    </data>
+    <data name="history_exit_status" xml:space="preserve">
+        <value>Exit Status</value>
+    </data>
+    <data name="history_profiles" xml:space="preserve">
+        <value>Profiles</value>
+    </data>
+    <data name="history_pm_faulted" xml:space="preserve">
+        <value>PMs faulted</value>
+    </data>
+    <data name="pmfaults_sequence" xml:space="preserve">
+        <value>Sequence</value>
+    </data>
+    <data name="pmfaults_id" xml:space="preserve">
+        <value>ID</value>
+    </data>
+    <data name="pmfaults_date" xml:space="preserve">
+        <value>Date</value>
+    </data>
+    <data name="pmfaults_powermodule_id" xml:space="preserve">
+        <value>Power Module ID</value>
+    </data>
+    <data name="pmfaults_valid" xml:space="preserve">
+        <value>Valid</value>
+    </data>
+    <data name="batt_daily_usage_date" xml:space="preserve">
+        <value>Date</value>
+    </data>
+    <data name="batt_daily_usage_day_type" xml:space="preserve">
+        <value>Day Type</value>
+    </data>
+    <data name="batt_daily_usage_charges" xml:space="preserve">
+        <value>Charges</value>
+    </data>
+    <data name="batt_daily_usage_inuse" xml:space="preserve">
+        <value>In Use</value>
+    </data>
+    <data name="batt_daily_usage_data" xml:space="preserve">
+        <value>Data</value>
+    </data>
+    <data name="login_period_error">
+        <value>User Access Denied</value>
+    </data>
+    <data name="download_it_again">
+        <value>Download it again from www.act-view.com</value>
+    </data>
+    <data name="contact_act_for_sw">
+        <value>Contact Advanced Charging Technologies (tshreah@act-chargers.com) for updated software</value>
+    </data>
+    <data name="sw_expired">
+        <value>Current Software has been expired.</value>
+    </data>
+    <data name="upload_before_synch_error">
+        <value>Some data logs have not been uploaded and synced with ACTview. Please click upload to ensure data is synced with ACTview, site sync function will be available after the upload is completed.</value>
+    </data>
+    <data name="new_software_is_available">
+        <value>New software update is available, download now from www.act-view.com</value>
+    </data>
+    <data name="UploadSteps_init">
+        <value>Starting</value>
+    </data>
+    <data name="UploadSteps_backup">
+        <value>Taking backup</value>
+    </data>
+    <data name="UploadSteps_database">
+        <value>Reading</value>
+    </data>
+    <data name="UploadSteps_items_view">
+        <value>Viewing items</value>
+    </data>
+    <data name="UploadSteps_uploading">
+        <value>Uploading</value>
+    </data>
+    <data name="UploadSteps_uploading_backup">
+        <value>Uploading backup</value>
+    </data>
+    <data name="UploadSteps_cleaning">
+        <value>Cleaning</value>
+    </data>
+    <data name="UploadSteps_finished">
+        <value>Completed</value>
+    </data>
+    <data name="never">
+        <value>Never</value>
+    </data>
+    <data name="no_internet_connection">
+        <value>No Internet Connection</value>
+    </data>
+    <data name="sites">
+        <value>Sites</value>
+    </data>
+    <data name="site_view">
+        <value>Site View</value>
+    </data>
+    <data name="percentage_chart">
+        <value>%</value>
+    </data>
+    <data name="a_chart">
+        <value>A</value>
+    </data>
+    <data name="v_chart">
+        <value>V</value>
+    </data>
+    <data name="c_chart">
+        <value>C</value>
+    </data>
+    <data name="f_chart">
+        <value>F</value>
+    </data>
+    <data name="vpc">
+        <value>VPC</value>
+    </data>
+    <data name="warning_update_firmware">
+        <value>New Firmware is available, click on Firmware update to update it.</value>
+    </data>
+    <data name="warning_timezone">
+        <value>BATTView Time is not correct.</value>
+    </data>
+    <data name="warning_hall_effect">
+        <value>Hall effect sensor is not connected.</value>
+    </data>
+    <data name="warning_battview_not_calibrated">
+        <value>Battview is not calibrated.</value>
+    </data>
+    <data name="warning_voltage_not_calibrated">
+        <value>Voltage is not calibrated.</value>
+    </data>
+    <data name="warning_voltage_reading_error">
+        <value>Voltage Reading Error.</value>
+    </data>
+    <data name="warning_temperature_sensor_not_working">
+        <value>External Temperature Sensor is not working properly.</value>
+    </data>
+    <data name="warning_intercell_temperature_not_working">
+        <value>Intercell Temperature Sensor is not working properly.</value>
+    </data>
+    <data name="warning_temperature_reading_error">
+        <value>Temperature Reading Error.</value>
+    </data>
+    <data name="warning_charger_type_not_supported">
+        <value>Charger Type Value is not supported.</value>
+    </data>
+    <data name="pm_live_title" xml:space="preserve">
+        <value>PM Live</value>
+    </data>
+    <data name="pm_id_live_title" xml:space="preserve">
+        <value>ID</value>
+    </data>
+    <data name="pm_state_live_title" xml:space="preserve">
+        <value>State</value>
+    </data>
+    <data name="pm_current_live_title" xml:space="preserve">
+        <value>Current</value>
+    </data>
+    <data name="pm_voltage_live_title" xml:space="preserve">
+        <value>Pm Voltage</value>
+    </data>
+    <data name="pm_rating_live_title" xml:space="preserve">
+        <value>Rating</value>
+    </data>
+    <data name="select_all" xml:space="preserve">
+        <value>Select All</value>
+    </data>
+    <data name="select_connected_devices" xml:space="preserve">
+        <value>Please select connected devices</value>
+    </data>
+    <data name="battView_calibration_success" xml:space="preserve">
+        <value>BattView Calibration Success</value>
+    </data>
+    <data name="charger_type_fast" xml:space="preserve">
+        <value>Fast</value>
+    </data>
+    <data name="charger_type_conventional" xml:space="preserve">
+        <value>Conventional</value>
+    </data>
+    <data name="charger_type_opportunity" xml:space="preserve">
+        <value>Opportunity</value>
+    </data>
+    <data name="battrey_type_lead_acid" xml:space="preserve">
+        <value>Lead Acid</value>
+    </data>
+    <data name="battrey_type_lead_agm" xml:space="preserve">
+        <value>AGM</value>
+    </data>
+    <data name="battrey_type_lithium_ion" xml:space="preserve">
+        <value>Lithium-ion</value>
+    </data>
+    <data name="battrey_type_lithium_ion_bms" xml:space="preserve">
+        <value>Lithium-ion: BMS</value>
+    </data>
+    <data name="battrey_type_lead_gel" xml:space="preserve">
+        <value>GEL</value>
+    </data>
+    <data name="start_new_study_alert_message" xml:space="preserve">
+        <value>Make sure the previous study is fully synched. Don't forget to set the battery settings</value>
+    </data>
+    <data name="start_new_study_alert_title" xml:space="preserve">
+        <value>This Operation will reset BATTView Mobile</value>
+    </data>
+    <data name="version" xml:space="preserve">
+        <value>Version</value>
+    </data>
+    <data name="mcb_version" xml:space="preserve">
+        <value>MCB Version</value>
+    </data>
+    <data name="batt_view_version" xml:space="preserve">
+        <value>BattView Version</value>
+    </data>
+    <data name="calibrator_version" xml:space="preserve">
+        <value>Calibrator Version</value>
+    </data>
+    <data name="copyright" xml:space="preserve">
+        <value>Copyright</value>
+    </data>
+    <data name="powered_by" xml:space="preserve">
+        <value>Powered by</value>
+    </data>
+    <data name="about_act" xml:space="preserve">
+        <value>Advanced Charging Technologies (ACT) is the recognized leader in forklift battery charging technologies and fleet energy/asset management solutions. With a commitment to innovation ACT has emerged as the next- generation replacement for traditional material handling charging systems. By providing high efficiency charging matched with unparalleled data metrics, our solutions increase productivity, reduce fleet running cost, improve safety, and lower greenhouse emissions.</value>
+    </data>
+    <data name="alert_reset_global_records_events" xml:space="preserve">
+        <value>Reset Global records, Events history?</value>
+    </data>
+    <data name="alert_reset_global_records_cycles_pm" xml:space="preserve">
+        <value>Reset Global records, cycles History and PM faults history?</value>
+    </data>
+</root>

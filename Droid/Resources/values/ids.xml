@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<item name="child_item_id" type="id"/>
+	<item name="group_item_id" type="id"/>
+	<item name="index_item_id" type="id"/>
+</resources>

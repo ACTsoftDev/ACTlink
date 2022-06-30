@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="cxk-wN-pdQ" customClass="SiteViewInProgressDevicesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="4764" translatesAutoresizingMaskIntoConstraints="NO">
+                        <rect key="frame" x="31" y="4" width="50" height="68"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="5125" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="68"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <subviews/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle_12.png" translatesAutoresizingMaskIntoConstraints="NO" id="5929">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="68"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battview.png" translatesAutoresizingMaskIntoConstraints="NO" id="5970">
+                                <rect key="frame" x="0.0" y="26" width="50" height="15"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="8393" firstItem="4764" firstAttribute="width" constant="50"/>
+                            <constraint id="8434" firstItem="4764" firstAttribute="height" constant="68"/>
+                            <constraint id="9283" firstItem="5125" firstAttribute="leading" secondItem="4764" secondAttribute="leading"/>
+                            <constraint id="9324" firstItem="5125" firstAttribute="top" secondItem="4764" secondAttribute="top"/>
+                            <constraint id="9365" firstItem="5125" firstAttribute="trailing" secondItem="4764" secondAttribute="trailing"/>
+                            <constraint id="9406" firstItem="5125" firstAttribute="bottom" secondItem="4764" secondAttribute="bottom"/>
+                            <constraint id="9769" firstItem="5929" firstAttribute="leading" secondItem="4764" secondAttribute="leading"/>
+                            <constraint id="9810" firstItem="5929" firstAttribute="top" secondItem="4764" secondAttribute="top"/>
+                            <constraint id="9851" firstItem="5929" firstAttribute="trailing" secondItem="4764" secondAttribute="trailing"/>
+                            <constraint id="9892" firstItem="5929" firstAttribute="bottom" secondItem="4764" secondAttribute="bottom"/>
+                            <constraint id="10660" firstItem="5970" firstAttribute="leading" secondItem="4764" secondAttribute="leading"/>
+                            <constraint id="10701" firstItem="5970" firstAttribute="trailing" secondItem="4764" secondAttribute="trailing"/>
+                            <constraint id="10742" firstItem="5970" firstAttribute="top" secondItem="4764" secondAttribute="top" constant="26"/>
+                            <constraint id="10783" firstItem="4764" firstAttribute="bottom" secondItem="5970" secondAttribute="bottom" constant="27"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2266">
+                        <rect key="frame" x="89" y="8" width="214" height="60.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2267">
+                                <rect key="frame" x="0.0" y="0.0" width="214" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="14677" firstItem="2267" firstAttribute="height" constant="17"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2268">
+                                <rect key="frame" x="0.0" y="17" width="214" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="14681" firstItem="2268" firstAttribute="height" constant="17"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2269">
+                                <rect key="frame" x="0.0" y="34" width="214" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="14685" firstItem="2269" firstAttribute="height" constant="17"/>
+                                </constraints>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0" translatesAutoresizingMaskIntoConstraints="NO" id="2270">
+                                <rect key="frame" x="0.0" y="56" width="214" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="14674" firstItem="2267" firstAttribute="leading" secondItem="2266" secondAttribute="leading"/>
+                            <constraint id="14675" firstItem="2267" firstAttribute="top" secondItem="2266" secondAttribute="top"/>
+                            <constraint id="14676" firstItem="2267" firstAttribute="trailing" secondItem="2266" secondAttribute="trailing"/>
+                            <constraint id="14678" firstItem="2268" firstAttribute="leading" secondItem="2266" secondAttribute="leading"/>
+                            <constraint id="14679" firstItem="2268" firstAttribute="top" secondItem="2267" secondAttribute="bottom"/>
+                            <constraint id="14680" firstItem="2268" firstAttribute="trailing" secondItem="2266" secondAttribute="trailing"/>
+                            <constraint id="14682" firstItem="2269" firstAttribute="leading" secondItem="2266" secondAttribute="leading"/>
+                            <constraint id="14683" firstItem="2269" firstAttribute="trailing" secondItem="2266" secondAttribute="trailing"/>
+                            <constraint id="14684" firstItem="2269" firstAttribute="top" secondItem="2268" secondAttribute="bottom"/>
+                            <constraint id="16786" firstItem="2270" firstAttribute="leading" secondItem="2269" secondAttribute="leading"/>
+                            <constraint id="16787" firstItem="2270" firstAttribute="trailing" secondItem="2269" secondAttribute="trailing"/>
+                            <constraint id="16788" firstItem="2270" firstAttribute="top" secondItem="2269" secondAttribute="bottom" constant="5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint id="8311" firstItem="4764" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="31"/>
+                    <constraint id="8352" firstItem="4764" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY"/>
+                    <constraint id="10984" firstItem="2266" firstAttribute="leading" secondItem="4764" secondAttribute="trailing" constant="8"/>
+                    <constraint id="11025" firstItem="2266" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="8"/>
+                    <constraint id="11066" firstItem="YTl-1W-gDM" firstAttribute="trailing" secondItem="2266" secondAttribute="trailing" constant="17"/>
+                    <constraint id="11107" firstItem="YTl-1W-gDM" firstAttribute="bottom" secondItem="2266" secondAttribute="bottom" constant="7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deviceImageContainer" destination="4764" id="name-outlet-4764"/>
+                <outlet property="notSiteView" destination="5125" id="name-outlet-5125"/>
+                <outlet property="chargerImage" destination="5929" id="name-outlet-5929"/>
+                <outlet property="battImage" destination="5970" id="name-outlet-5970"/>
+                <outlet property="deviceTitle" destination="2267" id="name-outlet-2267"/>
+                <outlet property="deviceSerialNumber" destination="2268" id="name-outlet-2268"/>
+                <outlet property="deviceStatus" destination="2269" id="name-outlet-2269"/>
+                <outlet property="progressIndicator" destination="2270" id="name-outlet-2270"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar.png" width="86" height="86"/>
+        <image name="logout.png" width="40" height="46"/>
+        <image name="menu.png" width="18" height="12"/>
+        <image name="circle.png" width="60" height="60"/>
+        <image name="dots.png" width="22" height="5"/>
+        <image name="sync_sites.png" width="60" height="60"/>
+        <image name="upload_data.png" width="60" height="60"/>
+        <image name="download_devicedata.png" width="60" height="60"/>
+        <image name="sync_sites_whitebg.png" width="60" height="60"/>
+        <image name="update_device_firmware.png" width="60" height="60"/>
+        <image name="upload_data_whitebg.png" width="60" height="60"/>
+        <image name="restat_device.png" width="60" height="60"/>
+        <image name="download_sitedata.png" width="60" height="60"/>
+        <image name="update_site_firmware.png" width="60" height="60"/>
+        <image name="Selected.png" width="25" height="20"/>
+        <image name="ACTlink-Logo.png" width="112" height="67"/>
+        <image name="battery_info.png" width="60" height="60"/>
+        <image name="battview_info.png" width="60" height="60"/>
+        <image name="battview_settings.png" width="60" height="60"/>
+        <image name="quick_view.png" width="60" height="60"/>
+        <image name="history.png" width="60" height="60"/>
+        <image name="caliberation.png" width="60" height="60"/>
+        <image name="factory_control.png" width="60" height="60"/>
+        <image name="wifi.png" width="60" height="60"/>
+        <image name="charger_info.png" width="60" height="60"/>
+        <image name="charger_settings.png" width="60" height="60"/>
+        <image name="energy_management.png" width="60" height="60"/>
+        <image name="power_module.png" width="60" height="60"/>
+        <image name="charger.png" width="34" height="17"/>
+        <image name="current_a_Icon.png" width="26" height="33"/>
+        <image name="temp_icon.png" width="16" height="39"/>
+        <image name="voltage.png" width="33" height="37"/>
+        <image name="chargerquickview.png" width="772" height="410"/>
+        <image name="back_arrow.png" width="13" height="22"/>
+        <image name="activeselect.png" width="60" height="60"/>
+        <image name="battview.png" width="144" height="43"/>
+        <image name="battview_lostConnection.png" width="144" height="43"/>
+        <image name="battview_notConnected.png" width="144" height="43"/>
+        <image name="downarrow.png" width="60" height="60"/>
+        <image name="firmware_update.png" width="60" height="60"/>
+        <image name="idleWithFault_12.png" width="165" height="220"/>
+        <image name="idleWithFault_4.png" width="118" height="150"/>
+        <image name="idleWithFault_6.png" width="165" height="150"/>
+        <image name="idleWithWarning_12.png" width="165" height="220"/>
+        <image name="idleWithWarning_4.png" width="118" height="150"/>
+        <image name="idleWithWarning_6.png" width="165" height="150"/>
+        <image name="idle_12.png" width="165" height="220"/>
+        <image name="idle_4.png" width="118" height="150"/>
+        <image name="idle_6.png" width="165" height="150"/>
+        <image name="inactiveselect.png" width="60" height="60"/>
+        <image name="lostConnection_12.png" width="110" height="146"/>
+        <image name="lostConnection_4.png" width="82" height="104"/>
+        <image name="lostConnection_6.png" width="110" height="99"/>
+        <image name="notConnected_12.png" width="165" height="220"/>
+        <image name="notConnected_4.png" width="118" height="150"/>
+        <image name="notConnected_6.png" width="165" height="150"/>
+        <image name="refresh_device.png" width="60" height="60"/>
+        <image name="rightarrow.png" width="60" height="60"/>
+        <image name="runningWithFault_12.gif" width="165" height="220"/>
+        <image name="runningWithFault_4.gif" width="118" height="150"/>
+        <image name="runningWithFault_6.gif" width="166" height="150"/>
+        <image name="runningWithWarning_12.gif" width="165" height="220"/>
+        <image name="runningWithWarning_4.gif" width="118" height="150"/>
+        <image name="runningWithWarning_6.gif" width="166" height="150"/>
+        <image name="running_12.gif" width="110" height="146"/>
+        <image name="running_4.gif" width="82" height="104"/>
+        <image name="running_6.gif" width="110" height="99"/>
+    </resources>
+</document>

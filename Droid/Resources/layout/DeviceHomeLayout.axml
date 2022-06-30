@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout
+        android:id="@+id/view_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        local:MvxBind="Refreshing IsRefreshing; RefreshCommand RefreshCommand"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <MvvmCross.Binding.Droid.Views.MvxGridView
+                android:numColumns="3"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/view_margin"
+                android:layout_marginBottom="@dimen/view_margin"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/details_grid"
+                android:useDefaultMargins="true"
+                local:MvxBind="ItemsSource DeviceDetailsItemSource; ItemClick SelectGridItemCommand"
+                local:MvxItemTemplate="@layout/device_home_item" />
+        </LinearLayout>
+    </MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout>
+</LinearLayout>

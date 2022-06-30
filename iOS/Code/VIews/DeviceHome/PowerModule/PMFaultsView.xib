@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PMFaultsView">
+            <connections>
+                <outlet property="listTableView" destination="HSW-EQ-ePr" id="imQ-Uy-2VM"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s22-64-01H">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="53.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sequence" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP4-ae-mS4">
+                            <rect key="frame" x="15" y="10" width="70.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ow-SN-0d0">
+                            <rect key="frame" x="93.5" y="10" width="70.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80L-OJ-duR">
+                            <rect key="frame" x="172" y="10" width="70" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Module ID" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsC-ga-KCY">
+                            <rect key="frame" x="250" y="10" width="70.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL2-tz-jRX">
+                            <rect key="frame" x="328.5" y="10" width="70.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="9Ow-SN-0d0" firstAttribute="leading" secondItem="TP4-ae-mS4" secondAttribute="trailing" constant="8" id="3mP-KG-qRD"/>
+                        <constraint firstItem="DL2-tz-jRX" firstAttribute="width" secondItem="80L-OJ-duR" secondAttribute="width" id="5Of-Fv-yCC"/>
+                        <constraint firstItem="DL2-tz-jRX" firstAttribute="leading" secondItem="bsC-ga-KCY" secondAttribute="trailing" constant="8" id="Bux-X9-bSW"/>
+                        <constraint firstItem="bsC-ga-KCY" firstAttribute="leading" secondItem="80L-OJ-duR" secondAttribute="trailing" constant="8" id="DKA-6q-DLt"/>
+                        <constraint firstItem="80L-OJ-duR" firstAttribute="top" secondItem="s22-64-01H" secondAttribute="top" constant="10" id="Dmx-9V-OsW"/>
+                        <constraint firstAttribute="bottom" secondItem="9Ow-SN-0d0" secondAttribute="bottom" constant="10" id="FBO-l4-aAe"/>
+                        <constraint firstItem="bsC-ga-KCY" firstAttribute="width" secondItem="80L-OJ-duR" secondAttribute="width" id="L30-QV-IlV"/>
+                        <constraint firstAttribute="bottom" secondItem="DL2-tz-jRX" secondAttribute="bottom" constant="10" id="NJZ-0g-Stn"/>
+                        <constraint firstAttribute="bottom" secondItem="bsC-ga-KCY" secondAttribute="bottom" constant="10" id="OfQ-hu-nWK"/>
+                        <constraint firstItem="9Ow-SN-0d0" firstAttribute="width" secondItem="TP4-ae-mS4" secondAttribute="width" id="PBT-Dt-zAF"/>
+                        <constraint firstAttribute="bottom" secondItem="TP4-ae-mS4" secondAttribute="bottom" constant="10" id="Puq-4m-40D"/>
+                        <constraint firstItem="80L-OJ-duR" firstAttribute="width" secondItem="TP4-ae-mS4" secondAttribute="width" id="RhY-3Y-kAx"/>
+                        <constraint firstAttribute="trailing" secondItem="DL2-tz-jRX" secondAttribute="trailing" constant="15" id="SQT-zl-eH9"/>
+                        <constraint firstItem="bsC-ga-KCY" firstAttribute="leading" secondItem="80L-OJ-duR" secondAttribute="trailing" constant="8" id="XVt-j7-dfn"/>
+                        <constraint firstItem="TP4-ae-mS4" firstAttribute="top" secondItem="s22-64-01H" secondAttribute="top" constant="10" id="a3K-fo-E4M"/>
+                        <constraint firstItem="DL2-tz-jRX" firstAttribute="top" secondItem="s22-64-01H" secondAttribute="top" constant="10" id="d4E-xm-HN6"/>
+                        <constraint firstItem="TP4-ae-mS4" firstAttribute="leading" secondItem="s22-64-01H" secondAttribute="leading" constant="15" id="efn-ia-ps4"/>
+                        <constraint firstItem="80L-OJ-duR" firstAttribute="leading" secondItem="9Ow-SN-0d0" secondAttribute="trailing" constant="8" id="fMH-8g-eNM"/>
+                        <constraint firstItem="9Ow-SN-0d0" firstAttribute="top" secondItem="s22-64-01H" secondAttribute="top" constant="10" id="iKH-hz-8La"/>
+                        <constraint firstItem="80L-OJ-duR" firstAttribute="leading" secondItem="9Ow-SN-0d0" secondAttribute="trailing" constant="8" id="j1B-uy-sv3"/>
+                        <constraint firstItem="bsC-ga-KCY" firstAttribute="centerY" secondItem="80L-OJ-duR" secondAttribute="centerY" id="lI2-gY-wP5"/>
+                        <constraint firstAttribute="bottom" secondItem="80L-OJ-duR" secondAttribute="bottom" constant="10" id="mqv-1b-QKw"/>
+                        <constraint firstItem="bsC-ga-KCY" firstAttribute="top" secondItem="s22-64-01H" secondAttribute="top" constant="10" id="ru5-Ee-TIF"/>
+                        <constraint firstItem="DL2-tz-jRX" firstAttribute="leading" secondItem="bsC-ga-KCY" secondAttribute="trailing" constant="8" id="wlC-8b-blz"/>
+                        <constraint firstItem="9Ow-SN-0d0" firstAttribute="leading" secondItem="TP4-ae-mS4" secondAttribute="trailing" constant="8" id="yNw-8m-JTf"/>
+                        <constraint firstItem="DL2-tz-jRX" firstAttribute="centerY" secondItem="80L-OJ-duR" secondAttribute="centerY" id="zMk-eq-4kr"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HSW-EQ-ePr">
+                    <rect key="frame" x="0.0" y="53.5" width="414" height="682.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s22-64-01H" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="CS7-lB-HDw"/>
+                <constraint firstItem="HSW-EQ-ePr" firstAttribute="top" secondItem="s22-64-01H" secondAttribute="bottom" id="M1y-ez-B1N"/>
+                <constraint firstItem="s22-64-01H" firstAttribute="top" secondItem="2" secondAttribute="top" id="N7w-43-cYY"/>
+                <constraint firstAttribute="bottom" secondItem="HSW-EQ-ePr" secondAttribute="bottom" id="hE2-Cj-lI9"/>
+                <constraint firstItem="HSW-EQ-ePr" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="jcB-sZ-Umv"/>
+                <constraint firstAttribute="trailing" secondItem="s22-64-01H" secondAttribute="trailing" id="sSK-JM-Dk3"/>
+                <constraint firstAttribute="trailing" secondItem="HSW-EQ-ePr" secondAttribute="trailing" id="whi-Wu-InY"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar.png" width="86" height="86"/>
+        <image name="logout.png" width="40" height="46"/>
+        <image name="menu.png" width="18" height="12"/>
+        <image name="circle.png" width="60" height="60"/>
+        <image name="dots.png" width="22" height="5"/>
+        <image name="sync_sites.png" width="60" height="60"/>
+        <image name="upload_data.png" width="60" height="60"/>
+        <image name="download_devicedata.png" width="60" height="60"/>
+        <image name="sync_sites_whitebg.png" width="60" height="60"/>
+        <image name="update_device_firmware.png" width="60" height="60"/>
+        <image name="upload_data_whitebg.png" width="60" height="60"/>
+        <image name="restat_device.png" width="60" height="60"/>
+        <image name="download_sitedata.png" width="60" height="60"/>
+        <image name="update_site_firmware.png" width="60" height="60"/>
+        <image name="Selected.png" width="25" height="20"/>
+        <image name="ACTlink-Logo.png" width="112" height="67"/>
+        <image name="battery_info.png" width="60" height="60"/>
+        <image name="battview_info.png" width="60" height="60"/>
+        <image name="battview_settings.png" width="60" height="60"/>
+        <image name="quick_view.png" width="60" height="60"/>
+        <image name="history.png" width="60" height="60"/>
+        <image name="caliberation.png" width="60" height="60"/>
+        <image name="factory_control.png" width="60" height="60"/>
+        <image name="wifi.png" width="60" height="60"/>
+        <image name="charger_info.png" width="60" height="60"/>
+        <image name="charger_settings.png" width="60" height="60"/>
+        <image name="energy_management.png" width="60" height="60"/>
+        <image name="power_module.png" width="60" height="60"/>
+        <image name="charger.png" width="34" height="17"/>
+        <image name="current_a_Icon.png" width="26" height="33"/>
+        <image name="temp_icon.png" width="16" height="39"/>
+        <image name="voltage.png" width="33" height="37"/>
+        <image name="chargerquickview.png" width="772" height="410"/>
+        <image name="back_arrow.png" width="13" height="22"/>
+        <image name="activeselect.png" width="60" height="60"/>
+        <image name="battview.png" width="144" height="43"/>
+        <image name="battview_lostConnection.png" width="144" height="43"/>
+        <image name="battview_notConnected.png" width="144" height="43"/>
+        <image name="downarrow.png" width="60" height="60"/>
+        <image name="firmware_update.png" width="60" height="60"/>
+        <image name="idleWithFault_12.png" width="165" height="220"/>
+        <image name="idleWithFault_4.png" width="118" height="150"/>
+        <image name="idleWithFault_6.png" width="165" height="150"/>
+        <image name="idleWithWarning_12.png" width="165" height="220"/>
+        <image name="idleWithWarning_4.png" width="118" height="150"/>
+        <image name="idleWithWarning_6.png" width="165" height="150"/>
+        <image name="idle_12.png" width="165" height="220"/>
+        <image name="idle_4.png" width="118" height="150"/>
+        <image name="idle_6.png" width="165" height="150"/>
+        <image name="inactiveselect.png" width="60" height="60"/>
+        <image name="lostConnection_12.png" width="110" height="146"/>
+        <image name="lostConnection_4.png" width="82" height="104"/>
+        <image name="lostConnection_6.png" width="110" height="99"/>
+        <image name="notConnected_12.png" width="165" height="220"/>
+        <image name="notConnected_4.png" width="118" height="150"/>
+        <image name="notConnected_6.png" width="165" height="150"/>
+        <image name="refresh_device.png" width="60" height="60"/>
+        <image name="rightarrow.png" width="60" height="60"/>
+        <image name="runningWithFault_12.gif" width="165" height="220"/>
+        <image name="runningWithFault_4.gif" width="118" height="150"/>
+        <image name="runningWithFault_6.gif" width="166" height="150"/>
+        <image name="runningWithWarning_12.gif" width="165" height="220"/>
+        <image name="runningWithWarning_4.gif" width="118" height="150"/>
+        <image name="runningWithWarning_6.gif" width="166" height="150"/>
+        <image name="running_12.gif" width="110" height="146"/>
+        <image name="running_4.gif" width="82" height="104"/>
+        <image name="running_6.gif" width="110" height="99"/>
+    </resources>
+</document>

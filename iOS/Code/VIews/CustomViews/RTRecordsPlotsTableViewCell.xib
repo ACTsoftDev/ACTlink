@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="166" id="cxk-wN-pdQ" customClass="RTRecordsPlotsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uS2-or-bRD" customClass="PlotView">
+                        <rect key="frame" x="16" y="16" width="302" height="10"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-AF-NTn">
+                        <rect key="frame" x="0.0" y="41" width="334" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mwS-lR-SBn"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ig3-nv-CRC" customClass="PlotView">
+                        <rect key="frame" x="16" y="57.5" width="302" height="9.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O78-zf-Ymy">
+                        <rect key="frame" x="0.0" y="82.5" width="334" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="KxE-O0-WBc"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oR3-NB-Eex" customClass="PlotView">
+                        <rect key="frame" x="16" y="98.5" width="302" height="10.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78K-J2-K4l">
+                        <rect key="frame" x="0.0" y="123.5" width="334" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="GVT-Rx-3qQ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIa-dk-FL3" customClass="PlotView">
+                        <rect key="frame" x="16" y="139.5" width="302" height="10"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HIa-dk-FL3" firstAttribute="height" secondItem="uS2-or-bRD" secondAttribute="height" id="1Id-0i-xu2"/>
+                    <constraint firstItem="oR3-NB-Eex" firstAttribute="height" secondItem="uS2-or-bRD" secondAttribute="height" id="Drd-qY-kVX"/>
+                    <constraint firstItem="T5d-AF-NTn" firstAttribute="top" secondItem="uS2-or-bRD" secondAttribute="bottom" constant="15" id="EJb-RK-c1r"/>
+                    <constraint firstItem="O78-zf-Ymy" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="Hwb-D6-YyG"/>
+                    <constraint firstItem="78K-J2-K4l" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="I52-hV-yFq"/>
+                    <constraint firstAttribute="trailing" secondItem="O78-zf-Ymy" secondAttribute="trailing" id="M2s-li-gBe"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ig3-nv-CRC" secondAttribute="trailing" constant="8" id="OwC-yD-mBq"/>
+                    <constraint firstItem="uS2-or-bRD" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="8" id="QEf-Bc-x43"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HIa-dk-FL3" secondAttribute="trailing" constant="8" id="UdG-C6-cRo"/>
+                    <constraint firstItem="O78-zf-Ymy" firstAttribute="top" secondItem="ig3-nv-CRC" secondAttribute="bottom" constant="15" id="Xce-JA-2dN"/>
+                    <constraint firstItem="T5d-AF-NTn" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" id="Xvf-yE-A3D"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HIa-dk-FL3" secondAttribute="bottom" constant="8" id="cEb-Wp-6vF"/>
+                    <constraint firstAttribute="trailing" secondItem="78K-J2-K4l" secondAttribute="trailing" id="cdR-T8-foi"/>
+                    <constraint firstItem="uS2-or-bRD" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" constant="8" id="exF-5f-udF"/>
+                    <constraint firstItem="HIa-dk-FL3" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" constant="8" id="kLm-Vg-0FG"/>
+                    <constraint firstItem="ig3-nv-CRC" firstAttribute="top" secondItem="T5d-AF-NTn" secondAttribute="bottom" constant="15" id="kXA-ia-yu5"/>
+                    <constraint firstAttribute="trailing" secondItem="T5d-AF-NTn" secondAttribute="trailing" id="lXI-cL-0nI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uS2-or-bRD" secondAttribute="trailing" constant="8" id="nbT-4X-ckQ"/>
+                    <constraint firstItem="oR3-NB-Eex" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" constant="8" id="p5o-Pr-PUo"/>
+                    <constraint firstItem="ig3-nv-CRC" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" constant="8" id="qwf-Pc-b2G"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oR3-NB-Eex" secondAttribute="trailing" constant="8" id="rGT-mb-yOv"/>
+                    <constraint firstItem="oR3-NB-Eex" firstAttribute="top" secondItem="O78-zf-Ymy" secondAttribute="bottom" constant="15" id="rTf-Bc-8AX"/>
+                    <constraint firstItem="ig3-nv-CRC" firstAttribute="height" secondItem="uS2-or-bRD" secondAttribute="height" id="xS2-tc-MCU"/>
+                    <constraint firstItem="78K-J2-K4l" firstAttribute="top" secondItem="oR3-NB-Eex" secondAttribute="bottom" constant="15" id="znh-Pk-0RU"/>
+                    <constraint firstItem="HIa-dk-FL3" firstAttribute="top" secondItem="78K-J2-K4l" secondAttribute="bottom" constant="15" id="zzS-2L-eVi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="currentPlot" destination="oR3-NB-Eex" id="ywW-EE-xEy"/>
+                <outlet property="socPlot" destination="HIa-dk-FL3" id="dy0-ZT-yuI"/>
+                <outlet property="temparaturePlot" destination="ig3-nv-CRC" id="ID3-Wi-AVK"/>
+                <outlet property="voltagePlot" destination="uS2-or-bRD" id="9OV-Kf-XA0"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="102"/>
+        </tableViewCell>
+    </objects>
+</document>

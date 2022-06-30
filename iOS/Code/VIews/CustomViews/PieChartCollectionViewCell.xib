@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cZE-iV-UFb" customClass="PieChartCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjv-MW-Bxk" customClass="PlotView">
+                        <rect key="frame" x="5" y="25" width="390" height="370"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voltage.png" translatesAutoresizingMaskIntoConstraints="NO" id="jFP-aa-tlq">
+                                <rect key="frame" x="179" y="166.5" width="33" height="37"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jFP-aa-tlq" firstAttribute="centerY" secondItem="tjv-MW-Bxk" secondAttribute="centerY" id="Vcx-ZQ-pco"/>
+                            <constraint firstItem="jFP-aa-tlq" firstAttribute="centerX" secondItem="tjv-MW-Bxk" secondAttribute="centerX" id="u6Q-xs-1Js"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXS-uc-1Da">
+                        <rect key="frame" x="5" y="5" width="390" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="RD5-64-jsr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tjv-MW-Bxk" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" constant="5" id="377-Pv-w4t"/>
+                <constraint firstItem="pXS-uc-1Da" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" constant="5" id="IuL-Z0-UbI"/>
+                <constraint firstAttribute="trailing" secondItem="tjv-MW-Bxk" secondAttribute="trailing" constant="5" id="UCF-ih-LGT"/>
+                <constraint firstItem="tjv-MW-Bxk" firstAttribute="top" secondItem="pXS-uc-1Da" secondAttribute="bottom" id="bqa-Rx-zlO"/>
+                <constraint firstAttribute="bottom" secondItem="tjv-MW-Bxk" secondAttribute="bottom" constant="5" id="imA-bo-T9S"/>
+                <constraint firstAttribute="trailing" secondItem="pXS-uc-1Da" secondAttribute="trailing" constant="5" id="moF-TY-kdY"/>
+                <constraint firstItem="pXS-uc-1Da" firstAttribute="top" secondItem="cZE-iV-UFb" secondAttribute="top" constant="5" id="zoU-oo-lpb"/>
+            </constraints>
+            <size key="customSize" width="433" height="413"/>
+            <connections>
+                <outlet property="imageView" destination="jFP-aa-tlq" id="ap3-z9-95r"/>
+                <outlet property="pieChartView" destination="tjv-MW-Bxk" id="jL6-kS-KmX"/>
+                <outlet property="titleLabel" destination="pXS-uc-1Da" id="iaI-Pk-zuB"/>
+            </connections>
+            <point key="canvasLocation" x="-294" y="74"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="voltage.png" width="33" height="37"/>
+    </resources>
+</document>

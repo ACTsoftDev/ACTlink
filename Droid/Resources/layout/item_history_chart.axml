@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <oxyplot.xamarin.android.PlotView
+            android:id="@+id/plot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chart_item_height"
+            local:MvxBind="Model PlotObject"
+            android:background="@color/white" />
+        <Button
+            android:id="@+id/plotButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chart_item_height"
+            android:background="#00000000"
+            local:MvxBind="Click ButtonSelectorCommand" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/view_margin"
+        android:layout_marginBottom="@dimen/view_margin"
+        android:background="@drawable/rectangle_divider" />
+</LinearLayout>

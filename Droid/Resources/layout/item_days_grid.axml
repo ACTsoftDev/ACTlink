@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/item_margin"
+        android:paddingBottom="@dimen/item_margin"
+        android:layout_marginLeft="@dimen/view_left_margin"
+        android:layout_marginRight="@dimen/view_left_margin">
+        <TextView
+            android:id="@+id/key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/view_left_margin"
+            android:textSize="@dimen/normal_text_size"
+            local:MvxBind="Text Title" />
+        <actchargers.Droid.CustomGrid
+            android:numColumns="3"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_margin"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/days_grid"
+            android:useDefaultMargins="true"
+            local:MvxBind="ItemsSource Items"
+            local:MvxItemTemplate="@layout/item_day_button" />
+    </LinearLayout>
+</LinearLayout>

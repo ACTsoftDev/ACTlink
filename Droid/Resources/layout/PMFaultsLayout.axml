@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:padding="4dp"
+        android:background="@color/view_cycle_header">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text PMFaults_Sequence" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text PMFaults_ID" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text PMFaults_Date" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text PMFaults_PowerModule_ID" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_cycle_item_margin"
+            local:MvxBind="Text PMFaults_Valid" />
+    </LinearLayout>
+    <MvvmCross.Binding.Droid.Views.MvxListView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        android:layout_weight="1"
+        android:id="@+id/pmFaultsListView"
+        android:listSelector="@color/transparent"
+        local:MvxBind="ItemsSource ListItemSource"
+        local:MvxItemTemplate="@layout/item_pmfaults" />
+</LinearLayout>

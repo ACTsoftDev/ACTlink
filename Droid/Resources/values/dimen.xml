@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="menu_icon_size">28dp</dimen>
+	<dimen name="profile_pic_size">58dp</dimen>
+	<dimen name="logout_button_size">34dp</dimen>
+	<dimen name="menu_item_text_size">16sp</dimen>
+	<dimen name="user_name_text_size">20sp</dimen>
+	<dimen name="email_text_size">14sp</dimen>
+	<dimen name="normal_text_size">14sp</dimen>
+	<dimen name="small_text_size">12sp</dimen>
+	<dimen name="large_text_size">16sp</dimen>
+	<dimen name="extra_large_text_size">32sp</dimen>
+	<dimen name="small_view_margin">5dp</dimen>
+	<dimen name="view_margin">10dp</dimen>
+	<dimen name="view_left_margin">10dp</dimen>
+	<dimen name="view_top_margin">4dp</dimen>
+	<dimen name="item_padding">10dp</dimen>
+	<dimen name="item_margin">8dp</dimen>
+	<dimen name="switch_layout_padding">12dp</dimen>
+	<dimen name="seperator_height">1dp</dimen>
+	<dimen name="seperator_space">0dp</dimen>
+	<dimen name="card_elevation">4dp</dimen>
+	<dimen name="corner_radius">5dp</dimen>
+	<dimen name="card_height">245dp</dimen>
+	<dimen name="item_header_size">16sp</dimen>
+	<dimen name="item_value_size">17sp</dimen>
+	<dimen name="item_key_size">14sp</dimen>
+	<dimen name="chart_item_height">320dp</dimen>
+	<dimen name="day_button_margin">4dp</dimen>
+	<dimen name="button_left_margin">8dp</dimen>
+	<dimen name="button_right_margin">8dp</dimen>
+	<dimen name="button_top_margin">4dp</dimen>
+	<dimen name="button_bootom_margin">4dp</dimen>
+	<dimen name="top_padding">20dp</dimen>
+	<dimen name="chart_height">300dp</dimen>
+	<dimen name="sync_sitem_item_margin">4dp</dimen>
+	<dimen name="sync_sitem_view_margin">12dp</dimen>
+	<dimen name="view_cycle_item_margin">6dp</dimen>
+
+</resources>

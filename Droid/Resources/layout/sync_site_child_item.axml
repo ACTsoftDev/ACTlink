@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginRight="@dimen/view_margin"
+        android:layout_marginTop="@dimen/sync_sitem_view_margin"
+        android:layout_marginBottom="@dimen/sync_sitem_view_margin">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/sync_sitem_item_margin"
+            android:visibility="invisible"
+            android:padding="@dimen/sync_sitem_item_margin"
+            android:src="@drawable/downarrow" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size"
+            local:MvxBind="Text name"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/sync_sitem_item_margin" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/checkImageView"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/sync_sitem_item_margin"
+            android:padding="@dimen/sync_sitem_item_margin"
+            local:MvxBind="DrawableName CheckedImageString,Converter = ImageName,ConverterParameter=0; Click ItemCheckBtnCommand" />
+    </LinearLayout>
+</LinearLayout>

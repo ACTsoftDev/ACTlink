@@ -1,0 +1,38 @@
+﻿namespace actchargers
+{
+    public enum BattViewCommunicationTypes
+    {
+        NOCall,
+        saveConfigAndTime,
+        saveConfig,
+        saveConfigDisconnect,
+        saveConfigTest,
+        resetGlobalRecords,
+        readAll,
+        readAll2,
+        connectCommand,
+        firmwareUpdateRequest,
+        firmwareWrite,
+        restartDevice,
+        restartDeviceNoDisconnect,
+        Batt_voltagecalibrationSaveConfig,
+        Batt_currentcalibrationSaveConfig,
+        saveActViewIDandRestart,
+        quickView,
+        quickViewDirect,
+        setSOC,
+        readDebugRecords,
+        setDebugRecord,
+        loadPLCFirmware,
+        loadDebugAnalog,
+        loadDebugAnalog2,
+        synchEvents,
+        saveConfigAndRestart,
+        startNewStudy,
+        saveConfigCommission,
+        doFinalComission,
+        resetFactorySettings,
+        replaceDevice,
+        plc_Cal
+    }
+}

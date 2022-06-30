@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView">
+            <connections>
+                <outlet property="RegisterAtBtn" destination="d8q-z0-xJS" id="V3Y-TH-w88"/>
+                <outlet property="contactUsBtn" destination="GDH-lK-SMw" id="luh-UE-g2N"/>
+                <outlet property="emailIdTF" destination="iCv-oK-urP" id="Idd-rQ-VjO"/>
+                <outlet property="havingTroubleLbl" destination="lYQ-vv-s5r" id="qdj-dP-XZj"/>
+                <outlet property="notRegisteredLbl" destination="dPy-qo-DsX" id="EIT-fD-KS5"/>
+                <outlet property="passwordTF" destination="xYN-d7-M5A" id="cNd-Tq-mg6"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYQ-vv-s5r">
+                    <rect key="frame" x="187" y="273" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="z6C-NJ-Krk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPy-qo-DsX">
+                    <rect key="frame" x="238" y="309" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="I5p-bQ-0Ki"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Mcr-bM-dzD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8q-z0-xJS">
+                    <rect key="frame" x="236" y="330" width="46" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4qU-Q5-b57"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDH-lK-SMw">
+                    <rect key="frame" x="234" y="273" width="46" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="36R-9A-CdW"/>
+                        <constraint firstAttribute="height" constant="21" id="Kwc-ZP-q7i"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPf-ag-faw">
+                    <rect key="frame" x="40" y="220" width="240" height="1"/>
+                    <color key="backgroundColor" red="0.25490196079999999" green="0.54901960780000003" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="fHH-mx-nza"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vAr-PX-pDi">
+                    <rect key="frame" x="40" y="265" width="240" height="1"/>
+                    <color key="backgroundColor" red="0.25490196079999999" green="0.54901960780000003" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="RdE-q2-Zgt"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="pky-f5-Rse"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ACTlink-Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="FMB-h9-mLG">
+                    <rect key="frame" x="104" y="88" width="112" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="4Cf-xW-cvm"/>
+                        <constraint firstAttribute="height" constant="67" id="QlL-5K-Moz"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-oK-urP">
+                    <rect key="frame" x="40" y="190" width="240" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5Jl-18-gT6"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" textContentType="email" keyboardType="emailAddress"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="X3m-sw-yAH"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYN-d7-M5A" clearButtonMode="whileEditing">
+                    <rect key="frame" x="40" y="235" width="240" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KL9-tX-hCo"/>
+                        <constraint firstAttribute="height" constant="30" id="opt-9J-hwr"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3ZB-1I-g1B"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vAr-PX-pDi" firstAttribute="leading" secondItem="xYN-d7-M5A" secondAttribute="leading" id="19s-tW-vP6"/>
+                <constraint firstItem="FMB-h9-mLG" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="6Fd-ap-re8"/>
+                <constraint firstItem="VPf-ag-faw" firstAttribute="leading" secondItem="iCv-oK-urP" secondAttribute="leading" id="7Vd-VO-DhU"/>
+                <constraint firstItem="lYQ-vv-s5r" firstAttribute="top" secondItem="xYN-d7-M5A" secondAttribute="bottom" constant="8" id="9bg-zg-3bQ"/>
+                <constraint firstAttribute="trailing" secondItem="GDH-lK-SMw" secondAttribute="trailing" constant="40" id="KCY-US-lif"/>
+                <constraint firstItem="xYN-d7-M5A" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="40" id="L85-oK-MM9"/>
+                <constraint firstItem="GDH-lK-SMw" firstAttribute="leading" secondItem="lYQ-vv-s5r" secondAttribute="trailing" constant="5" id="NXz-h4-0uc"/>
+                <constraint firstItem="GDH-lK-SMw" firstAttribute="top" secondItem="xYN-d7-M5A" secondAttribute="bottom" constant="8" id="OYw-r6-kpZ"/>
+                <constraint firstItem="dPy-qo-DsX" firstAttribute="top" secondItem="GDH-lK-SMw" secondAttribute="bottom" constant="15" id="QJa-98-xXc"/>
+                <constraint firstItem="iCv-oK-urP" firstAttribute="top" secondItem="2" secondAttribute="top" constant="190" id="SzV-vn-Am0"/>
+                <constraint firstItem="d8q-z0-xJS" firstAttribute="top" secondItem="dPy-qo-DsX" secondAttribute="bottom" id="WdN-j3-TwC"/>
+                <constraint firstItem="vAr-PX-pDi" firstAttribute="top" secondItem="xYN-d7-M5A" secondAttribute="bottom" id="Xyn-vh-are"/>
+                <constraint firstItem="vAr-PX-pDi" firstAttribute="width" secondItem="xYN-d7-M5A" secondAttribute="width" id="Z1W-AV-bKR"/>
+                <constraint firstItem="FMB-h9-mLG" firstAttribute="top" secondItem="2" secondAttribute="top" constant="88" id="ghQ-xV-zXl"/>
+                <constraint firstItem="VPf-ag-faw" firstAttribute="top" secondItem="iCv-oK-urP" secondAttribute="bottom" id="gmp-Ne-Wwi"/>
+                <constraint firstAttribute="trailing" secondItem="iCv-oK-urP" secondAttribute="trailing" constant="40" id="lb0-Gt-4aY"/>
+                <constraint firstAttribute="trailing" secondItem="dPy-qo-DsX" secondAttribute="trailing" constant="40" id="oJs-7D-TeC"/>
+                <constraint firstAttribute="trailing" secondItem="d8q-z0-xJS" secondAttribute="trailing" constant="38" id="pJ8-wh-013"/>
+                <constraint firstAttribute="trailing" secondItem="xYN-d7-M5A" secondAttribute="trailing" constant="40" id="pld-nR-wXV"/>
+                <constraint firstItem="xYN-d7-M5A" firstAttribute="top" secondItem="iCv-oK-urP" secondAttribute="bottom" constant="15" id="qQ5-3B-L38"/>
+                <constraint firstItem="VPf-ag-faw" firstAttribute="width" secondItem="iCv-oK-urP" secondAttribute="width" id="uY7-qA-2f2"/>
+                <constraint firstItem="iCv-oK-urP" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="40" id="vqL-fs-3QW"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ACTlink-Logo.png" width="112" height="67"/>
+        <image name="avatar.png" width="86" height="86"/>
+        <image name="logout.png" width="40" height="46"/>
+        <image name="menu.png" width="18" height="12"/>
+        <image name="circle.png" width="60" height="60"/>
+        <image name="dots.png" width="22" height="5"/>
+        <image name="sync_sites.png" width="60" height="60"/>
+        <image name="upload_data.png" width="60" height="60"/>
+        <image name="download_devicedata.png" width="60" height="60"/>
+        <image name="sync_sites_whitebg.png" width="60" height="60"/>
+        <image name="update_device_firmware.png" width="60" height="60"/>
+        <image name="upload_data_whitebg.png" width="60" height="60"/>
+        <image name="restat_device.png" width="60" height="60"/>
+        <image name="download_sitedata.png" width="60" height="60"/>
+        <image name="update_site_firmware.png" width="60" height="60"/>
+        <image name="Selected.png" width="25" height="20"/>
+        <image name="battery_info.png" width="60" height="60"/>
+        <image name="battview_info.png" width="60" height="60"/>
+        <image name="battview_settings.png" width="60" height="60"/>
+        <image name="quick_view.png" width="60" height="60"/>
+        <image name="history.png" width="60" height="60"/>
+        <image name="caliberation.png" width="60" height="60"/>
+        <image name="factory_control.png" width="60" height="60"/>
+        <image name="wifi.png" width="60" height="60"/>
+        <image name="charger_info.png" width="60" height="60"/>
+        <image name="charger_settings.png" width="60" height="60"/>
+        <image name="energy_management.png" width="60" height="60"/>
+        <image name="power_module.png" width="60" height="60"/>
+        <image name="charger.png" width="34" height="17"/>
+        <image name="current_a_Icon.png" width="26" height="33"/>
+        <image name="temp_icon.png" width="16" height="39"/>
+        <image name="voltage.png" width="33" height="37"/>
+        <image name="chargerquickview.png" width="772" height="410"/>
+        <image name="back_arrow.png" width="13" height="22"/>
+        <image name="activeselect.png" width="60" height="60"/>
+        <image name="battview.png" width="144" height="43"/>
+        <image name="battview_lostConnection.png" width="144" height="43"/>
+        <image name="battview_notConnected.png" width="144" height="43"/>
+        <image name="downarrow.png" width="60" height="60"/>
+        <image name="firmware_update.png" width="60" height="60"/>
+        <image name="idleWithFault_12.png" width="165" height="220"/>
+        <image name="idleWithFault_4.png" width="118" height="150"/>
+        <image name="idleWithFault_6.png" width="165" height="150"/>
+        <image name="idleWithWarning_12.png" width="165" height="220"/>
+        <image name="idleWithWarning_4.png" width="118" height="150"/>
+        <image name="idleWithWarning_6.png" width="165" height="150"/>
+        <image name="idle_12.png" width="165" height="220"/>
+        <image name="idle_4.png" width="118" height="150"/>
+        <image name="idle_6.png" width="165" height="150"/>
+        <image name="inactiveselect.png" width="60" height="60"/>
+        <image name="lostConnection_12.png" width="110" height="146"/>
+        <image name="lostConnection_4.png" width="82" height="104"/>
+        <image name="lostConnection_6.png" width="110" height="99"/>
+        <image name="notConnected_12.png" width="165" height="220"/>
+        <image name="notConnected_4.png" width="118" height="150"/>
+        <image name="notConnected_6.png" width="165" height="150"/>
+        <image name="refresh_device.png" width="60" height="60"/>
+        <image name="rightarrow.png" width="60" height="60"/>
+        <image name="runningWithFault_12.gif" width="165" height="220"/>
+        <image name="runningWithFault_4.gif" width="118" height="150"/>
+        <image name="runningWithFault_6.gif" width="166" height="150"/>
+        <image name="runningWithWarning_12.gif" width="165" height="220"/>
+        <image name="runningWithWarning_4.gif" width="118" height="150"/>
+        <image name="runningWithWarning_6.gif" width="166" height="150"/>
+        <image name="running_12.gif" width="110" height="146"/>
+        <image name="running_4.gif" width="82" height="104"/>
+        <image name="running_6.gif" width="110" height="99"/>
+    </resources>
+</document>

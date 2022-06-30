@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="@dimen/view_margin"
+        android:gravity="center_vertical"
+        local:MvxBind="Visible SelectAllVisibility">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            local:MvxBind="Text SelectAllTitle; Click SelectAllCommand" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/item_margin"
+            local:MvxBind="DrawableName SelectAllChecked, Converter = BoolToImage, ConverterParameter=0; Click SelectAllCommand" />
+    </LinearLayout>
+    <MvvmCross.Binding.Droid.Views.MvxListView
+        android:id="@+id/list"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        local:MvxItemTemplate="@layout/item_siteview_devices"
+        local:MvxBind="ItemsSource ListItemSource" />
+</LinearLayout>

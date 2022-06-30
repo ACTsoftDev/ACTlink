@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/view_left_margin"
+        android:layout_marginLeft="@dimen/view_left_margin"
+        android:textSize="@dimen/normal_text_size"
+        local:MvxBind="Text Title" />
+    <View
+        android:id="@+id/item_seperator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seperator_height"
+        android:background="@color/seperator_color"
+        android:layout_marginTop="@dimen/seperator_space"
+        android:layout_marginBottom="@dimen/seperator_space"
+        android:visibility="visible" />
+    <actchargers.Droid.AcEditText
+        android:id="@+id/valueText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:paddingLeft="@dimen/view_left_margin"
+        android:textSize="@dimen/large_text_size"
+        android:backgroundTint="@color/transparent"
+        android:cursorVisible="true" />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/view_left_margin"
+        android:layout_marginRight="@dimen/view_left_margin"
+        android:layout_marginTop="@dimen/view_margin"
+        android:layout_marginBottom="@dimen/view_margin"
+        android:textAllCaps="true"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        local:MvxBind="Click ButtonSelectorCommand; Text Title" />
+</LinearLayout>

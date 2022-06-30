@@ -1,0 +1,1129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75DAD2E9-F1FD-483E-99F2-02C9CA3BF458}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>actchargers</RootNamespace>
+    <AssemblyName>actchargers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Code\ViewModels\DataModels\ListViewItem.cs" />
+    <Compile Include="Code\ViewModels\SplashModel\SplashViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Code\App.cs" />
+    <Compile Include="Code\CustomAppStart.cs" />
+    <Compile Include="Code\ViewModels\Login\LoginViewModel.cs" />
+    <Compile Include="Code\ViewModels\MainContainer\MainContainerViewModel.cs" />
+    <Compile Include="Code\ViewModels\MainContainer\SideMenuViewModel.cs" />
+    <Compile Include="Code\ViewModels\Login\UsageAgreementViewModel.cs" />
+    <Compile Include="Code\Utility\ACColors.cs" />
+    <Compile Include="Code\ViewModels\DataModels\MenuViewItem.cs" />
+    <Compile Include="Resx\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Code\ViewModels\BaseClasses\BaseViewModel.cs" />
+    <Compile Include="Code\Utility\IDeviceInfo.cs" />
+    <Compile Include="Code\Utility\ACConstants.cs" />
+    <Compile Include="Code\Model\ServiceLayer\SuccessResponseEventArg.cs" />
+    <Compile Include="Code\Model\ServiceLayer\ErrorResponseEventArg.cs" />
+    <Compile Include="Code\Utility\IUserPreferences.cs" />
+    <Compile Include="Code\ViewModels\DataModels\BaseResponse.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\DBManagerService.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\IDBManagerService.cs" />
+    <Compile Include="Code\Model\DataLayer\DBUser.cs" />
+    <Compile Include="Code\Model\DataLayer\DBModel.cs" />
+    <Compile Include="Code\Utility\ACUserDialogs.cs" />
+    <Compile Include="Code\ViewModels\DataModels\DefineResult.cs" />
+    <Compile Include="Code\Model\DataLayer\AccessPermission.cs" />
+    <Compile Include="Code\Utility\ISQLite.cs" />
+    <Compile Include="Code\ViewModels\Login\ContactUsViewModel.cs" />
+    <Compile Include="Code\ViewModels\Connect\ConnectViewModel.cs" />
+    <Compile Include="Code\ViewModels\Connect\ConnectToDeviceViewModel.cs" />
+    <Compile Include="Code\ViewModels\DataModels\DeviceInfoItem.cs" />
+    <Compile Include="Code\Utility\StaticDataAndHelperFunctions.cs" />
+    <Compile Include="Code\Utility\ACTimer.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\DeviceHomeViewModel.cs" />
+    <Compile Include="Code\ViewModels\DataModels\DeviceDetailsItem.cs" />
+    <Compile Include="Code\ViewModels\Connect\ActionsMenuViewModel.cs" />
+    <Compile Include="Code\Utility\ACUtility.cs" />
+    <Compile Include="Code\Utility\UIAccessControlUtility.cs" />
+    <Compile Include="Code\Utility\Logger.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\EventDataRangeHistoryViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\BatteryUsageSummaryViewModel.cs" />
+    <Compile Include="Code\ViewModels\DataModels\TableHeaderItem.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\EventsDateRangeViewModel.cs" />
+    <Compile Include="Code\Utility\ValidationUtility.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\QuickView\QuickViewModel.cs" />
+    <Compile Include="Code\Utility\ItemValueColorValueConverter.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\Calibration\CalibrationViewModel.cs" />
+    <Compile Include="Code\Device\BATTViewReporting.cs" />
+    <Compile Include="Code\Utility\IWifiManagerService.cs" />
+    <Compile Include="Code\Utility\Messages\ProgressChangeMessage.cs" />
+    <Compile Include="Code\ViewModels\DataModels\ReplacementItem.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\ViewGlobalRecordsViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\ViewCyclesHistoryViewModel.cs" />
+    <Compile Include="Code\ViewModels\DataModels\DayViewItem.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\QuickView\QuickViewChargerViewModel.cs" />
+    <Compile Include="Code\Model\DataLayer\DBConnectedDevices.cs" />
+    <Compile Include="Code\Utility\Messages\DeviceResetMessage.cs" />
+    <Compile Include="Code\ViewModels\SyncSites\SyncSitesViewModel.cs" />
+    <Compile Include="Code\Device\ACTVIEWQuantum.cs" />
+    <Compile Include="Code\Device\ACTViewConnect.cs" />
+    <Compile Include="Code\Device\SyncSites.cs" />
+    <Compile Include="Code\ViewModels\DataModels\SyncSitesHeaderItem.cs" />
+    <Compile Include="Code\ViewModels\SyncSites\ReplacementViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\FactoryControl\FactoryControlViewModel.cs" />
+    <Compile Include="Code\Utility\IUSBInterface.cs" />
+    <Compile Include="Code\Utility\Messages\ActionsMenuMessage.cs" />
+    <Compile Include="Code\Device\DownloadUpload.cs" />
+    <Compile Include="Code\Utility\ICustomAlert.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\FirmwareUpdate\FirmwareUpdateViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\FactoryControl\CommissionAReplacementPartViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\FactoryControl\CommissionNextViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\FactoryControl\CommissionViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\FactoryControl\EditEventControlViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\FactoryControl\TestingBattViewViewModel.cs" />
+    <Compile Include="Code\Utility\USBInterface.cs" />
+    <Compile Include="Code\Utility\usersList.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\BatteryDailyUsageViewModel.cs" />
+    <Compile Include="Code\Model\DataLayer\BATTDailyUsageModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\PowerModule\PMFaultsViewModel.cs" />
+    <Compile Include="Code\ViewModels\DataModels\ViewCycle.cs" />
+    <Compile Include="Code\Utility\Messages\AddDeviceMessage.cs" />
+    <Compile Include="Code\Utility\Messages\BackScanMessage.cs" />
+    <Compile Include="Code\Utility\Messages\EventsHistoryMessage.cs" />
+    <Compile Include="Code\Utility\Messages\StartScanMessage.cs" />
+    <Compile Include="Code\Utility\IProfileCheckService.cs" />
+    <Compile Include="Code\Helpers\Login\LoginDataValidator.cs" />
+    <Compile Include="Code\Helpers\Login\AuthenticationHelper.cs" />
+    <Compile Include="Code\Helpers\Login\LoginAuthenticationHelper.cs" />
+    <Compile Include="Code\Utility\JsonParser.cs" />
+    <Compile Include="Code\Helpers\Login\AuthenticationStatus.cs" />
+    <Compile Include="Code\Sessions\BackgroundSessionManager.cs" />
+    <Compile Include="Code\Helpers\SynchSites\SynchSitesHelpers.cs" />
+    <Compile Include="Code\Utility\PlatformVersion\IPlatformVersion.cs" />
+    <Compile Include="Code\Utility\PlatformVersion\PlatformVersionBase.cs" />
+    <Compile Include="Code\Helpers\Versions\VersionsChecker.cs" />
+    <Compile Include="Code\Helpers\Versions\VersionsConverter.cs" />
+    <Compile Include="Code\Helpers\Versions\AllVersions.cs" />
+    <Compile Include="Code\Helpers\Versions\LatestVersions.cs" />
+    <Compile Include="Code\Sessions\SoftwareUpdateHelper.cs" />
+    <Compile Include="Code\Model\DataLayer\FirmwareDownloaded.cs" />
+    <Compile Include="Code\Model\DataLayer\GenericObjects.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\DBUserLoader.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\LoadersBase.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\Helpers\DeviceNameDeterminer.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\FirmwareDownloadedLoader.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\GenericObjectsLoader.cs" />
+    <Compile Include="Code\Model\DataLayer\SynchSites\SynchObjectsBufferedData.cs" />
+    <Compile Include="Code\Model\DataLayer\SynchSites\SynchSiteObjects.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\SynchSites\SynchObjectsBufferedDataLoader.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\SynchSites\SynchSiteObjectsLoader.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\DbSingleton.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\DBConnectedDevicesLoader.cs" />
+    <Compile Include="Code\Model\DataLayer\Uploadable\Events\BattviewEvents.cs" />
+    <Compile Include="Code\Model\DataLayer\Uploadable\Events\ChargeCycles.cs" />
+    <Compile Include="Code\Model\DataLayer\Uploadable\Events\EventBase.cs" />
+    <Compile Include="Code\Model\DataLayer\Uploadable\Events\PmFaults.cs" />
+    <Compile Include="Code\Model\DataLayer\Uploadable\DevicesObjects.cs" />
+    <Compile Include="Code\Model\DataLayer\Uploadable\UploadableBase.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\Uploadable\Events\BattviewEventsLoader.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\Uploadable\Events\ChargeCyclesLoader.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\Uploadable\Events\PMFaultsLoader.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\Uploadable\DevicesObjectsLoader.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\Uploadable\ReplaceDevicesLoaders.cs" />
+    <Compile Include="Code\Model\DataLayer\PMFaultsModel.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\Uploadable\UploadableLoadersBase.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\AllSourceLists.cs" />
+    <Compile Include="Code\Model\DataLayer\Uploadable\ReplaceDevices.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\UploadSteps.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\Uploader.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\ListsOrganizer.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\UploadableDeviceDictionary.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\Upload\UploadViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\Upload\UploadableDeviceViewModel.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\UploadableDevicesLists.cs" />
+    <Compile Include="Code\Model\DataLayer\Uploadable\DeviceConfig.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\UploadStepsEventArgs.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\UploadStepsToProgress.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\Upload\Helpers\UploadStepsToText.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\UploadableRequestManager.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Helpes\TablesCreaterAndDropper.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\Helpers\FakedUploadsGenerator.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\AllUploadableLists.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\BackupAndCleaner.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\Helpers\ListToJson.cs" />
+    <Compile Include="Code\DownloadUpload\Upload\IDatabaseBackupManager.cs" />
+    <Compile Include="Code\ViewModels\Connect\Helpers\UiConnectionType.cs" />
+    <Compile Include="Code\ViewModels\Connect\Helpers\TimeToTextHelper.cs" />
+    <Compile Include="Code\ViewModels\SiteView\SiteViewDevicesViewModel.cs" />
+    <Compile Include="Code\Model\DataLayer\DeviceType.cs" />
+    <Compile Include="Code\Device\Connectivity\ConnectionManager\GenericDevice.cs" />
+    <Compile Include="Code\Device\Connectivity\ConnectionManager\DoLoadResult.cs" />
+    <Compile Include="Code\Device\Connectivity\ConnectionManager\DeviceBattViewObject.cs" />
+    <Compile Include="Code\Device\Connectivity\ConnectionManager\DeviceMCBObject.cs" />
+    <Compile Include="Code\Device\Connectivity\ConnectionManager\ConnectionManagerGenericList.cs" />
+    <Compile Include="Code\Device\Connectivity\ConnectionManager\ConnectionManager.cs" />
+    <Compile Include="Code\Device\Connectivity\ControlObject\AccessLevelConsts.cs" />
+    <Compile Include="Code\Device\Connectivity\ControlObject\AccessLevel.cs" />
+    <Compile Include="Code\Device\Connectivity\ControlObject\ConnectionTypesEnum.cs" />
+    <Compile Include="Code\Device\Connectivity\ControlObject\ConnectionTypes.cs" />
+    <Compile Include="Code\Device\Connectivity\ControlObject\ValuesLimits.cs" />
+    <Compile Include="Code\Device\Connectivity\ControlObject\ControlObject.cs" />
+    <Compile Include="Code\Device\Connectivity\CommunicationProtocol\CommProtocol.cs" />
+    <Compile Include="Code\Device\Connectivity\CommunicationProtocol\Communicator.cs" />
+    <Compile Include="Code\Device\Connectivity\CommunicationProtocol\CommunicationResult.cs" />
+    <Compile Include="Code\Device\Connectivity\CommunicationProtocol\Crc7.cs" />
+    <Compile Include="Code\Device\Connectivity\CommunicationProtocol\DeviceBaseType.cs" />
+    <Compile Include="Code\Device\Connectivity\CommunicationProtocol\TimeoutLevel.cs" />
+    <Compile Include="Code\Device\Connectivity\CommunicationProtocol\ValidateDeviceResponse.cs" />
+    <Compile Include="Code\Device\Connectivity\CommunicationProtocol\CommandObject.cs" />
+    <Compile Include="Code\Helpers\Login\ManagementUsers.cs" />
+
+    <Compile Include="Code\Device\Mcb\MCBObject\ToTimeStamp.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\ToNormalString.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\ToMcbConfigRateFrom16Bits.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\ToMcbConfigEqfiStartTime.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\ToMcbConfigDaysMask.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\ToMcbConfigEqfiWindow.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\ToMcbConfigBatteryType.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\LcdRequest.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\CalibratorSimulator.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\LcdSimulator.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\MCBHealthCheck.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\PMfault.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\GlobalRecord.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\DaysMask.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\PMState.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\ChargeState.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\ChargeRecord.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\MCBConfig.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\MCBObject.cs" />
+    <Compile Include="Code\Device\Mcb\MCBQuantum\BattTestStages.cs" />
+    <Compile Include="Code\Device\Mcb\MCBQuantum\McbCommunicationTypes.cs" />
+    <Compile Include="Code\Device\Mcb\MCBQuantum\ActviewCommGeneric.cs" />
+    <Compile Include="Code\Device\Mcb\MCBQuantum\MCBQuantum.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\ChargeCycleTypes.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\FiDoneReason.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\ToBoolean.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\ToJsonDate.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\AdcRawClass.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\DebugRecord.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\QuickView.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\RealTimeRecord.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\BattViewObjectEvent.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\BattViewObjectGlobalRecord.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\BattViewObject.cs" />
+    <Compile Include="Code\Device\BattView\BattViewQuantum\BattViewCommunicationTypes.cs" />
+    <Compile Include="Code\Device\BattView\BattViewQuantum\BattViewQuantum.cs" />
+    <Compile Include="Code\Device\Firmware\HexLineCode.cs" />
+    <Compile Include="Code\Device\Firmware\McbChip.cs" />
+    <Compile Include="Code\Device\Firmware\CalibratorChip.cs" />
+    <Compile Include="Code\Device\Firmware\BATTViewChip.cs" />
+    <Compile Include="Code\Device\Firmware\Hexencoder.cs" />
+    <Compile Include="Code\Device\Firmware\FirmwareResult.cs" />
+    <Compile Include="Code\Device\Firmware\Firmware.cs" />
+    <Compile Include="Code\Utility\InternetConnectivityManager.cs" />
+    <Compile Include="Code\Utility\JsonZone.cs" />
+    <Compile Include="Code\Utility\TemperatureManager.cs" />
+    <Compile Include="Code\Helpers\DeviceWarning\DeviceWarningManager.cs" />
+    <Compile Include="Code\Helpers\DeviceWarning\BattviewDeviceWarningManager.cs" />
+    <Compile Include="Code\Helpers\DeviceWarning\McbDeviceWarningManager.cs" />
+    <Compile Include="Code\Device\BattView\BattViewObject\BattViewConfig.cs" />
+    <Compile Include="Code\Model\ThinModels\BaseModel.cs" />
+    <Compile Include="Code\Controllers\DeviceHome\PowerModule\PmLiveController.cs" />
+    <Compile Include="Code\Controllers\BaseController.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\PowerModule\PmLiveViewModel.cs" />
+    <Compile Include="Code\Model\ThinModels\DeviceHome\PowerModule\PmLiveModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\PowerSnapshotsViewModel.cs" />
+    <Compile Include="Code\Model\ThinModels\DeviceHome\History\PowerSnapshotsModel.cs" />
+    <Compile Include="Code\Device\Mcb\MCBObject\PowerSnapshot.cs" />
+    <Compile Include="Code\Controllers\DeviceHome\History\PowerSnapshotsCntroller.cs" />
+    <Compile Include="Code\Utility\AppUserPreferences.cs" />
+    <Compile Include="Code\Utility\BaseUrlChooser.cs" />
+    <Compile Include="Code\Device\SiteView\SiteViewDeviceObject.cs" />
+    <Compile Include="Code\Device\SiteView\ChargerImages.cs" />
+    <Compile Include="Code\Device\SiteView\SiteViewChargerObject.cs" />
+    <Compile Include="Code\Device\SiteView\SiteViewBattviewObject.cs" />
+    <Compile Include="Code\Device\SiteView\BattviewImages.cs" />
+    <Compile Include="Code\Device\SiteView\SiteViewBattviewSettings.cs" />
+    <Compile Include="Code\Device\SiteView\SiteViewChargerSettings.cs" />
+    <Compile Include="Code\Device\SiteView\SiteViewDevice.cs" />
+    <Compile Include="Code\Device\SiteView\SiteViewInterface.cs" />
+    <Compile Include="Code\Device\SiteView\SiteViewQuantum.cs" />
+    <Compile Include="Code\ViewModels\SiteView\SiteViewSitesViewModel.cs" />
+    <Compile Include="Code\Controllers\SiteView\SiteViewSitesController.cs" />
+    <Compile Include="Code\Device\SiteView\SessionDevices.cs" />
+    <Compile Include="Code\Device\SiteView\DeviceTypes.cs" />
+    <Compile Include="Code\Device\SiteView\FirmwareUpdateStage.cs" />
+    <Compile Include="Code\Helpers\SiteView\SiteViewListBuilder.cs" />
+    <Compile Include="Code\Controllers\SiteView\SiteViewDevicesController.cs" />
+    <Compile Include="Code\Utility\CrossDeviceInfoManager.cs" />
+    <Compile Include="Code\Helpers\SiteView\SiteViewUpdater.cs" />
+    <Compile Include="Code\Utility\ValueConverters\ImageNameValueConverter.cs" />
+    <Compile Include="Code\Utility\ValueConverters\BoolToImageValueConverter.cs" />
+    <Compile Include="Code\Utility\ValueConverters\BoolToImageNameConverter.cs" />
+    <Compile Include="Code\ViewModels\Connect\Helpers\ActionsMenuTypes.cs" />
+    <Compile Include="Code\ViewModels\SiteView\SiteViewInProgressDevicesViewModel.cs" />
+    <Compile Include="Code\Helpers\SiteView\SiteViewInProgressTypes.cs" />
+    <Compile Include="Code\Controllers\SiteView\SiteViewInProgressDevicesController.cs" />
+    <Compile Include="Code\Device\DeviceObjectParent.cs" />
+    <Compile Include="Code\Helpers\SiteView\SiteviewChargerDownloader.cs" />
+    <Compile Include="Code\Helpers\SiteView\SiteViewDownloader.cs" />
+    <Compile Include="Code\Helpers\SiteView\SiteviewBattViewDownloader.cs" />
+    <Compile Include="Code\Device\Common\WiFiDebug.cs" />
+    <Compile Include="Code\Utility\DevicesTabs.cs" />
+    <Compile Include="Code\ViewModels\SiteView\SiteViewSettingsHomeViewModel.cs" />
+    <Compile Include="Code\Controllers\SiteView\SiteViewSettingsHomeController.cs" />
+    <Compile Include="Code\Controllers\Helpers\GlobalLists.cs" />
+    <Compile Include="Code\Helpers\SiteView\SiteViewSettingsSaver.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\Common\ListSelectorParameter.cs" />
+    <Compile Include="Code\Utility\Messages\CableSettingsMessage.cs" />
+    <Compile Include="Code\Utility\VerifyControl.cs" />
+    <Compile Include="Code\Model\DataLayer\IncompleteDownload.cs" />
+    <Compile Include="Code\Model\DataAccessLayer\Loaders\IncompleteDownloadLoader.cs" />
+    <Compile Include="Code\Utility\ValueConverters\BoolToAlphaValueConverter.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\EnergyManagement\EnergyManagementBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\EnergyManagement\EnergyManagementDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\EnergyManagement\EnergyManagementSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\Info\InfoBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\Info\InfoDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\Info\InfoSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\PowerModule\PmInfoBase\PmInfoBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\PowerModule\PmInfoBase\PmInfoDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\PowerModule\PmInfoBase\PmInfoSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\PowerModule\PowerModule\PowerModuleBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\PowerModule\PowerModule\PowerModuleDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\PowerModule\PowerModule\PowerModuleSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\Settings\CableSettings\CableSettingsSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\Settings\SettingsBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\Settings\SettingsDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\Settings\SettingsSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WiFi\WiFiBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WiFi\WiFiDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WiFi\WiFiSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\BatteryInfo\BatteryInfoBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\BatteryInfo\BatteryInfoDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\BatteryInfo\BatteryInfoSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\BatterySettings\BatterySettingsBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\BatterySettings\BatterySettingsDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\BatterySettings\BatterySettingsSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\DefaultChargeProfile\DefaultChargeProfileBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\DefaultChargeProfile\DefaultChargeProfileDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\DefaultChargeProfile\DefaultChargeProfileSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\FinishAndEQSettings\FinishAndEQSettingsBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\FinishAndEQSettings\FinishAndEQSettingsDeviceSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\FinishAndEQSettings\FinishAndEQSettingsSiteViewSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\NewStudy\NewStudySubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\WithBattViewMobileBaseSubController.cs" />
+    <Compile Include="Code\Controllers\Helpers\ConnectedDevicesPinger.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\EnergyManagement\EnergyManagementController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\Info\InfoController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\PowerModule\PmInfoController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\PowerModule\PowerModuleController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\Settings\CableSettings\CableSettingsController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\Settings\SettingsController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\WiFi\WiFiController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\WithBattViewMobile\BatteryInfo\BatteryInfoController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\WithBattViewMobile\BatterySettings\BatterySettingsController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\WithBattViewMobile\DefaultChargeProfile\DefaultChargeProfileController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\WithBattViewMobile\FinishAndEQSettings\FinishAndEQSettingsController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\WithBattViewMobile\NewStudy\NewStudyController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\WithBattViewMobile\WithBattViewMobileBaseController.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\EnergyManagement\EnergyManagementViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\Info\InfoViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\PowerModule\PmInfoViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\PowerModule\PowerModuleViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\Settings\CableSettings\CableSettingsViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\Settings\SettingsViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\WiFi\WiFiViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\WithBattViewMobile\BatteryInfo\BatteryInfoViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\WithBattViewMobile\BatterySettings\BatterySettingsViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\WithBattViewMobile\DefaultChargeProfile\DefaultChargeProfileViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\WithBattViewMobile\FinishAndEQSettings\FinishAndEQSettingsViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\WithBattViewMobile\NewStudy\NewStudyViewModel.cs" />
+    <Compile Include="Code\Controllers\SubControllers\SiteViewSettings\SiteViewSettingsBaseSubController.cs" />
+    <Compile Include="Code\Controllers\SubControllers\ListViewBaseSubController.cs" />
+    <Compile Include="Code\Controllers\ListView\SiteViewSettings\SiteViewSettingsBaseSubController.cs" />
+    <Compile Include="Code\Controllers\ListView\ListViewBaseController.cs" />
+    <Compile Include="Code\ViewModels\ListView\SiteViewSettings\SiteViewSettingsBaseViewModel.cs" />
+    <Compile Include="Code\ViewModels\ListView\ListViewBaseViewModel.cs" />
+    <Compile Include="Code\ViewModels\Login\AboutUsViewModel.cs" />
+    <Compile Include="Code\Controllers\Login\AboutUsController.cs" />
+    <Compile Include="Code\Utility\ValueConverters\InverseValueConverter.cs" />
+    <Compile Include="Code\Device\Connectivity\WiFi\RouterInterface.cs" />
+    <Compile Include="Code\Device\Connectivity\WiFi\RouterInterfaceDevice.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\BatteryInfo\SaveBatteryInfoViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\BatteryInfo\SaveBatterySettingsViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\BatteryInfo\SaveFinishAndEQSettingsViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\DefaultChargeProfile\SaveDefaultChargeProfileViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\EnergyManagement\SaveEnergyViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\Info\SaveInfoViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\NewStudy\SaveNewStudyViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\PowerModule\SavePMInfoViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\PowerModule\SavePowerModuleViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\Settings\SaveSettingsViewModel.cs" />
+    <Compile Include="Code\ViewModels\SaveCode\WiFi\SaveWifiViewModel.cs" />
+    <Compile Include="Code\Device\Connectivity\WiFi\FirmwareWiFiVersionUtility.cs" />
+    <Compile Include="Code\Helpers\SiteView\SiteviewDeviceDownloader.cs" />
+    <Compile Include="Code\Device\Mcb\Helpers\McbHelper.cs" />
+    <Compile Include="Code\Utility\DevelopmentProfileHelper.cs" />
+    <Compile Include="Code\Device\SharedTexts.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\ViewModels\DeviceHome\History\ChargeSummaryViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\ExceptionsViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\HistoryChartsViewModel.cs" />
+    <Compile Include="Code\ViewModels\BaseClasses\IMvxPagedViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\ViewModels\DeviceHome\History\HistoryViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\CumulativeDataViewModel.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\History\RtRecordsViewModel.cs" />
+    <Compile Include="Code\ViewModels\DataModels\ChartViewItem.cs" />
+    <Compile Include="Code\Utility\Messages\ListSelectorMessage.cs" />
+    <Compile Include="Code\ViewModels\DeviceHome\Common\ListSelectorViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\ThirdPartyLibraries\ModernHttpClient\portable-headers\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.2.3.0\lib\portable-net45+wp80+win8+wpa81\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.2.3.0\lib\portable-net45+wp80+win8+wpa81\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo">
+      <HintPath>..\packages\Xam.Plugin.DeviceInfo.3.1.0\lib\netstandard1.0\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\portable-win+net45+wp8+win8+wpa81\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.3.4.2\lib\portable-win+net45+wp8+win8+wpa81\Acr.UserDialogs.Interface.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.3.3.3\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\portable-win+net45+wp8+win8+wpa81\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\portable-win+net45+wp8+win8+wpa81\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\portable-win+net45+wp8+win8+wpa81\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\portable-win+net45+wp8+win8+wpa81\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\portable-win+net45+wp8+win8+wpa81\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.3\lib\portable-win+net45+wp8+win8+wpa81\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.Plugin.Email.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="DefaultFirmwareFiles\version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\Helpers\SynchSites\" />
+    <Folder Include="Code\Utility\PlatformVersion\" />
+    <Folder Include="Code\Helpers\Versions\" />
+    <Folder Include="Code\Model\DataAccessLayer\Loaders\" />
+    <Folder Include="Code\Model\DataAccessLayer\Loaders\Helpers\" />
+    <Folder Include="Code\Model\DataLayer\SynchSites\" />
+    <Folder Include="Code\Model\DataAccessLayer\Loaders\SynchSites\" />
+    <Folder Include="Code\Model\DataAccessLayer\Helpes\" />
+    <Folder Include="Code\Model\DataLayer\Uploadable\" />
+    <Folder Include="Code\Model\DataLayer\Uploadable\Events\" />
+    <Folder Include="Code\Model\DataAccessLayer\Loaders\Uploadable\" />
+    <Folder Include="Code\Model\DataAccessLayer\Loaders\Uploadable\Events\" />
+    <Folder Include="Code\DownloadUpload\" />
+    <Folder Include="Code\DownloadUpload\Upload\" />
+    <Folder Include="Code\ViewModels\DeviceHome\Upload\" />
+    <Folder Include="Code\ViewModels\DeviceHome\Upload\Helpers\" />
+    <Folder Include="Code\DownloadUpload\Upload\Helpers\" />
+    <Folder Include="Code\ViewModels\Connect\Helpers\" />
+    <Folder Include="Code\ViewModels\SiteView\" />
+    <Folder Include="Code\Device\Connectivity\" />
+    <Folder Include="Code\Device\Connectivity\ConnectionManager\" />
+    <Folder Include="Code\Device\Connectivity\ControlObject\" />
+    <Folder Include="Code\Device\Mcb\" />
+    <Folder Include="Code\Device\Mcb\MCBObject\" />
+    <Folder Include="Code\Device\Mcb\MCBQuantum\" />
+    <Folder Include="Code\Device\BattView\" />
+    <Folder Include="Code\Device\BattView\BattViewObject\" />
+    <Folder Include="Code\Device\BattView\BattViewQuantum\" />
+    <Folder Include="Code\Device\Firmware\" />
+    <Folder Include="Code\Helpers\DeviceWarning\" />
+    <Folder Include="Code\Model\ThinModels\" />
+    <Folder Include="Code\Controllers\" />
+    <Folder Include="Code\Controllers\DeviceHome\" />
+    <Folder Include="Code\Controllers\DeviceHome\PowerModule\" />
+    <Folder Include="Code\Model\ThinModels\DeviceHome\" />
+    <Folder Include="Code\Model\ThinModels\DeviceHome\PowerModule\" />
+    <Folder Include="Code\Model\ThinModels\DeviceHome\History\" />
+    <Folder Include="Code\Controllers\DeviceHome\History\" />
+    <Folder Include="Code\Device\SiteView\" />
+    <Folder Include="Code\Controllers\SiteView\" />
+    <Folder Include="Code\Helpers\SiteView\" />
+    <Folder Include="Code\Utility\ValueConverters\" />
+    <Folder Include="Code\Device\Common\" />
+    <Folder Include="Code\Controllers\SubControllers\" />
+    <Folder Include="Code\Controllers\Helpers\" />
+    <Folder Include="Code\Controllers\SubControllers\SiteViewSettings\" />
+    <Folder Include="Code\Controllers\SubControllers\SiteViewSettings\EnergyManagement\" />
+    <Folder Include="Code\Controllers\SubControllers\SiteViewSettings\Info\" />
+    <Folder Include="Code\Controllers\SubControllers\SiteViewSettings\PowerModule\" />
+    <Folder Include="Code\Controllers\SubControllers\SiteViewSettings\Settings\" />
+    <Folder Include="Code\Controllers\SubControllers\SiteViewSettings\WiFi\" />
+    <Folder Include="Code\Controllers\SubControllers\SiteViewSettings\WithBattViewMobile\" />
+    <Folder Include="Code\Controllers\ListView\" />
+    <Folder Include="Code\Controllers\ListView\SiteViewSettings\" />
+    <Folder Include="Code\ViewModels\ListView\" />
+    <Folder Include="Code\ViewModels\ListView\SiteViewSettings\" />
+    <Folder Include="Code\Controllers\Login\" />
+    <Folder Include="Code\Device\Connectivity\WiFi\" />
+    <Folder Include="Code\ViewModels\SaveCode\" />
+    <Folder Include="Code\Device\Mcb\Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resx\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+      <LogicalName>actchargers.AppResources.resources</LogicalName>
+      <CustomToolNamespace>actchargers</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefaultFirmwareFiles\zonesJson.txt" />
+    <EmbeddedResource Include="DefaultFirmwareFiles\img-passthru-xxr-evk2_opa564.bundle" />
+    <EmbeddedResource Include="DefaultFirmwareFiles\calibrator.X.production.hex" />
+    <EmbeddedResource Include="DefaultFirmwareFiles\battview.X.production.hex" />
+    <EmbeddedResource Include="DefaultFirmwareFiles\MCB.X.production.hex" />
+    <EmbeddedResource Include="DefaultFirmwareFiles\wifi.bin" />
+    <EmbeddedResource Include="DefaultFirmwareFiles\DCFW_GCT.bin" />
+    <EmbeddedResource Include="DefaultFirmwareFiles\DCFW_Navitas.bin" />
+    <EmbeddedResource Include="DefaultFirmwareFiles\DCFW_Electrovaya.bin" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdPartyLibraries\FilePicker\Plugin.FilePicker\Plugin.FilePicker.csproj">
+      <Project>{A6FCEF44-D2BA-42C7-B3CB-13667BCD7B54}</Project>
+      <Name>Plugin.FilePicker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdPartyLibraries\FilePicker\Plugin.FilePicker.Abstractions\Plugin.FilePicker.Abstractions.csproj">
+      <Project>{6EDB0588-FFC5-4EF5-8A99-9E241D0F878D}</Project>
+      <Name>Plugin.FilePicker.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdPartyLibraries\ModernHttpClient\ModernHttpClient\ModernHttpClient.Portable.csproj">
+      <Project>{6DD98593-4498-463D-B16E-F6CC5A928B79}</Project>
+      <Name>ModernHttpClient.Portable</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+</Project>

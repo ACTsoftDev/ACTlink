@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <MvvmCross.Binding.Droid.Views.MvxListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        local:MvxBind="ItemsSource ItemSource" />
+    <Button
+        android:id="@+id/resetLCD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/button_left_margin"
+        android:layout_marginRight="@dimen/button_right_margin"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:layout_marginBottom="@dimen/button_bootom_margin"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:enabled="false"
+        local:MvxBind="Click McbResetLcdCalibrationCommand; Text ResetLcdCalibrationTitle; Visible IsResetLcdCalibrationVisible; Enabled IsResetLcdCalibrationEditEnabled; BackgroundColor IsResetLcdCalibrationEditEnabled, Converter=ItemValueColor" />
+</LinearLayout>
